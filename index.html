@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Aditya Verma</h1>
-<h4>Biohacker. Using science to find new and clever ways to improve life..</h4>
-  
-<canvas id="tutorial" width="150" height="150"></canvas>
-<canvas id="stockGraph" width="150" height="150">
-  current stock price: $3.15 + 0.15
-</canvas>
 
-<canvas id="clock" width="150" height="150">
-  <img src="images/clock.png" width="150" height="150" alt=""/>
-</canvas>
+<script type="text/javascript">
+
+function draw() {
+  var img = new Image();
+        img.src = 'images/clock.png';
+
+        // WAIT TILL IMAGE IS LOADED.
+        img.onload = function () {
+            fill_canvas(img);       // FILL THE CANVAS WITH THE IMAGE.
+        }
+
+        function fill_canvas(img) {
+            // CREATE CANVAS CONTEXT.
+            var canvas = document.getElementById('tutorial');
+            var ctx = canvas.getContext('2d');
+
+            canvas.width = img.width;
+            canvas.height = img.height;
+
+            ctx.drawImage(img, 0, 0);       // DRAW THE IMAGE TO THE CANVAS.
+        }
+}
+</script>
+
+<style type="text/css">
+  canvas { border: 1px solid black; }
+</style>
+
+
+<body onload="draw();">
+
+  <h1>Aditya Verma</h1>
+  <h4>Biohacker. Using science to find new and clever ways to improve life!</h4>
   
+  <canvas id="tutorial" width="150" height="150"></canvas>
+
 </body>
 </html>
