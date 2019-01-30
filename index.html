@@ -1,41 +1,248 @@
-<!DOCTYPE html>
 <html>
 
-<script type="text/javascript">
-
-function draw() {
-  var img = new Image();
-        img.src = 'images/clock.PNG';
-
-        // WAIT TILL IMAGE IS LOADED.
-        img.onload = function () {
-            fill_canvas(img);       // FILL THE CANVAS WITH THE IMAGE.
+<head>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        function fill_canvas(img) {
-            // CREATE CANVAS CONTEXT.
-            var canvas = document.getElementById('tutorial');
-            var ctx = canvas.getContext('2d');
-
-            canvas.width = img.width;
-            canvas.height = img.height;
-
-            ctx.drawImage(img, 0, 0);       // DRAW THE IMAGE TO THE CANVAS.
+        #parent {
+            margin: auto;
+            width: 2000px;
+            height: 2000px;
+            background-color: black;
+            box-sizing: border-box;
+            border-style: solid;
         }
-}
-</script>
 
-<style type="text/css">
-  canvas { border: 1px solid black; }
-</style>
+        .rectangle {
+            margin: 0%;
+            width: 5%;
+            height: 5%;
+            background-color: white;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body onload='draw()'>
+    <h1 style="font-size:175px;" >Aditya Verma</h1>
+    <h4 style="font-size:50px;">Biohacker. Using science to find new and clever ways to improve Life. </h4>
+       
+    <div id="parent"></div>
+
+    <script>
+
+        function makeAlive(elementId) {
+            document.getElementById(elementId).style.backgroundColor = 'black';
+        }
+
+        function makeDie(elementId) {
+            document.getElementById(elementId).style.backgroundColor = 'white';
+        }
+
+        function isElementAlive(ele) {
+            if (document.getElementById(ele) == null)
+                return false;
+            if (ele < 0)
+                return false;
+            if (document.getElementById(ele).style.backgroundColor == 'black') {
+                return true;
+            } return false;
+        }
+
+        //black == alive
+        function findLeftElement(element) {
+            if (element % 10 == 0) {
+                return -1;
+            }
+            return element - 1;
+        }
+
+        function findRightElement(element) {
+            if (element % 10 == 9) {
+                return -1;
+            } return element + 1;
+        }
+
+        function findTopElement(element) {
+            if (element >= 0 && element <= 9) {
+                return -1;
+            }
+            return element - 10;
+        }
+
+        function findBottomElement(element) {
+            if (element >= 90) {
+                return -1;
+            }
+            return element + 10;
+        }
+
+        function findTopLeftElement(element) {
+            return findTopElement(element) - 1;
+        }
+        function findTopRightElement(element) {
+            return findTopElement(element) + 1;
+        }
+        function findBottomLeftElement(element) {
+            return findBottomElement(element) - 1;
+        }
+        function findBottomRightElement(element) {
+            return findBottomElement(element) + 1;
+        }
 
 
-<body onload="draw();">
+        function findAliveNeighbours() {
+            alivePeople = []
+            for (let p = 0; p < 400; p++) {
+                if (document.getElementById(p).style.backgroundColor == 'black') {
+                    alivePeople.push(p);
+                }
+            }
+            return alivePeople;
+        }
 
-  <h1>Aditya Verma</h1>
-  <h4>Biohacker. Using science to find new and clever ways to improve life!</h4>
-  
-  <canvas id="tutorial" width="150" height="150"></canvas>
+        function isElementAlive(array, element) {
+            if (array.includes(element))
+                return 1;
+            else return 0;
+
+        }
+
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        function seedLife() {
+            // aliveElements = [46,37,48,62,94,86,16,45,23,56,11,78,23,67,32];
+            //aliveElements = [46,37,44,47,34,75,78,23,67,32,42,23];
+            //aliveElements = [3,64,62,234,245,123,234,346,221,333,222,111,0,1,12,78,112,289,123,236,345,367,304,267,214,222,189,123,12,67,4,9];
+            //[171, 134, 288, 30, 0, 368, 367, 63, 79, 136, 386, 237, 65, 379, 139, 165, 158, 366, 336, 205, 196, 149, 124, 116, 68, 260, 115, 156, 234, 372, 334, 91, 91, 220, 114, 251, 110, 99, 75, 96, 262, 388, 270, 237, 393, 323, 363, 212, 86, 397, 204, 210, 351, 371, 392, 308, 346, 134, 11]
+            aliveElements = [];
+            for ( var k = 0; k < 59; k++ ) {
+                aliveElements.push ( getRandomArbitrary(0,400));
+            }
+
+            aliveElements = [171, 134, 288, 30, 0, 368, 367, 63, 79, 136, 386, 237, 65, 379, 139, 165, 158, 366, 336, 205, 196, 149, 124, 116, 68, 260, 115, 156, 234, 372, 334, 91, 91, 220, 114, 251, 110, 99, 75, 96, 262, 388, 270, 237, 393, 323, 363, 212, 86, 397, 204, 210, 351, 371, 392, 308, 346, 134, 11]
+
+            console.log("seed :", aliveElements);
+            return aliveElements;
+        }
+
+
+        function renderAliveElements(aliveElements) {
+            for (var k = 0; k < 400; k++) {
+                document.getElementById(k).style.backgroundColor = 'white';
+            }
+            aliveElements.forEach(ele => {
+                document.getElementById(ele).style.backgroundColor = 'black';
+            });
+        }
+
+
+        function countLiveNeighbours(ele, aliveElements) {
+            var neigh1 = findTopElement(ele);
+            var neigh2 = findBottomElement(ele);
+            var neigh3 = findLeftElement(ele);
+            var neigh4 = findRightElement(ele);
+            var neigh5 = findTopLeftElement(ele);
+            var neigh6 = findTopRightElement(ele);
+            var neigh7 = findBottomLeftElement(ele);
+            var neigh8 = findBottomRightElement(ele);
+            var numberOfAliveElements = 0;
+
+            if (aliveElements.includes(neigh1)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh2)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh3)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh4)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh5)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh6)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh7)) {
+                numberOfAliveElements += 1;
+            }
+
+            if (aliveElements.includes(neigh8)) {
+                numberOfAliveElements += 1;
+            }
+
+            return numberOfAliveElements;
+        }
+
+        //rules:
+        function checkAliveElementsAndCreateNewSetOfAliveElements(aliveElements) {
+            newSetOfAliveElements = [];
+            for (var ele = 0; ele < 400; ele++) {
+                if (aliveElements.includes(ele)) {
+                    countOfLiveNeighbours = countLiveNeighbours(ele, aliveElements);
+                    if (countOfLiveNeighbours == 2 || countOfLiveNeighbours == 3)
+                        newSetOfAliveElements.push(ele);
+
+                }
+                else {
+                    countOfLiveNeighbours = countLiveNeighbours(ele, aliveElements);
+                    if (countOfLiveNeighbours == 3)
+                        newSetOfAliveElements.push(ele);
+
+
+                }
+            }
+
+            return newSetOfAliveElements;
+
+        }
+
+        function draw() {
+
+            let parent = document.getElementById('parent');
+            let rectangles = [];
+            let rectangleHealth = [];
+
+            for (var ele = 0; ele < 400; ele++) {
+                rectangles.push(ele);
+            }
+            rectangles.forEach(rectangle => parent.innerHTML += `<div class="rectangle" id=${rectangle}></div>`);
+            for (var k = 0; k < 400; k++) {
+                document.getElementById(k).style.backgroundColor = 'white';
+            }
+
+            let i = 0;
+            aliveElements = seedLife();
+            setInterval(() => {
+                renderAliveElements(aliveElements);
+                aliveElements = checkAliveElementsAndCreateNewSetOfAliveElements(aliveElements);
+
+            }, 600);
+            console.log('rendering');
+
+
+        }
+
+    </script>
 
 </body>
+
 </html>
