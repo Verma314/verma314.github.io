@@ -6,8 +6,10 @@
 .row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
-    border: 1px ridge;
-    min-height: 400px;
+    border: 0.5px ridge;
+    min-height: 200px;
+    font-size: 130%;
+    border-color: darkgray;
 }
 
 .footer {
