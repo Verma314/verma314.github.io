@@ -1,13 +1,18 @@
-## to-do
+### ongoing ideas
 
-* How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/
+* how web servers and web frameworks
+* real time and event driven programming
+* compilers
 
-* Neuroscience of consciousness. Resources: 'the feeling of life itself christof koch'
+### to-do
 
+* [ ] Neuroscience of consciousness. Resources: 'the feeling of life itself christof koch'
+* [X] How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/
 
-
-# Reading
+### Reading
 
 * [Game Engine Architecture](https://learning.oreilly.com/library/view/game-engine-architecture/)
-
 * [RESTful Java with JAX-RS](https://learning.oreilly.com/library/view/restful-java-with/)
+* [Engineering a Compiler](https://books.google.co.in/books/about/Engineering_a_Compiler.html?id=_tgh4bgQ6PAC&source=kp_book_description&redir_esc=y)
+
+
