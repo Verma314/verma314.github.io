@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-24T18:29:58+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Aditya Verma</title><subtitle>Chronicling a journey</subtitle><entry><title type="html">Links</title><link href="http://localhost:4000/jekyll/update/2024/04/18/Links.html" rel="alternate" type="text/html" title="Links" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/jekyll/update/2024/04/18/Links</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/04/18/Links.html"><![CDATA[<ul>
+  <li>
+    <p>How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/</p>
+  </li>
+  <li>
+    <p><a href="https://learning.oreilly.com/library/view/game-engine-architecture/">Game Engine Architecture</a></p>
+  </li>
+  <li>
+    <p><a href="http://gameprogrammingpatterns.com/introduction.html">Game Design Patterns</a></p>
+  </li>
+  <li>
+    <p><a href="https://learning.oreilly.com/library/view/restful-java-with/">RESTful Java with JAX-RS</a></p>
+  </li>
+  <li>
+    <p><a href="https://books.google.co.in/books/about/Engineering_a_Compiler.html?id=_tgh4bgQ6PAC&amp;source=kp_book_description&amp;redir_esc=y">Engineering a Compiler</a></p>
+  </li>
+  <li>
+    <p><a href="https://fooledbyrandomness.com/">Taleb</a></p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Karl_Popper">Karl Popper</a></p>
+  </li>
+  <li>
+    <p><a href="https://duckduckgo.com">Duck Duck Go</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Falsifiability">Falsifiability</a></p>
+  </li>
+  <li>
+    <p><a href="https://unearnedwisdom.com/how-to-read-nassim-taleb/#Understanding_Taleb">How to read Taleb</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.scottaaronson.com/democritus/lec9.html">PHYS771 Quantum Computing Since Democritus</a></p>
+  </li>
+  <li>
+    <p><a href="https://jekyllrb.com/docs/home">Jekyll Docs</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.wolfram.com/engine/">Wolfram Engine</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/WolframResearch/WolframLanguageForJupyter">Wolfram LanguageFor Jupyter</a></p>
+  </li>
+  <li>
+    <p>Machine learning and symbolic AI for mathematics Jeremy Avigad</p>
+  </li>
+  <li>
+    <p><a href="https://docs.jupyter.org/en/latest/running.html#running">Jupyter Notebook</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/jobindjohn/obsidian-publish-mkdocs">obsidian</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io?tab=readme-ov-file">Jekyll garden</a></p>
+  </li>
+  <li>
+    <p><a href="https://hiran.in/antilibrary">Hiran anti-library</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.preetamnath.com/blog/shopify-micro-saas#Shopify%20app%20ideas:%C2%A0How%20to%20discover%20problems%20&amp;%20niches">Build a shopify app</a></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/]]></summary></entry><entry><title type="html">Machine Learning Notes</title><link href="http://localhost:4000/jekyll/update/2024/04/18/machine-learning-notes-1.html" rel="alternate" type="text/html" title="Machine Learning Notes" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/jekyll/update/2024/04/18/machine-learning-notes-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/04/18/machine-learning-notes-1.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Notes from Fooled by Randomness</title><link href="http://localhost:4000/books/2024/04/18/Fooled-by-Randomness.html" rel="alternate" type="text/html" title="Notes from Fooled by Randomness" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/books/2024/04/18/Fooled-by-Randomness</id><content type="html" xml:base="http://localhost:4000/books/2024/04/18/Fooled-by-Randomness.html"><![CDATA[<ul>
+  <li>The cetral premise seems to say that humans see patterns where there are none. And very dangerously successes are often attribtued to skill when it has only been sheer luck.</li>
+</ul>
+
+<p>On left: the truth vs, on right: what humans confuse the truth for:
+<img src="/assets/Distinctions.png" alt="image info" /></p>
+
+<ul>
+  <li>Asks us to be suspicious of ‘experts’ that offer certainity; more advisable to listen to 
+experts who talk about the irrationality and unreliability of human thought. People such as Daniel Kahneman, Karl Popper, Maynard Keynes, Hayek, Adam Smith</li>
+</ul>
+
+<p>Humans are defective and faulty.</p>
+
+<p><em>To check out:</em>
+Bounded rationality.
+Heuristic and biases.
+Check out https://en.wikipedia.org/wiki/Falsifiability
+Charles Sanders Pierce</p>
+
+<p>We need to get around our emotions instead of grandiose moralizing of overcoming the human-ness. We need tricks.</p>
+
+<h3 id="alternate-histories-or-parallel-timelines">Alternate Histories or Parallel Timelines</h3>
+
+<ul>
+  <li>In life and risk-taking, always look at ‘alternative histories.’</li>
+</ul>
+
+<p>£10 million earned from dentistry and £10 million earned from a lottery are vastly different qualitatively. Even though for an accountant they are the same.</p>
+
+<p>In trading, when taking risks make sure to take them in such a way that in n number of alternate universe timelines that risk should pan out in a good number of them.</p>
+
+<p>A dentist having studied dentistry will have the same/similar outcome in 1 million universes, as opposed to a person who invests in lottery tickets.</p>
+
+<ul>
+  <li>Life’s successes/failures are similar to russian roulette. Ask yourself is your success coming from a genuine skill or dumb luck? Go to the source of the wealth creation (skill vs lotto tickets?) – this is called <code class="language-plaintext highlighter-rouge">the generator</code></li>
+</ul>
+
+<p>Always seek for the generator.</p>
+
+<ul>
+  <li>Look for the invisible risks of blowup in your ‘portfolio’</li>
+</ul>
+
+<h3 id="monte-carlo-methods">Monte Carlo Methods</h3>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[The cetral premise seems to say that humans see patterns where there are none. And very dangerously successes are often attribtued to skill when it has only been sheer luck.]]></summary></entry><entry><title type="html">Questions to think about</title><link href="http://localhost:4000/blog/2024/04/18/Questions.html" rel="alternate" type="text/html" title="Questions to think about" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/blog/2024/04/18/Questions</id><content type="html" xml:base="http://localhost:4000/blog/2024/04/18/Questions.html"><![CDATA[<h4 id="on-thinking">On thinking</h4>
+
+<ol>
+  <li>
+    <p>What is critical thinking?</p>
+  </li>
+  <li>
+    <p>What is logic? How do humans do it and can machines replicate it?</p>
+  </li>
+  <li>
+    <p>What is the nature of logical thought? Biological basis? How do brains verify logical correctness, even though brains are one of the only sources of validating logic?</p>
+  </li>
+</ol>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[On thinking]]></summary></entry><entry><title type="html">Online Books</title><link href="http://localhost:4000/resources/2024/04/18/Books.html" rel="alternate" type="text/html" title="Online Books" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/resources/2024/04/18/Books</id><content type="html" xml:base="http://localhost:4000/resources/2024/04/18/Books.html"><![CDATA[<h3 id="artificial-intelligence">Artificial Intelligence</h3>
+<ul>
+  <li><a href="https://udlbook.github.io/udlbook/">Understanding Deep Learning</a></li>
+</ul>
+
+<h3 id="computer-science">Computer Science</h3>
+<ul>
+  <li>
+    <p><a href="https://www.thomaswong.net/#:~:text=October%2028%2C%202023-,Free%20eBook%20(16%20MB),-Paperback%3A%20Amazon">PDF Introduction to Classical and Quantum Computing</a></p>
+  </li>
+  <li>
+    <p>Author’s Website: <a href="https://www.thomaswong.net/">Thomas Wong</a></p>
+  </li>
+</ul>
+
+<h3 id="neuroscience">Neuroscience</h3>
+
+<ul>
+  <li>The feeling of life itself by Christof Koch’</li>
+</ul>]]></content><author><name></name></author><category term="resources" /><summary type="html"><![CDATA[Artificial Intelligence Understanding Deep Learning]]></summary></entry><entry><title type="html">Science and concepts</title><link href="http://localhost:4000/musings/2024/04/03/Science-and-concepts.html" rel="alternate" type="text/html" title="Science and concepts" /><published>2024-04-03T19:24:16+01:00</published><updated>2024-04-03T19:24:16+01:00</updated><id>http://localhost:4000/musings/2024/04/03/Science-and-concepts</id><content type="html" xml:base="http://localhost:4000/musings/2024/04/03/Science-and-concepts.html"><![CDATA[<p>I think <code class="language-plaintext highlighter-rouge">science</code> is a bunch of <code class="language-plaintext highlighter-rouge">concepts</code> that humans agree on.
+We have <code class="language-plaintext highlighter-rouge">unit</code> concepts, i.e. ideas that are very fundamental (such as axioms), and we have <code class="language-plaintext highlighter-rouge">compound</code> concepts 
+that build up from these <code class="language-plaintext highlighter-rouge">unit</code> concepts.</p>
+
+<p>Anything in science or engineering, is a culmination of <code class="language-plaintext highlighter-rouge">n</code> number of concepts.</p>
+
+<p>If something is too complicated to undersatnd, we are likely very unfamiliar with its consituent unit concepts.
+These unit concepts are often quite trivial, and its probably the vastness of them that gives rise to complexity.</p>
+
+<p>We try to penetrate large concepts (and large engineering systems) until can.</p>
+
+<p>I believe that science, math, and engineering are fundamentally human disciplines and working with them keeping in mind 
+that humans are the creators and consumers of it is a fundamental concept.</p>
+
+<p>We can not have ‘objective’ science or math as long as humans are the ones doing it. 
+This is not to say that the physical nature or reality does not exist and that laws of universe are imagined. It is just that 
+“science” is a way of interpreting nature in a very human way.</p>]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[I think science is a bunch of concepts that humans agree on. We have unit concepts, i.e. ideas that are very fundamental (such as axioms), and we have compound concepts that build up from these unit concepts.]]></summary></entry><entry><title type="html">Cellular Automata</title><link href="http://localhost:4000/2019/05/17/Cellular-Automata.html" rel="alternate" type="text/html" title="Cellular Automata" /><published>2019-05-17T00:00:00+01:00</published><updated>2019-05-17T00:00:00+01:00</updated><id>http://localhost:4000/2019/05/17/Cellular-Automata</id><content type="html" xml:base="http://localhost:4000/2019/05/17/Cellular-Automata.html"><![CDATA[<html>
+
+<head>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #parent {
+            margin: auto;
+            width: 50%;
+            height: 65%;
+
+            min-width: 500px;
+            min-height: 500px;
+            max-width: 500px;
+
+            max-height: 500px;
+
+            background-color: black;
+            box-sizing: border-box;
+            border-style: solid;
+        }
+
+        .rectangle {
+            margin: 0%;
+            width: 5%;
+            height: 5%;
+            background-color: white;
+            display: inline-block;
+        }
+
+        .fonts {
+            font-size: 125%;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload='draw()'>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Cellular Automata</h1>
+                    <p></p>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div id="parent"></div>
+
+            <script>
+                function makeAlive(elementId) {
+                    document.getElementById(elementId).style.backgroundColor = 'black';
+                }
+                function makeDie(elementId) {
+                    document.getElementById(elementId).style.backgroundColor = 'white';
+                }
+                function isElementAlive(ele) {
+                    if (document.getElementById(ele) == null)
+                        return false;
+                    if (ele < 0)
+                        return false;
+                    if (document.getElementById(ele).style.backgroundColor == 'black') {
+                        return true;
+                    } return false;
+                }
+                //black == alive
+                function findLeftElement(element) {
+                    if (element % 10 == 0) {
+                        return -1;
+                    }
+                    return element - 1;
+                }
+                function findRightElement(element) {
+                    if (element % 10 == 9) {
+                        return -1;
+                    } return element + 1;
+                }
+                function findTopElement(element) {
+                    if (element >= 0 && element <= 9) {
+                        return -1;
+                    }
+                    return element - 10;
+                }
+                function findBottomElement(element) {
+                    if (element >= 90) {
+                        return -1;
+                    }
+                    return element + 10;
+                }
+                function findTopLeftElement(element) {
+                    return findTopElement(element) - 1;
+                }
+                function findTopRightElement(element) {
+                    return findTopElement(element) + 1;
+                }
+                function findBottomLeftElement(element) {
+                    return findBottomElement(element) - 1;
+                }
+                function findBottomRightElement(element) {
+                    return findBottomElement(element) + 1;
+                }
+                function findAliveNeighbours() {
+                    alivePeople = []
+                    for (let p = 0; p < 400; p++) {
+                        if (document.getElementById(p).style.backgroundColor == 'black') {
+                            alivePeople.push(p);
+                        }
+                    }
+                    return alivePeople;
+                }
+                function isElementAlive(array, element) {
+                    if (array.includes(element))
+                        return 1;
+                    else return 0;
+                }
+                function getRandomArbitrary(min, max) {
+                    return Math.floor(Math.random() * (max - min) + min);
+                }
+                function seedLife() {
+                    // aliveElements = [46,37,48,62,94,86,16,45,23,56,11,78,23,67,32];
+                    //aliveElements = [46,37,44,47,34,75,78,23,67,32,42,23];
+                    //aliveElements = [3,64,62,234,245,123,234,346,221,333,222,111,0,1,12,78,112,289,123,236,345,367,304,267,214,222,189,123,12,67,4,9];
+                    //[171, 134, 288, 30, 0, 368, 367, 63, 79, 136, 386, 237, 65, 379, 139, 165, 158, 366, 336, 205, 196, 149, 124, 116, 68, 260, 115, 156, 234, 372, 334, 91, 91, 220, 114, 251, 110, 99, 75, 96, 262, 388, 270, 237, 393, 323, 363, 212, 86, 397, 204, 210, 351, 371, 392, 308, 346, 134, 11]
+                    aliveElements = [];
+                    for (var k = 0; k < 245; k++) {
+                        aliveElements.push(getRandomArbitrary(0, 400));
+                    }
+                    // aliveElements = [171, 134, 288, 30, 0, 368, 367, 63, 79, 136, 386, 237, 65, 379, 139, 165, 158, 366, 336, 205, 196, 149, 124, 116, 68, 260, 115, 156, 234, 372, 334, 91, 91, 220, 114, 251, 110, 99, 75, 96, 262, 388, 270, 237, 393, 323, 363, 212, 86, 397, 204, 210, 351, 371, 392, 308, 346, 134, 11]
+                    console.log("seed :", aliveElements);
+                    return aliveElements;
+                }
+                function renderAliveElements(aliveElements) {
+                    for (var k = 0; k < 400; k++) {
+                        document.getElementById(k).style.backgroundColor = 'white';
+                    }
+                    aliveElements.forEach(ele => {
+                        document.getElementById(ele).style.backgroundColor = 'black';
+                    });
+                }
+                function countLiveNeighbours(ele, aliveElements) {
+                    var neigh1 = findTopElement(ele);
+                    var neigh2 = findBottomElement(ele);
+                    var neigh3 = findLeftElement(ele);
+                    var neigh4 = findRightElement(ele);
+                    var neigh5 = findTopLeftElement(ele);
+                    var neigh6 = findTopRightElement(ele);
+                    var neigh7 = findBottomLeftElement(ele);
+                    var neigh8 = findBottomRightElement(ele);
+                    var numberOfAliveElements = 0;
+                    if (aliveElements.includes(neigh1)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh2)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh3)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh4)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh5)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh6)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh7)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh8)) {
+                        numberOfAliveElements += 1;
+                    }
+                    return numberOfAliveElements;
+                }
+                //rules:
+                function checkAliveElementsAndCreateNewSetOfAliveElements(aliveElements) {
+                    newSetOfAliveElements = [];
+                    for (var ele = 0; ele < 400; ele++) {
+                        if (aliveElements.includes(ele)) {
+                            countOfLiveNeighbours = countLiveNeighbours(ele, aliveElements);
+
+                            if (countOfLiveNeighbours == 2) //|| countOfLiveNeighbours == 3 || countOfLiveNeighbours == 4)
+                                newSetOfAliveElements.push(ele);
+
+                        }
+                        else {
+                            countOfLiveNeighbours = countLiveNeighbours(ele, aliveElements);
+                            if (countOfLiveNeighbours == 2)  // || countOfLiveNeighbours == 4)
+                                newSetOfAliveElements.push(ele);
+                        }
+                    }
+                    return newSetOfAliveElements;
+                }
+                function draw() {
+                    let parent = document.getElementById('parent');
+                    let rectangles = [];
+                    let rectangleHealth = [];
+
+                    var width = parent.style.width;
+                    var height = parent.style.height;
+                    console.log(width, "...", height);
+                    for (var ele = 0; ele < 400; ele++) {
+                        rectangles.push(ele);
+                    }
+                    rectangles.forEach(rectangle => parent.innerHTML += `<div class="rectangle" id=${rectangle}></div>`);
+                    for (var k = 0; k < 400; k++) {
+                        document.getElementById(k).style.backgroundColor = 'white';
+                    }
+                    let i = 0;
+                    aliveElements = seedLife();
+                    setInterval(() => {
+                        renderAliveElements(aliveElements);
+                        aliveElements = checkAliveElementsAndCreateNewSetOfAliveElements(aliveElements);
+                    }, 600);
+                    console.log('rendering');
+                }
+            </script>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+                <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                    
+                </div>
+                <br><br><br>
+                <p class="fonts">The above grid consists of a number of cells, each in either on or off state.
+                    In the beginning a random set of cells are set to on. The grid then evolved (i.e. changes state)
+                    based on a set of rules. The rules for this particular cellular automata characterize Conway's Game
+                    of Life.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <ul class="list-unstyled">
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
