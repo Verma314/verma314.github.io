@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Defend Thinking: Thought as Productivity"
-date:   2024-04-25 19:24:16 +0100
+date:   2024-04-25 00:00:00 +0100
 categories: musings
 ---
 
