@@ -10,6 +10,8 @@ I have been thinking of the ideas of  _‘thought as productivity’_
 
 In order to maximise productivity (for scientific innovation, creating art or literature and so on) humans often look at large scale macro things, our ‘habits’, our ‘identities’, our ‘interests’
 
+For people with a programming background: `thought` must become the first-class citizen for life-efficiency; over any other category.
+
 What if we take the opposite approach and look the ‘mico’ aspect of being a productive and prolific human being? That is, pointing our lens to the very nature of ‘thought’ itself.
 
 The human condition, the human experience, all boils down to thoughts (and emotions) that a person experiences. And so it might be of great help for a human to be mindful of their thoughts. This can include several things such as developing an understanding of thoughts with things like: the quality of thoughts (logical/rational), what one thinks about (being vigilant of the thoughts entertained), how one thinks (the logistics of it, such as being in a distraction-free area, the number of hours of uninterrupted focus), and to what purpose does one think for. 
@@ -52,6 +54,7 @@ Care must be taken to have uninterrupted periods of time where one can think the
 Is the thinker able to come back to the chain of thought after a moment of distraction?
 
 Does the thinker know the value of thoughts? 
+
 
 
 **Addendum**
