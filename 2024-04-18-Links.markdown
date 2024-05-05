@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "Links"
+date:   2024-04-18 19:24:16 +0100
+categories: links
+---
+*  [Andrej Karpathy](https://karpathy.github.io/)
+
+* [We don't know how to compute - lecture by Gerald Sussman](https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/)
+
+
+* [Steven Wittens Tools for Thought](https://acko.net/)
+
+* [Euclid The Game](https://www.geogebra.org/m/gzfn4pe3#material/xsnx8cdb)
+[My Current Level](https://www.geogebra.org/m/gzfn4pe3#material/nafsdznh)
+
+* [Discussion on Euclid The Game](https://news.ycombinator.com/item?id=7920442)
+
+* [Origin of Euclid The Game](https://math.stackexchange.com/questions/373672/about-euclids-elements-and-modern-video-games)
+
+
+* [Thoughts as technology](https://cognitivemedium.com/tat/index.html)
+
+* [How to do independant research](https://www.lesswrong.com/posts/kpmaEevZ2KehZo2tp/some-advice-on-independent-research)
+
+* [How to think about co-relation](https://news.ycombinator.com/item?id=25341601)
+
+* [System Design](https://www.linkedin.com/posts/alexandre-zajac_softwareengineering-systemdesign-programming-activity-7191685360572084224-y_EP?utm_source=share&utm_medium=member_desktop)
+
+* Research Paper on polyhedral compilation [Dataflow analysis of array and scalar references](https://link.springer.com/article/10.1007/BF01407931)
+
+* [AskHistorian's views on various books](https://www.reddit.com/r/AskHistorians/wiki/historians_views/#wiki_historians.27_views_of_jared_diamond.27s_.22guns.2C_germs.2C_and_steel.22)
+
+* [System Design Newsletter](https://newsletter.systemdesign.one/)
+
+* [System Design](https://www.linkedin.com/posts/nk-systemdesign-one_programming-coding-systemdesign-activity-7189602878272020480-20tF/?utm_source=share&utm_medium=member_desktop)
+
+
+* [The Haskell Brain](https://mmhaskell.com/haskell-brain)
+
+* [Functors in Haskell](https://mmhaskell.com/monads/functors)
+
+* How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/
+
+* [Game Engine Architecture](https://learning.oreilly.com/library/view/game-engine-architecture/)
+
+* [Game Design Patterns](http://gameprogrammingpatterns.com/introduction.html)
+
+* [RESTful Java with JAX-RS](https://learning.oreilly.com/library/view/restful-java-with/)
+
+* [Engineering a Compiler](https://books.google.co.in/books/about/Engineering_a_Compiler.html?id=_tgh4bgQ6PAC&source=kp_book_description&redir_esc=y)
+
+
+* [Taleb's Homepage](https://fooledbyrandomness.com/)
+
+* [Karl Popper Wiki](https://en.wikipedia.org/wiki/Karl_Popper)
+
+* [Falsifiability](https://en.wikipedia.org/wiki/Falsifiability)
+
+* [How to read Taleb](https://unearnedwisdom.com/how-to-read-nassim-taleb/#Understanding_Taleb)
+
+* [PHYS771 Quantum Computing Since Democritus][quantum]
+
+* [Jekyll Docs][jekyll-docs]
+
+* [Wolfram Engine][wolfram-engine]
+
+* [Wolfram LanguageFor Jupyter][WolframLanguageForJupyter]
+
+* Machine learning and symbolic AI for mathematics Jeremy Avigad
+
+* [Jupyter Notebook][Jupyter_Notebook] 
+
+* [obsidian](https://github.com/jobindjohn/obsidian-publish-mkdocs)
+
+* [Jekyll garden](https://github.com/Jekyll-Garden/jekyll-garden.github.io?tab=readme-ov-file)
+
+* [Hiran anti-library](https://hiran.in/antilibrary)
+
+* [Build a shopify app](https://www.preetamnath.com/blog/shopify-micro-saas#Shopify%20app%20ideas:%C2%A0How%20to%20discover%20problems%20&%20niches)
+
+[Jupyter_Notebook]: https://docs.jupyter.org/en/latest/running.html#running
+[WolframLanguageForJupyter]: https://github.com/WolframResearch/WolframLanguageForJupyter
+[wolfram-engine]: https://www.wolfram.com/engine/
+[quantum]: https://www.scottaaronson.com/democritus/lec9.html
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
