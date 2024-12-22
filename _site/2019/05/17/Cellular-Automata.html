@@ -1,0 +1,274 @@
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #parent {
+            margin: auto;
+            width: 50%;
+            height: 65%;
+
+            min-width: 500px;
+            min-height: 500px;
+            max-width: 500px;
+
+            max-height: 500px;
+
+            background-color: black;
+            box-sizing: border-box;
+            border-style: solid;
+        }
+
+        .rectangle {
+            margin: 0%;
+            width: 5%;
+            height: 5%;
+            background-color: white;
+            display: inline-block;
+        }
+
+        .fonts {
+            font-size: 125%;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload='draw()'>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Cellular Automata</h1>
+                    <p></p>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div id="parent"></div>
+
+            <script>
+                function makeAlive(elementId) {
+                    document.getElementById(elementId).style.backgroundColor = 'black';
+                }
+                function makeDie(elementId) {
+                    document.getElementById(elementId).style.backgroundColor = 'white';
+                }
+                function isElementAlive(ele) {
+                    if (document.getElementById(ele) == null)
+                        return false;
+                    if (ele < 0)
+                        return false;
+                    if (document.getElementById(ele).style.backgroundColor == 'black') {
+                        return true;
+                    } return false;
+                }
+                //black == alive
+                function findLeftElement(element) {
+                    if (element % 10 == 0) {
+                        return -1;
+                    }
+                    return element - 1;
+                }
+                function findRightElement(element) {
+                    if (element % 10 == 9) {
+                        return -1;
+                    } return element + 1;
+                }
+                function findTopElement(element) {
+                    if (element >= 0 && element <= 9) {
+                        return -1;
+                    }
+                    return element - 10;
+                }
+                function findBottomElement(element) {
+                    if (element >= 90) {
+                        return -1;
+                    }
+                    return element + 10;
+                }
+                function findTopLeftElement(element) {
+                    return findTopElement(element) - 1;
+                }
+                function findTopRightElement(element) {
+                    return findTopElement(element) + 1;
+                }
+                function findBottomLeftElement(element) {
+                    return findBottomElement(element) - 1;
+                }
+                function findBottomRightElement(element) {
+                    return findBottomElement(element) + 1;
+                }
+                function findAliveNeighbours() {
+                    alivePeople = []
+                    for (let p = 0; p < 400; p++) {
+                        if (document.getElementById(p).style.backgroundColor == 'black') {
+                            alivePeople.push(p);
+                        }
+                    }
+                    return alivePeople;
+                }
+                function isElementAlive(array, element) {
+                    if (array.includes(element))
+                        return 1;
+                    else return 0;
+                }
+                function getRandomArbitrary(min, max) {
+                    return Math.floor(Math.random() * (max - min) + min);
+                }
+                function seedLife() {
+                    // aliveElements = [46,37,48,62,94,86,16,45,23,56,11,78,23,67,32];
+                    //aliveElements = [46,37,44,47,34,75,78,23,67,32,42,23];
+                    //aliveElements = [3,64,62,234,245,123,234,346,221,333,222,111,0,1,12,78,112,289,123,236,345,367,304,267,214,222,189,123,12,67,4,9];
+                    //[171, 134, 288, 30, 0, 368, 367, 63, 79, 136, 386, 237, 65, 379, 139, 165, 158, 366, 336, 205, 196, 149, 124, 116, 68, 260, 115, 156, 234, 372, 334, 91, 91, 220, 114, 251, 110, 99, 75, 96, 262, 388, 270, 237, 393, 323, 363, 212, 86, 397, 204, 210, 351, 371, 392, 308, 346, 134, 11]
+                    aliveElements = [];
+                    for (var k = 0; k < 245; k++) {
+                        aliveElements.push(getRandomArbitrary(0, 400));
+                    }
+                    // aliveElements = [171, 134, 288, 30, 0, 368, 367, 63, 79, 136, 386, 237, 65, 379, 139, 165, 158, 366, 336, 205, 196, 149, 124, 116, 68, 260, 115, 156, 234, 372, 334, 91, 91, 220, 114, 251, 110, 99, 75, 96, 262, 388, 270, 237, 393, 323, 363, 212, 86, 397, 204, 210, 351, 371, 392, 308, 346, 134, 11]
+                    console.log("seed :", aliveElements);
+                    return aliveElements;
+                }
+                function renderAliveElements(aliveElements) {
+                    for (var k = 0; k < 400; k++) {
+                        document.getElementById(k).style.backgroundColor = 'white';
+                    }
+                    aliveElements.forEach(ele => {
+                        document.getElementById(ele).style.backgroundColor = 'black';
+                    });
+                }
+                function countLiveNeighbours(ele, aliveElements) {
+                    var neigh1 = findTopElement(ele);
+                    var neigh2 = findBottomElement(ele);
+                    var neigh3 = findLeftElement(ele);
+                    var neigh4 = findRightElement(ele);
+                    var neigh5 = findTopLeftElement(ele);
+                    var neigh6 = findTopRightElement(ele);
+                    var neigh7 = findBottomLeftElement(ele);
+                    var neigh8 = findBottomRightElement(ele);
+                    var numberOfAliveElements = 0;
+                    if (aliveElements.includes(neigh1)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh2)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh3)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh4)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh5)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh6)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh7)) {
+                        numberOfAliveElements += 1;
+                    }
+                    if (aliveElements.includes(neigh8)) {
+                        numberOfAliveElements += 1;
+                    }
+                    return numberOfAliveElements;
+                }
+                //rules:
+                function checkAliveElementsAndCreateNewSetOfAliveElements(aliveElements) {
+                    newSetOfAliveElements = [];
+                    for (var ele = 0; ele < 400; ele++) {
+                        if (aliveElements.includes(ele)) {
+                            countOfLiveNeighbours = countLiveNeighbours(ele, aliveElements);
+
+                            if (countOfLiveNeighbours == 2) //|| countOfLiveNeighbours == 3 || countOfLiveNeighbours == 4)
+                                newSetOfAliveElements.push(ele);
+
+                        }
+                        else {
+                            countOfLiveNeighbours = countLiveNeighbours(ele, aliveElements);
+                            if (countOfLiveNeighbours == 2)  // || countOfLiveNeighbours == 4)
+                                newSetOfAliveElements.push(ele);
+                        }
+                    }
+                    return newSetOfAliveElements;
+                }
+                function draw() {
+                    let parent = document.getElementById('parent');
+                    let rectangles = [];
+                    let rectangleHealth = [];
+
+                    var width = parent.style.width;
+                    var height = parent.style.height;
+                    console.log(width, "...", height);
+                    for (var ele = 0; ele < 400; ele++) {
+                        rectangles.push(ele);
+                    }
+                    rectangles.forEach(rectangle => parent.innerHTML += `<div class="rectangle" id=${rectangle}></div>`);
+                    for (var k = 0; k < 400; k++) {
+                        document.getElementById(k).style.backgroundColor = 'white';
+                    }
+                    let i = 0;
+                    aliveElements = seedLife();
+                    setInterval(() => {
+                        renderAliveElements(aliveElements);
+                        aliveElements = checkAliveElementsAndCreateNewSetOfAliveElements(aliveElements);
+                    }, 600);
+                    console.log('rendering');
+                }
+            </script>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+                <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                    
+                </div>
+                <br><br><br>
+                <p class="fonts">The above grid consists of a number of cells, each in either on or off state.
+                    In the beginning a random set of cells are set to on. The grid then evolved (i.e. changes state)
+                    based on a set of rules. The rules for this particular cellular automata characterize Conway's Game
+                    of Life.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <ul class="list-unstyled">
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</html>

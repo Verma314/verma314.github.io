@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-22T19:33:20+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Aditya Verma</title><subtitle>Chronicling</subtitle><entry><title type="html">Cravings</title><link href="http://localhost:4000/musings/2024/12/22/Cravings.html" rel="alternate" type="text/html" title="Cravings" /><published>2024-12-22T04:30:16+05:30</published><updated>2024-12-22T04:30:16+05:30</updated><id>http://localhost:4000/musings/2024/12/22/Cravings</id><content type="html" xml:base="http://localhost:4000/musings/2024/12/22/Cravings.html"><![CDATA[]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Academia</title><link href="http://localhost:4000/musings/2024/05/04/Audit.html" rel="alternate" type="text/html" title="Academia" /><published>2024-05-04T04:30:16+05:30</published><updated>2024-05-04T04:30:16+05:30</updated><id>http://localhost:4000/musings/2024/05/04/Audit</id><content type="html" xml:base="http://localhost:4000/musings/2024/05/04/Audit.html"><![CDATA[<ol>
+  <li>DSP lectures at DCU - -7.5 ECTS
+https://www.dcu.ie/engineeringandcomputing/real-time-digital-signal-processing-dsp</li>
+</ol>
+
+<p>https://www.dcu.ie/engineeringandcomputing/machine-learning</p>
+
+<ol>
+  <li>Part time MSc in AI https://ictskillnet.ie/courses/msc-in-computing-artificial-intelligence-online/</li>
+</ol>
+
+<p>(online)</p>
+
+<ol>
+  <li>
+    <p>Cert in AI 
+https://ictskillnet.ie/courses/certificate-in-foundations-of-artificial-intelligence/</p>
+  </li>
+  <li>
+    <p>Audit courses in UCD</p>
+  </li>
+</ol>
+
+<p>https://www.ucd.ie/all/cometoucd/applying/universityaccesscourses/accesstoscienceengineeringagriculturalscienceandmedicineseam/</p>
+
+<p>https://www.ucd.ie/all/cometoucd/applying/openlearning/</p>
+
+<p>https://www.ucd.ie/all/t4media/Progression%20Pathways%202023%20update%20December%20digital%20(1).pdf</p>
+
+<p>Research Labs in Ireland</p>
+
+<p>https://www.ml-labs.ie/ml-labs-training-programme-2/</p>
+
+<p>https://karpathy.github.io/2016/09/07/phd/</p>]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[DSP lectures at DCU - -7.5 ECTS https://www.dcu.ie/engineeringandcomputing/real-time-digital-signal-processing-dsp]]></summary></entry><entry><title type="html">Why one must study mathematics?</title><link href="http://localhost:4000/musings/2024/05/04/Why-Study-Mathematics.html" rel="alternate" type="text/html" title="Why one must study mathematics?" /><published>2024-05-04T04:30:16+05:30</published><updated>2024-05-04T04:30:16+05:30</updated><id>http://localhost:4000/musings/2024/05/04/Why-Study-Mathematics</id><content type="html" xml:base="http://localhost:4000/musings/2024/05/04/Why-Study-Mathematics.html"><![CDATA[<ul>
+  <li>
+    <p>Understand the nature of existence.</p>
+  </li>
+  <li>
+    <p>Understand the nature of ‘understanding’</p>
+  </li>
+  <li>
+    <p>Underpins the explanation of every single phenomenon.</p>
+  </li>
+  <li>
+    <p>Keeps the mind engaged.</p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[Understand the nature of existence.]]></summary></entry><entry><title type="html">Thoughts as Technology</title><link href="http://localhost:4000/musings/2024/05/04/Thought-Interfaces.html" rel="alternate" type="text/html" title="Thoughts as Technology" /><published>2024-05-04T04:30:16+05:30</published><updated>2024-05-04T04:30:16+05:30</updated><id>http://localhost:4000/musings/2024/05/04/Thought%20Interfaces</id><content type="html" xml:base="http://localhost:4000/musings/2024/05/04/Thought-Interfaces.html"><![CDATA[<h3 id="notes-from-thoughts-as-technology">Notes from <a href="https://cognitivemedium.com/tat/index.html">Thoughts as Technology</a></h3>
+
+<p>Math/science is not about raw computation or symbols. It is about qualitative ideas. Without human interpretation/attaching of ‘meaning’ — quantitative ideas remain meaningless. Equations in themselves do not carry all that meaning.</p>
+
+<p>‘The majority of the creative process is instead concerned with rapid exploration relying more on heuristics and rules of thumb than on rigorous proof. We may call this the logic of heuristic discovery. Developing such a logic is essential to building exploratory interfaces. I’ve done some preliminary investigations of what such a logic may look like in Toward an Exploratory Medium for Mathematics.’</p>
+
+<p>The idea is to come up with qualitative (maybe visual?) representations of rigorous concepts. Making it human to reason about them.</p>
+
+<p>Math/computing is not a sequence of symbol manipulations.Symbols and operations are not math. If one is having to rely on them for their understanding of an idea – maybe the idea is not clear enough.</p>
+
+<p>Experts usually find their own representation for things.  These representations act as an ‘interface’ to interact with the idea.</p>
+
+<p>From the article:</p>
+
+<p><em>Heuristic 1: Reify hidden representations in the interface</em></p>
+
+<p><em>Heuristic 2: Reify deep principles about the world in the interface</em></p>
+
+<p>The new interface doesn’t always have to be visual, but it must provide a new way of thinking.</p>
+
+<p>From the article:
+<strong>Any deep principle is an opportunity to create powerful interface ideas.</strong>
+<strong>Every theorem of mathematics, every significant result of science is a challenge to our imagination as interface designers</strong></p>
+
+<p><strong>Can we find interfaces which vividly reveal those relationships, preferably in a way that is unique to the phenomenon being studied? By answering these questions, we can turn a surprising and non-intuitive principle into a source of intuition and novel understanding</strong></p>
+
+<p><strong>A consequence of reifying deep principles in an interface is that mastering the subject begings to coincide with mastering the interface</strong></p>
+
+<p><strong>Rather than just solving problems expressed in terms we already understand, the goal is to change the thoughts we can think:</strong></p>]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[Notes from Thoughts as Technology]]></summary></entry><entry><title type="html">What is Expertise?</title><link href="http://localhost:4000/musings/2024/05/04/Expertise.html" rel="alternate" type="text/html" title="What is Expertise?" /><published>2024-05-04T04:30:16+05:30</published><updated>2024-05-04T04:30:16+05:30</updated><id>http://localhost:4000/musings/2024/05/04/Expertise</id><content type="html" xml:base="http://localhost:4000/musings/2024/05/04/Expertise.html"><![CDATA[<h3 id="fundamental-concepts">Fundamental concepts:</h3>
+<p>1.⁠ Break down complex or challenging issues into unit concepts until they can’t be broken down.
+2.⁠ ⁠Thoughts are everything — be mindful of the nature of your thoughts
+3.⁠ ⁠⁠You can choose your attention (i.e. you can choose your interests)</p>
+
+<h3 id="how-to-start">How to start</h3>
+<p>to gain expertise start off with something easy to grok. popular science book, blogs, articles, visualization, youtube video, lecture, book, and finally research papers.</p>
+
+<h3 id="deliberate-practice">Deliberate Practice</h3>
+<p><em>in progress</em>
+Making errors, getting feedback, improving,</p>
+
+<h3 id="progressive-overload">Progressive Overload</h3>
+
+<h3 id="staying-on-track">Staying on track</h3>
+<p><em>in progress</em>
+iterations, 
+what is the end result?
+existence of stakes?
+motivation</p>
+
+<h3 id="what-to-focus-on">What to focus on</h3>
+<p><em>in progress</em>
+Knowing what exactly one wants to become an expert at.</p>
+
+<p>Short term, vs long term goals, interests.
+Organizing ones interests so that one knows what one is interested in.</p>
+
+<h3 id="productivity">Productivity</h3>
+<p>Use of management systes to keep oneself on track. 
+Use of JIRA/Kanban for personal goals?
+Keeping track of readings etc
+Helps keeping track of timelines.
+Overarching goals.</p>
+
+<h3 id="use-of-memory-systems">Use of memory systems</h3>
+<p><em>in progress</em>
+Spaced repetetion, Zettlekasten,</p>
+
+<p>http://augmentingcognition.com/ltm.html</p>
+
+<h3 id="mindset">Mindset</h3>
+<p><em>in progress</em></p>
+
+<ul>
+  <li>
+    <p>Carol Dweck’s work</p>
+  </li>
+  <li>
+    <p>routines and habits</p>
+  </li>
+  <li>
+    <p>Is gaining expertise a matter of identity and self-belief?</p>
+  </li>
+</ul>
+
+<p>“I am the kind of person who finishes things and learns them really deep” vs “I am a person who kinda sorta learns about things and never follows throught”.</p>
+
+<h3 id="community-effect">Community effect</h3>
+
+<p><em>in progress</em></p>
+
+<h2 id="representing-knowledge-as-mental-model-representations">Representing knowledge as mental model representations</h2>
+
+<p>A collection of heuristics to help you navigate things. A mental model is essentially a representation of knowledge which leads to a “knowing” or an “understanding” in a very qualitative way about an aspect of the universe.</p>
+
+<p>The subjects might be anything, ranging from understanding a culture, speaking a language, mathematical concepts, financial markets and so on.</p>]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[Fundamental concepts: 1.⁠ Break down complex or challenging issues into unit concepts until they can’t be broken down. 2.⁠ ⁠Thoughts are everything — be mindful of the nature of your thoughts 3.⁠ ⁠⁠You can choose your attention (i.e. you can choose your interests)]]></summary></entry><entry><title type="html">Category Theory</title><link href="http://localhost:4000/math/2024/05/04/Category-Theory.html" rel="alternate" type="text/html" title="Category Theory" /><published>2024-05-04T04:30:16+05:30</published><updated>2024-05-04T04:30:16+05:30</updated><id>http://localhost:4000/math/2024/05/04/Category-Theory</id><content type="html" xml:base="http://localhost:4000/math/2024/05/04/Category-Theory.html"><![CDATA[<h3 id="kleisli-categories">Kleisli Categories</h3>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[Kleisli Categories]]></summary></entry><entry><title type="html">Quotes</title><link href="http://localhost:4000/quotes/2024/04/27/Quotes.html" rel="alternate" type="text/html" title="Quotes" /><published>2024-04-27T23:54:16+05:30</published><updated>2024-04-27T23:54:16+05:30</updated><id>http://localhost:4000/quotes/2024/04/27/Quotes</id><content type="html" xml:base="http://localhost:4000/quotes/2024/04/27/Quotes.html"><![CDATA[<ul>
+  <li>Nassim Taleb on reading</li>
+</ul>
+
+<p><img src="/assets/NassimOnReading.png" alt="On reading" /></p>
+
+<ul>
+  <li>From <a href="https://cognitivemedium.com/tat/index.html">Thought as Technology</a></li>
+</ul>
+
+<p>“Rather than just solving problems expressed in terms we already understand, the goal is to change the thoughts we can think.”</p>]]></content><author><name></name></author><category term="quotes" /><summary type="html"><![CDATA[Nassim Taleb on reading]]></summary></entry><entry><title type="html">Notes from ‘I Am a Strange Loop’</title><link href="http://localhost:4000/books/2024/04/26/Strange-Loop.html" rel="alternate" type="text/html" title="Notes from ‘I Am a Strange Loop’" /><published>2024-04-26T00:00:00+05:30</published><updated>2024-04-26T00:00:00+05:30</updated><id>http://localhost:4000/books/2024/04/26/Strange-Loop</id><content type="html" xml:base="http://localhost:4000/books/2024/04/26/Strange-Loop.html"><![CDATA[<h3 id="chapter-1">Chapter 1</h3>
+
+<p><em>in progress</em></p>
+
+<p>–</p>
+
+<p>Btw, You can use latex in md files</p>
+
+\[f(x) = x^2 - x^\frac{1}{\pi}\]]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Chapter 1]]></summary></entry><entry><title type="html">Notes from The Pragmatic Programmer</title><link href="http://localhost:4000/books/2024/04/26/Pragmatic-Programmer.html" rel="alternate" type="text/html" title="Notes from The Pragmatic Programmer" /><published>2024-04-26T00:00:00+05:30</published><updated>2024-04-26T00:00:00+05:30</updated><id>http://localhost:4000/books/2024/04/26/Pragmatic-Programmer</id><content type="html" xml:base="http://localhost:4000/books/2024/04/26/Pragmatic-Programmer.html"><![CDATA[<p>in progress</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[in progress]]></summary></entry><entry><title type="html">Defend Thinking: Thought as Productivity</title><link href="http://localhost:4000/musings/2024/04/25/Defense-Of-Thoughts.html" rel="alternate" type="text/html" title="Defend Thinking: Thought as Productivity" /><published>2024-04-25T04:30:00+05:30</published><updated>2024-04-25T04:30:00+05:30</updated><id>http://localhost:4000/musings/2024/04/25/Defense-Of-Thoughts</id><content type="html" xml:base="http://localhost:4000/musings/2024/04/25/Defense-Of-Thoughts.html"><![CDATA[<p>I have been thinking of the ideas of  <em>‘thought as productivity’</em></p>
+
+<p>In order to maximise productivity (for scientific innovation, creating art or literature and so on) humans often look at large scale macro things, our ‘habits’, our ‘identities’, our ‘interests’</p>
+
+<p>For people with a programming background: <code class="language-plaintext highlighter-rouge">thought</code> must become the first-class citizen for life-efficiency; over any other category.</p>
+
+<p>What if we take the opposite approach and look the ‘mico’ aspect of being a productive and prolific human being? That is, pointing our lens to the very nature of ‘thought’ itself.</p>
+
+<p>The human condition, the human experience, all boils down to thoughts (and emotions) that a person experiences. And so it might be of great help for a human to be mindful of their thoughts. This can include several things such as developing an understanding of thoughts with things like: the quality of thoughts (logical/rational), what one thinks about (being vigilant of the thoughts entertained), how one thinks (the logistics of it, such as being in a distraction-free area, the number of hours of uninterrupted focus), and to what purpose does one think for.</p>
+
+<p>To elaborate,</p>
+
+<p>It would be of use to practice analysing the <em>nature</em> of one’s thoughts.  I understand ‘nature’ is a very broad term. But what I intend by this point    is that the thinker should always strive to keep an eye out for any and all attributes of the thinking that they are doing.  The fundamental nature of a ‘unit thought’ is something I am not too sure of, but it might include things such as: it being visual or auditary; abstract or concrete; conscious or sub-conscious.</p>
+
+<p><strong>We then move to the aspect of ‘sequence of thoughts’, or the patterns in the thoughts.</strong></p>
+
+<p>We are now not dealing with the singular ‘unit thought’ Meta-cognition (being aware of one’s cognition) is the primary step. Be aware that thoughts follow certain patterns. Sequences that we re-utilise from time to time.</p>
+
+<p>The following questions might help form a mental model:</p>
+
+<ul>
+  <li>Are we thinking the same thoughts in a loop over and over again?</li>
+  <li>Are the thoughts linear or diffuse? (Both have their place in thinking for example problem solving vs creativity).</li>
+  <li>Are the sequence of thoughts rational? Do the thoughts follow a logical cadence?  Are thoughts riddled with biases and fallacies? 
+(Of course, it will be impossible to be fully rational and logical, but when needed this can be of great service.)</li>
+  <li>Are the thoughts focused? Is the stream of thought able to be completed, or is the thinker losing track of the chain of thoughts.</li>
+</ul>
+
+<p><strong>Then we talk about philosophical aspects of thinking.</strong></p>
+
+<p>What is the <em>subject</em> one is thinking about? Is one thinking about poetry, and mathematics? Or is one thinking about how to be petty and evil to one’s friend?</p>
+
+<p>What is the <em>purpose</em> of one’s thinking? To what end are you thinking for? Are you trying to solve a problem? Are you coming up with new ideas? Do you know <em>why</em> you are thinking what you’re thinking?</p>
+
+<p><strong>Last we talk about the nature of the thinker</strong></p>
+
+<p>Is the brain which is thinking these thoughts healthy? Is it hydrated? Sleep-deprived? Caffeinated? Under the influence? Utmost care of the thinking apparatus must be taken.</p>
+
+<p>How <em>much</em> can one think? When does one think best? While taking a walk, in the shower, when and what time? 
+Does the thinker <em>know</em> what things are useful to think about?</p>
+
+<p>Care must be taken to have uninterrupted periods of time where one can think their best for long durations to increase effectiveness for the task at hand.</p>
+
+<p>Is the thinker able to come back to the chain of thought after a moment of distraction?</p>
+
+<p>Does the thinker know the value of thoughts?</p>
+
+<p><strong>Addendum</strong></p>
+
+<p>One can develop automations in life to have a set answer for things of a trivial nature. Example of a simple automation: do not spend too much time thinking about events or things that are unaligned with your purpose.</p>]]></content><author><name></name></author><category term="musings" /><summary type="html"><![CDATA[I have been thinking of the ideas of ‘thought as productivity’]]></summary></entry></feed>
