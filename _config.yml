@@ -24,13 +24,38 @@ description: >- # this means to ignore newlines until "baseurl:"
   Chronicling
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+future: true
 twitter_username: verma314x
 github_username:  verma314
 
+theme_config:
+  date_format: "%b %d, %Y"
+
+# Collections
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: post
+      date: "1970-01-01 00:00:00 +0000"
+
 # Build settings
-theme: minima
+kramdown:
+  math_engine: null
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  collections:
+    - blog
 
 # Exclude from processing.
 # The following items will not be processed, by default.

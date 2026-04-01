@@ -143,10 +143,6 @@ They claimed that these should replace the 'literary hogwash' in the humanities
 
 * Definition - Asymmetric outcomes: the *payoffs* from the event (say in gambling) are not equal.
 
-* An example:
-![probability example](/assets/Skewness.png)
-
-
 * *Expectation* = *Probability*  x *Payoff*
 
 People confuse probability vs expectation. For instance: even if the probability is in our favor, the relative magnitude of the payoffs might be very very bad in case of unfavourable event. 
@@ -155,10 +151,5 @@ People confuse probability vs expectation. For instance: even if the probability
 
 * This is a very important point. **To reiterate, probability alone does not mean anything; it is only when we multiply it with the *payoff* or the outcome, that we can make a judgement and understand reality**
 
-* An example from the markets:
 
-![Multiply probability by outcome](/assets/Bullish.png)
-
-* Bullish and bearish are used by people who do not *engage* in practicing uncertainity. (Because these terms do not quantify the magnitude of the rise or fall)
-
-* 
+* Bullish and bearish are used by people who do not *engage* in practicing uncertainity. (Because these terms do not quantify the magnitude of the rise or fall).

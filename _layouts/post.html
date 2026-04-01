@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{%-include back_link.html-%}
+
+<article>
+  {%- assign post_year = page.date | date: "%Y" -%}
+  {%- if post_year != "1970" -%}
+  <p class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+  </p>
+  {%- endif -%}
+  
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+</article>
