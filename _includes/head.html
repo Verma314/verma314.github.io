@@ -14,7 +14,9 @@
   {%-seo title=false-%}
   {%-feed_meta-%}
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
+  {%- if site.favicon -%}
+  <link rel="icon" href="{{ site.favicon | relative_url }}" />
+  {%- endif -%}
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
 
