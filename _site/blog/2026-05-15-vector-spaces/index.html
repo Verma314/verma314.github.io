@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Vector Spaces</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Vector Spaces" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Vector Spaces" />
+<meta property="og:description" content="Vector Spaces" />
+<link rel="canonical" href="http://localhost:4000/blog/2026-05-15-vector-spaces/" />
+<meta property="og:url" content="http://localhost:4000/blog/2026-05-15-vector-spaces/" />
+<meta property="og:site_name" content="Aditya Verma" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-15T18:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Vector Spaces" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T18:00:00+01:00","datePublished":"2026-05-15T18:00:00+01:00","description":"Vector Spaces","headline":"Vector Spaces","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026-05-15-vector-spaces/"},"url":"http://localhost:4000/blog/2026-05-15-vector-spaces/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aditya Verma" /><link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"></a><article><p class="post-meta">
+    <time datetime="2026-05-15 18:00:00 +0100">May 15, 2026</time>
+  </p><h1>Vector Spaces</h1>
+
+  <h2 id="vector-spaces">Vector Spaces</h2>
+
+<p>A <strong>vector space</strong> over a field <span class="kdmath">$\mathbb{F}$</span> is a set <span class="kdmath">$V$</span> together with two operations:</p>
+
+<div class="kdmath">$$
+\begin{aligned}
++ &: V \times V \to V \\
+\cdot &: \mathbb{F} \times V \to V
+\end{aligned}
+$$</div>
+
+<p>These operations are called <strong>vector addition</strong> and <strong>scalar multiplication</strong>. For every
+<span class="kdmath">$u, v, w \in V$</span> and every <span class="kdmath">$a, b \in \mathbb{F}$</span>, the following axioms must hold:</p>
+
+<div class="kdmath">$$
+\begin{aligned}
+u + v &= v + u && \text{commutativity of addition} \\
+(u + v) + w &= u + (v + w) && \text{associativity of addition} \\
+\exists\,0 \in V \quad \text{such that} \quad v + 0 &= v && \text{additive identity} \\
+\forall v \in V,\ \exists\,(-v) \in V \quad \text{such that} \quad v + (-v) &= 0 && \text{additive inverse} \\
+a(u + v) &= au + av && \text{distributivity over vector addition} \\
+(a + b)v &= av + bv && \text{distributivity over scalar addition} \\
+(ab)v &= a(bv) && \text{compatibility of scalar multiplication} \\
+1v &= v && \text{scalar identity}
+\end{aligned}
+$$</div>
+
+<p>Equivalently, <span class="kdmath">$V$</span> forms an abelian group under vector addition, and the scalars come
+from a field <span class="kdmath">$\mathbb{F}$</span> whose multiplication acts on the vectors in a way compatible
+with both addition in <span class="kdmath">$V$</span> and addition and multiplication in <span class="kdmath">$\mathbb{F}$</span>.</p>
+
+<p>Intuitively, <span class="kdmath">$V$</span> has elements that can combine to form other <span class="kdmath">$V$</span> elements, and can get ‘scaled’ up or down using elements from a field/scalar.</p>
+
+<h2 id="examples-of-vector-spaces">Examples of Vector Spaces</h2>
+
+<p>The usual example of a vector space is <span class="kdmath">$\mathbb{R}^n$</span>. For example,</p>
+
+<div class="kdmath">$$
+\mathbb{R}^2 = \{(x, y) : x, y \in \mathbb{R}\}
+$$</div>
+
+<p>is the set of all ordered pairs of real numbers. We add vectors component by component:</p>
+
+<div class="kdmath">$$
+(x_1, y_1) + (x_2, y_2) = (x_1 + x_2, y_1 + y_2)
+$$</div>
+
+<p>and we multiply by scalars component by component:</p>
+
+<div class="kdmath">$$
+a(x, y) = (ax, ay)
+$$</div>
+
+<p>The intuition is that these vectors can be drawn as arrows in the plane, similar to how it is done in physics.</p>
+
+<p>However, vector spaces are much more general than ‘arrows’. A vector is any object that can be added to another object of the same kind, and multiplied by scalars, while satisfying the vector space axioms.</p>
+
+<p>For example, the set of all polynomials with real coefficients is a vector space over
+<span class="kdmath">$\mathbb{R}$</span>:</p>
+
+<div class="kdmath">$$
+\mathbb{R}[x]
+$$</div>
+
+<p>An element of this vector space looks like</p>
+
+<div class="kdmath">$$
+p(x) = a_0 + a_1x + a_2x^2 + \cdots + a_nx^n
+$$</div>
+
+<p>where each coefficient <span class="kdmath">$a_i$</span> is a real number.</p>
+
+<p>We can add two polynomials:</p>
+
+<div class="kdmath">$$
+(p + q)(x) = p(x) + q(x)
+$$</div>
+
+<p>and we can multiply a polynomial by a scalar:</p>
+
+<div class="kdmath">$$
+(ap)(x) = a p(x)
+$$</div>
+
+<p>The result is still a polynomial, so the operations stay inside <span class="kdmath">$\mathbb{R}[x]$</span>.</p>
+
+<p>For instance, if</p>
+
+<div class="kdmath">$$
+p(x) = 1 + 2x
+$$</div>
+
+<p>and</p>
+
+<div class="kdmath">$$
+q(x) = 3 - x + x^2
+$$</div>
+
+<p>then</p>
+
+<div class="kdmath">$$
+p(x) + q(x) = 4 + x + x^2
+$$</div>
+
+<p>and</p>
+
+<div class="kdmath">$$
+5p(x) = 5 + 10x
+$$</div>
+
+<p>So the set of polynomials form a vector space as well.</p>
+
+<p>Another example is the set of all <span class="kdmath">$m \times n$</span> matrices over a field <span class="kdmath">$\mathbb{F}$</span>:</p>
+
+<div class="kdmath">$$
+M_{m \times n}(\mathbb{F})
+$$</div>
+
+<p>(The field can be anything, R, C, etc)</p>
+
+<p>Matrices can be added entry by entry, and multiplied by scalars entry by entry. Therefore,
+they form a vector space over <span class="kdmath">$\mathbb{F}$</span>.</p>
+
+<p>Vector spaces are very general: the vectors might be arrows, lists of numbers,
+polynomials, matrices, functions,  or other mathematical objects. The only properties of importance is that they can be added and scaled according to the
+vector space axioms.</p>
+
+</article>
+      </div>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });"></script>
+  </body>
+</html>

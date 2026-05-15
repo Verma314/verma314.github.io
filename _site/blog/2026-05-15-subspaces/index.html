@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Subspaces</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Subspaces" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Subspaces: Definition" />
+<meta property="og:description" content="Subspaces: Definition" />
+<link rel="canonical" href="http://localhost:4000/blog/2026-05-15-subspaces/" />
+<meta property="og:url" content="http://localhost:4000/blog/2026-05-15-subspaces/" />
+<meta property="og:site_name" content="Aditya Verma" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-15T18:30:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Subspaces" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-15T18:30:00+01:00","datePublished":"2026-05-15T18:30:00+01:00","description":"Subspaces: Definition","headline":"Subspaces","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026-05-15-subspaces/"},"url":"http://localhost:4000/blog/2026-05-15-subspaces/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aditya Verma" /><link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"></a><article><p class="post-meta">
+    <time datetime="2026-05-15 18:30:00 +0100">May 15, 2026</time>
+  </p><h1>Subspaces</h1>
+
+  <h2 id="subspaces-definition">Subspaces: Definition</h2>
+
+<p>A subset <span class="kdmath">$U$</span> of a vector space <span class="kdmath">$V$</span> is called a <strong>subspace</strong> of <span class="kdmath">$V$</span> if
+<span class="kdmath">$U$</span> is itself a vector space using the same addition and scalar multiplication
+as <span class="kdmath">$V$</span>.</p>
+
+<p>In practice, we do not need to check all the vector space axioms again. From Axler:</p>
+
+<h4 id="conditions-for-a-subspace">Conditions for a Subspace</h4>
+
+<p>Let <span class="kdmath">$V$</span> be a vector space over a field <span class="kdmath">$\mathbb{F}$</span>, and let <span class="kdmath">$U \subseteq V$</span>.
+Then <span class="kdmath">$U$</span> is a subspace of <span class="kdmath">$V$</span> if and only if the following three conditions hold:</p>
+
+<div class="kdmath">$$
+\begin{aligned}
+&\text{additive identity:}
+&& 0 \in U, \\
+&\text{closed under addition:}
+&& u, w \in U \implies u + w \in U, \\
+&\text{closed under scalar multiplication:}
+&& a \in \mathbb{F} \text{ and } u \in U \implies au \in U.
+\end{aligned}
+$$</div>
+
+<h4 id="proof">Proof</h4>
+
+<p>Think about why we don’t need to show that in <span class="kdmath">$U$</span> other properties of vector spaces also hold.</p>
+
+<h2 id="examples-of-subspaces-from-axler">Examples of Subspaces (from Axler)</h2>
+
+<h3 id="1-a-subset-of-mathbbf4">1. A subset of <span class="kdmath">$\mathbb{F}^4$</span></h3>
+
+<p>If <span class="kdmath">$b \in \mathbb{F}$</span>, then</p>
+
+<div class="kdmath">$$
+\{(x_1, x_2, x_3, x_4) \in \mathbb{F}^4 : x_3 = 5x_4 + b\}
+$$</div>
+
+<p>is a subspace of <span class="kdmath">$\mathbb{F}^4$</span> if and only if <span class="kdmath">$b = 0$</span>.</p>
+
+<p>Why: the zero vector <span class="kdmath">$(0,0,0,0)$</span> can be in this set only if</p>
+
+<div class="kdmath">$$
+0 = 5(0) + b,
+$$</div>
+
+<p>which means <span class="kdmath">$b = 0$</span>.</p>
+
+<h3 id="2-continuous-functions-on-01">2. Continuous functions on <span class="kdmath">$[0,1]$</span></h3>
+
+<p>The set of continuous real-valued functions on the interval <span class="kdmath">$[0,1]$</span> is a
+subspace of <span class="kdmath">$\mathbb{R}^{[0,1]}$</span>.</p>
+
+<p>Note: <span class="kdmath">$A^B$</span>, such as <span class="kdmath">$\mathbb{R}^{[0,1]}$</span>, means the set of functions from
+<span class="kdmath">$B$</span> to <span class="kdmath">$A$</span>.</p>
+
+<h3 id="3-differentiable-functions-on-mathbbr">3. Differentiable functions on <span class="kdmath">$\mathbb{R}$</span></h3>
+
+<p>The set of differentiable real-valued functions on <span class="kdmath">$\mathbb{R}$</span> is a
+subspace of <span class="kdmath">$\mathbb{R}^{\mathbb{R}}$</span>.</p>
+
+<h3 id="4-differentiable-functions-with-f2--b">4. Differentiable functions with <span class="kdmath">$f'(2) = b$</span></h3>
+
+<p>The set of differentiable real-valued functions <span class="kdmath">$f$</span> on the interval <span class="kdmath">$(0,3)$</span>
+such that</p>
+
+<div class="kdmath">$$
+f'(2) = b
+$$</div>
+
+<p>is a subspace of <span class="kdmath">$\mathbb{R}^{(0,3)}$</span> if and only if <span class="kdmath">$b = 0$</span>.</p>
+
+<p>Why?</p>
+
+<p>Define <span class="kdmath">$S_b = \{f : (0,3) \to \mathbb{R} : f \text{ is differentiable and } f'(2) = b\}.$</span></p>
+
+<p>For <span class="kdmath">$S_b$</span> to be a subspace, it must contain the zero function. The zero function is</p>
+
+<div class="kdmath">$$
+0(x) = 0.
+$$</div>
+
+<p>Therefore,</p>
+
+<div class="kdmath">$$
+0'(x) = 0,
+$$</div>
+
+<p>so in particular</p>
+
+<div class="kdmath">$$
+0'(2) = 0.
+$$</div>
+
+<p>Thus the zero function belongs to <span class="kdmath">$S_b$</span> only when <span class="kdmath">$b = 0$</span>.</p>
+
+<h3 id="5-subspaces-of-mathbbr2">5. Subspaces of <span class="kdmath">$\mathbb{R}^2$</span></h3>
+
+<p>The subspaces of <span class="kdmath">$\mathbb{R}^2$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^2,$</span> and all lines in <span class="kdmath">$\mathbb{R}^2$</span> passing through the origin.</p>
+
+<h3 id="6-subspaces-of-mathbbr3">6. Subspaces of <span class="kdmath">$\mathbb{R}^3$</span></h3>
+
+<p>The subspaces of <span class="kdmath">$\mathbb{R}^3$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^3,$</span> all lines in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin, and all planes in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin.</p>
+
+</article>
+      </div>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });"></script>
+  </body>
+</html>

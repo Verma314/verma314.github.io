@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Quotes"
+date:   2024-04-27 19:24:16 +0100
+categories: quotes
+---
+
+* Nassim Taleb on reading
+
+![On reading](/assets/NassimOnReading.png)
+
+
+* From [Thought as Technology](https://cognitivemedium.com/tat/index.html)
+
+“Rather than just solving problems expressed in terms we already understand, the goal is to change the thoughts we can think.”

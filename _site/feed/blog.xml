@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-15T21:42:52+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">Subspaces</title><link href="http://localhost:4000/blog/2026-05-15-subspaces/" rel="alternate" type="text/html" title="Subspaces" /><published>2026-05-15T18:30:00+01:00</published><updated>2026-05-15T18:30:00+01:00</updated><id>http://localhost:4000/blog/Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-subspaces/"><![CDATA[<h2 id="subspaces-definition">Subspaces: Definition</h2>
+
+<p>A subset <span class="kdmath">$U$</span> of a vector space <span class="kdmath">$V$</span> is called a <strong>subspace</strong> of <span class="kdmath">$V$</span> if
+<span class="kdmath">$U$</span> is itself a vector space using the same addition and scalar multiplication
+as <span class="kdmath">$V$</span>.</p>
+
+<p>In practice, we do not need to check all the vector space axioms again. From Axler:</p>
+
+<h4 id="conditions-for-a-subspace">Conditions for a Subspace</h4>
+
+<p>Let <span class="kdmath">$V$</span> be a vector space over a field <span class="kdmath">$\mathbb{F}$</span>, and let <span class="kdmath">$U \subseteq V$</span>.
+Then <span class="kdmath">$U$</span> is a subspace of <span class="kdmath">$V$</span> if and only if the following three conditions hold:</p>
+
+<div class="kdmath">$$
+\begin{aligned}
+&\text{additive identity:}
+&& 0 \in U, \\
+&\text{closed under addition:}
+&& u, w \in U \implies u + w \in U, \\
+&\text{closed under scalar multiplication:}
+&& a \in \mathbb{F} \text{ and } u \in U \implies au \in U.
+\end{aligned}
+$$</div>
+
+<h4 id="proof">Proof</h4>
+
+<p>Think about why we don’t need to show that in <span class="kdmath">$U$</span> other properties of vector spaces also hold.</p>
+
+<h2 id="examples-of-subspaces-from-axler">Examples of Subspaces (from Axler)</h2>
+
+<h3 id="1-a-subset-of-mathbbf4">1. A subset of <span class="kdmath">$\mathbb{F}^4$</span></h3>
+
+<p>If <span class="kdmath">$b \in \mathbb{F}$</span>, then</p>
+
+<div class="kdmath">$$
+\{(x_1, x_2, x_3, x_4) \in \mathbb{F}^4 : x_3 = 5x_4 + b\}
+$$</div>
+
+<p>is a subspace of <span class="kdmath">$\mathbb{F}^4$</span> if and only if <span class="kdmath">$b = 0$</span>.</p>
+
+<p>Why: the zero vector <span class="kdmath">$(0,0,0,0)$</span> can be in this set only if</p>
+
+<div class="kdmath">$$
+0 = 5(0) + b,
+$$</div>
+
+<p>which means <span class="kdmath">$b = 0$</span>.</p>
+
+<h3 id="2-continuous-functions-on-01">2. Continuous functions on <span class="kdmath">$[0,1]$</span></h3>
+
+<p>The set of continuous real-valued functions on the interval <span class="kdmath">$[0,1]$</span> is a
+subspace of <span class="kdmath">$\mathbb{R}^{[0,1]}$</span>.</p>
+
+<p>Note: <span class="kdmath">$A^B$</span>, such as <span class="kdmath">$\mathbb{R}^{[0,1]}$</span>, means the set of functions from
+<span class="kdmath">$B$</span> to <span class="kdmath">$A$</span>.</p>
+
+<h3 id="3-differentiable-functions-on-mathbbr">3. Differentiable functions on <span class="kdmath">$\mathbb{R}$</span></h3>
+
+<p>The set of differentiable real-valued functions on <span class="kdmath">$\mathbb{R}$</span> is a
+subspace of <span class="kdmath">$\mathbb{R}^{\mathbb{R}}$</span>.</p>
+
+<h3 id="4-differentiable-functions-with-f2--b">4. Differentiable functions with <span class="kdmath">$f'(2) = b$</span></h3>
+
+<p>The set of differentiable real-valued functions <span class="kdmath">$f$</span> on the interval <span class="kdmath">$(0,3)$</span>
+such that</p>
+
+<div class="kdmath">$$
+f'(2) = b
+$$</div>
+
+<p>is a subspace of <span class="kdmath">$\mathbb{R}^{(0,3)}$</span> if and only if <span class="kdmath">$b = 0$</span>.</p>
+
+<p>Why?</p>
+
+<p>Define <span class="kdmath">$S_b = \{f : (0,3) \to \mathbb{R} : f \text{ is differentiable and } f'(2) = b\}.$</span></p>
+
+<p>For <span class="kdmath">$S_b$</span> to be a subspace, it must contain the zero function. The zero function is</p>
+
+<div class="kdmath">$$
+0(x) = 0.
+$$</div>
+
+<p>Therefore,</p>
+
+<div class="kdmath">$$
+0'(x) = 0,
+$$</div>
+
+<p>so in particular</p>
+
+<div class="kdmath">$$
+0'(2) = 0.
+$$</div>
+
+<p>Thus the zero function belongs to <span class="kdmath">$S_b$</span> only when <span class="kdmath">$b = 0$</span>.</p>
+
+<h3 id="5-subspaces-of-mathbbr2">5. Subspaces of <span class="kdmath">$\mathbb{R}^2$</span></h3>
+
+<p>The subspaces of <span class="kdmath">$\mathbb{R}^2$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^2,$</span> and all lines in <span class="kdmath">$\mathbb{R}^2$</span> passing through the origin.</p>
+
+<h3 id="6-subspaces-of-mathbbr3">6. Subspaces of <span class="kdmath">$\mathbb{R}^3$</span></h3>
+
+<p>The subspaces of <span class="kdmath">$\mathbb{R}^3$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^3,$</span> all lines in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin, and all planes in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Subspaces: Definition]]></summary></entry><entry><title type="html">Vector Spaces</title><link href="http://localhost:4000/blog/2026-05-15-vector-spaces/" rel="alternate" type="text/html" title="Vector Spaces" /><published>2026-05-15T18:00:00+01:00</published><updated>2026-05-15T18:00:00+01:00</updated><id>http://localhost:4000/blog/Vector-Spaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-vector-spaces/"><![CDATA[<h2 id="vector-spaces">Vector Spaces</h2>
+
+<p>A <strong>vector space</strong> over a field <span class="kdmath">$\mathbb{F}$</span> is a set <span class="kdmath">$V$</span> together with two operations:</p>
+
+<div class="kdmath">$$
+\begin{aligned}
++ &: V \times V \to V \\
+\cdot &: \mathbb{F} \times V \to V
+\end{aligned}
+$$</div>
+
+<p>These operations are called <strong>vector addition</strong> and <strong>scalar multiplication</strong>. For every
+<span class="kdmath">$u, v, w \in V$</span> and every <span class="kdmath">$a, b \in \mathbb{F}$</span>, the following axioms must hold:</p>
+
+<div class="kdmath">$$
+\begin{aligned}
+u + v &= v + u && \text{commutativity of addition} \\
+(u + v) + w &= u + (v + w) && \text{associativity of addition} \\
+\exists\,0 \in V \quad \text{such that} \quad v + 0 &= v && \text{additive identity} \\
+\forall v \in V,\ \exists\,(-v) \in V \quad \text{such that} \quad v + (-v) &= 0 && \text{additive inverse} \\
+a(u + v) &= au + av && \text{distributivity over vector addition} \\
+(a + b)v &= av + bv && \text{distributivity over scalar addition} \\
+(ab)v &= a(bv) && \text{compatibility of scalar multiplication} \\
+1v &= v && \text{scalar identity}
+\end{aligned}
+$$</div>
+
+<p>Equivalently, <span class="kdmath">$V$</span> forms an abelian group under vector addition, and the scalars come
+from a field <span class="kdmath">$\mathbb{F}$</span> whose multiplication acts on the vectors in a way compatible
+with both addition in <span class="kdmath">$V$</span> and addition and multiplication in <span class="kdmath">$\mathbb{F}$</span>.</p>
+
+<p>Intuitively, <span class="kdmath">$V$</span> has elements that can combine to form other <span class="kdmath">$V$</span> elements, and can get ‘scaled’ up or down using elements from a field/scalar.</p>
+
+<h2 id="examples-of-vector-spaces">Examples of Vector Spaces</h2>
+
+<p>The usual example of a vector space is <span class="kdmath">$\mathbb{R}^n$</span>. For example,</p>
+
+<div class="kdmath">$$
+\mathbb{R}^2 = \{(x, y) : x, y \in \mathbb{R}\}
+$$</div>
+
+<p>is the set of all ordered pairs of real numbers. We add vectors component by component:</p>
+
+<div class="kdmath">$$
+(x_1, y_1) + (x_2, y_2) = (x_1 + x_2, y_1 + y_2)
+$$</div>
+
+<p>and we multiply by scalars component by component:</p>
+
+<div class="kdmath">$$
+a(x, y) = (ax, ay)
+$$</div>
+
+<p>The intuition is that these vectors can be drawn as arrows in the plane, similar to how it is done in physics.</p>
+
+<p>However, vector spaces are much more general than ‘arrows’. A vector is any object that can be added to another object of the same kind, and multiplied by scalars, while satisfying the vector space axioms.</p>
+
+<p>For example, the set of all polynomials with real coefficients is a vector space over
+<span class="kdmath">$\mathbb{R}$</span>:</p>
+
+<div class="kdmath">$$
+\mathbb{R}[x]
+$$</div>
+
+<p>An element of this vector space looks like</p>
+
+<div class="kdmath">$$
+p(x) = a_0 + a_1x + a_2x^2 + \cdots + a_nx^n
+$$</div>
+
+<p>where each coefficient <span class="kdmath">$a_i$</span> is a real number.</p>
+
+<p>We can add two polynomials:</p>
+
+<div class="kdmath">$$
+(p + q)(x) = p(x) + q(x)
+$$</div>
+
+<p>and we can multiply a polynomial by a scalar:</p>
+
+<div class="kdmath">$$
+(ap)(x) = a p(x)
+$$</div>
+
+<p>The result is still a polynomial, so the operations stay inside <span class="kdmath">$\mathbb{R}[x]$</span>.</p>
+
+<p>For instance, if</p>
+
+<div class="kdmath">$$
+p(x) = 1 + 2x
+$$</div>
+
+<p>and</p>
+
+<div class="kdmath">$$
+q(x) = 3 - x + x^2
+$$</div>
+
+<p>then</p>
+
+<div class="kdmath">$$
+p(x) + q(x) = 4 + x + x^2
+$$</div>
+
+<p>and</p>
+
+<div class="kdmath">$$
+5p(x) = 5 + 10x
+$$</div>
+
+<p>So the set of polynomials form a vector space as well.</p>
+
+<p>Another example is the set of all <span class="kdmath">$m \times n$</span> matrices over a field <span class="kdmath">$\mathbb{F}$</span>:</p>
+
+<div class="kdmath">$$
+M_{m \times n}(\mathbb{F})
+$$</div>
+
+<p>(The field can be anything, R, C, etc)</p>
+
+<p>Matrices can be added entry by entry, and multiplied by scalars entry by entry. Therefore,
+they form a vector space over <span class="kdmath">$\mathbb{F}$</span>.</p>
+
+<p>Vector spaces are very general: the vectors might be arrows, lists of numbers,
+polynomials, matrices, functions,  or other mathematical objects. The only properties of importance is that they can be added and scaled according to the
+vector space axioms.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Vector Spaces]]></summary></entry><entry><title type="html">AI and Turing Machines</title><link href="http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/" rel="alternate" type="text/html" title="AI and Turing Machines" /><published>2026-04-02T13:00:00+01:00</published><updated>2026-04-02T13:00:00+01:00</updated><id>http://localhost:4000/blog/AI-and-Turing-Machines</id><content type="html" xml:base="http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/"><![CDATA[<p>Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20</p>
+
+<h2 id="p-vs-np">P vs NP</h2>
+
+<ul>
+  <li>
+    <p>P is the class of ‘problems’ (or languages) that have polynomial time algorithms</p>
+  </li>
+  <li>
+    <p>NP is the class of ‘problems’ (or languages) that have polynomial time <strong>verifiers</strong>, e.g., hamiltonian path, finding a hamiltonian path is non-poly, but verification of a solution can be done in polynomical time.  Another characterization: is that these problems can be solved in (non-detrministic) polynomial time by a non-deterministic Turing Machine.</p>
+  </li>
+</ul>
+
+<p>Everything that is in P is also in NP.</p>
+
+<p>In summary,</p>
+
+<p>P = the class of languages for which membership can be decided quickly.
+NP = the class of languages for which membership can be verified quickly.
+P subset of NP.</p>
+
+<p>NP Completeness:</p>
+
+<p>Certain problems in NP show this property that they can be reduced to one another. so if we solve one such problem, all such other problems are solved. So far these have only been problmes not in P.</p>
+
+<p>NP = P ∪ NP-Intermediate ∪ NP-Complete</p>
+
+<p>NP Hard problems may fall outside NP. Although there may be overlap.
+NP-Complete = NP ∩ NP-Hard (hard, but at least verifiable)
+NP-Hard \ NP = problems that are at least as hard as anything in NP, but aren’t even verifiable in poly time.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--
+NP-Hard
+├── NP-Complete (the part inside NP)
+└── stuff outside NP entirely (Halting Problem, etc.)
+
+NP
+├── P
+├── NP-Intermediate
+└── NP-Complete (the part inside NP-Hard)
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="where-do-connectionist-architectures-such-as-llms-fall-on-the-classical-computational-hierarchy">Where do connectionist architectures such as LLMs fall on the classical computational hierarchy?</h3>
+
+<p><a href="https://arxiv.org/abs/2310.07923">The Expressive Power of Transformers with Chain of Thought</a> describes that with CoT reasoning they fall within P class.</p>
+
+<p>What does this mean? This implies that LLMs even with chain-of-thought reasoning are quite ‘weak’ (even weaker than Pushdown automata) when being benchmarked against the classical computational models.</p>
+
+<p>todo: read paper and describe the methodology.</p>
+
+<h3 id="do-brains-compute-ie-can-brain-processes-that-cause-mental-phenomenon-be-reduced-to-or-expressed-as-computation">Do brains compute i.e. can brain processes that cause mental phenomenon be reduced to or expressed as computation?</h3>
+<p>Yes – according to the research paper linked about and the Computational Theory of Mind. But how did they get to that conclusion?</p>
+
+<p>https://claude.ai/chat/6c1213f3-bbc0-49cd-882e-384f0c71771f</p>
+
+<h3 id="are-there-any-genuine-similarities-between-brains-and-neural-networks-such-as-llms-where-does-dynamical-systems-theory-fit-in">Are there any genuine similarities between brains and neural networks such as LLMs? Where does Dynamical Systems Theory fit in?</h3>
+<p>https://en.wikipedia.org/wiki/Dynamical_systems_theory</p>
+
+<h3 id="simulating-physicsphysical-processes-vs-simulating-mathematics">Simulating Physics/Physical processes vs Simulating “Mathematics”</h3>
+
+<p>The Church-Turing-Deutsch thesis says every <em>physical process</em> can be simulated by a Turing machine. This is a claim about the physical world: that nature doesn’t compute anything a Turing machine can’t.</p>
+
+<p>The situation with mathematics is different, Gödel’s first incompleteness theorem says that any consistent formal system that strong enough to express basic arithmetic will contain true statements it cannot prove.</p>
+
+<p>Any formal system (including math) <em>is</em> already computational. If we take the axioms and inference rules of ZFC or Peano Arithmetic: we can write a program that mechanically enumerates every theorem. The set of provable theorems is recursively enumerable (it’s the output of an algorithm). Formal systems such as mathematics or mathematic theorem-generation are already a Turing machine.</p>
+
+<p>The problem is that mathematical <em>truths</em> can exist beyond a formal system.
+“For any consistent formal system F that can do arithmetic, there exist arithmetic statements that are true but not provable in F. You can add that statement as a new axiom to get F’, but then F’ has its own unprovable truths. This never terminates.”</p>
+
+<p>So obviously, there is distinction is between <em>provability within a system</em> (computational) and <em>truth</em> (not capturable by any single computation at all). There are truths no formal system can reach. (Godel, Turing’s Halting Problem etc).</p>
+
+<p>Each formal system (including math) is a computation, but ‘truth’ still transcends formal systems. Although somehow, ‘nature’ seems more amneable to being computable.</p>
+
+<p>So, does nature ever ‘compute’ things that are non-computational? We haven’t found it yet. But have we? What about the millions of simulations that would take forever to compute? How do we know that all physical processes can truly be computed?</p>
+
+<p><em>in progress, I will keep thinking about this</em></p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20]]></summary></entry><entry><title type="html">Notes from Fooled by Randomness</title><link href="http://localhost:4000/blog/2024-04-21-fooled-by-randomness/" rel="alternate" type="text/html" title="Notes from Fooled by Randomness" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/blog/Fooled-by-Randomness</id><content type="html" xml:base="http://localhost:4000/blog/2024-04-21-fooled-by-randomness/"><![CDATA[<h3 id="the-premise">The premise</h3>
+
+<ul>
+  <li>The cetral premise seems to say that humans see patterns where there are none. And very dangerously successes are often attribtued to skill when it has only been sheer luck.</li>
+</ul>
+
+<p>On left: the truth vs, on right: what humans confuse the truth for:
+<img src="/assets/Distinctions.png" alt="image info" /></p>
+
+<ul>
+  <li>Asks us to be suspicious of ‘experts’ that offer certainity; more advisable to listen to 
+experts who talk about the irrationality and unreliability of human thought. People such as Daniel Kahneman, Karl Popper, Maynard Keynes, Hayek, Adam Smith</li>
+</ul>
+
+<p>Humans are defective and faulty.</p>
+
+<p><em>To check out:</em>
+Bounded rationality.
+Heuristic and biases.
+Check out https://en.wikipedia.org/wiki/Falsifiability
+Charles Sanders Pierce</p>
+
+<p>We need to get around our emotions instead of grandiose moralizing of overcoming the human-ness. We need tricks.</p>
+
+<h3 id="alternate-histories-or-parallel-timelines">Alternate Histories or Parallel Timelines</h3>
+
+<ul>
+  <li>In life and risk-taking, always look at ‘alternative histories.’</li>
+</ul>
+
+<p>£10 million earned from dentistry and £10 million earned from a lottery are vastly different qualitatively. Even though for an accountant they are the same.</p>
+
+<p>In trading, when taking risks make sure to take them in such a way that in n number of alternate universe timelines that risk should pan out in a good number of them.</p>
+
+<p>A dentist having studied dentistry will have the same/similar outcome in 1 million universes, as opposed to a person who invests in lottery tickets.</p>
+
+<ul>
+  <li>Life’s successes/failures are similar to russian roulette. Ask yourself is your success coming from a genuine skill or dumb luck? Go to the source of the wealth creation (skill vs lotto tickets?) – this is called <code class="language-plaintext highlighter-rouge">the generator</code></li>
+</ul>
+
+<p>Always seek for the generator.</p>
+
+<ul>
+  <li>Look for the invisible risks of blowup in your ‘portfolio’</li>
+</ul>
+
+<h3 id="monte-carlo-methods">Monte Carlo Methods</h3>
+
+<ul>
+  <li>Monte Carlo methods seek to formalize the idea of alternate histories. The scientific name for them being <code class="language-plaintext highlighter-rouge">alternate sample paths</code></li>
+</ul>
+
+<p>The name is borrowed from the field of probability known as <code class="language-plaintext highlighter-rouge">stochastic processes</code></p>
+
+<p>Note the focus on <em>path</em> instead of outcome.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Stochastic processes</code>: dynamics of event unfolding over time. Evolution of successive random events.</p>
+  </li>
+  <li>
+    <p>A <code class="language-plaintext highlighter-rouge">Monte Carlo Simulation</code> how various paths could unfold given a set of biases.</p>
+  </li>
+  <li>
+    <p>Probability affects all sciences, especially “the mother of all sciences” – <code class="language-plaintext highlighter-rouge">knowledge</code></p>
+  </li>
+</ul>
+
+<p>To assess the <em>quality</em> of knowledge being gathered we have to look at the randomness with which it was obtained. ?? (Revisit: Monte Carlo Mathematics pg 44)</p>
+
+<ul>
+  <li>In science probability and information are treated exactly the same.</li>
+</ul>
+
+<h3 id="learning-from-history">Learning from history</h3>
+
+<ul>
+  <li>
+    <p>He says, he learns about the past by reading history, and the future via monte carlo simulations.</p>
+  </li>
+  <li>
+    <p>People have a bias to not learn from other’s experience (denigrating other’s history). They might assume that they are special, or some such.</p>
+  </li>
+  <li>
+    <p>People in the investment industry did not learn from numerous crashes.</p>
+  </li>
+  <li>
+    <p>We can not run experiments on ‘history’ but due to the nature of history being long we cna see the outcome of many paths.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Distilled thinking</code>: Thinking that is based on information that is stripped out of meaningless and diverting clutter.</p>
+  </li>
+  <li>
+    <p>Respects time-honoured ideas as opposed to ‘modern ideas’ – older ideas that have survived have stood the test of time.</p>
+  </li>
+  <li>
+    <p>Barrage of (new) information is often toxic; irrelevant and a needle in the haystack.  Information in outlets such as WSJ are statistically insignificant for the derivation of any meaningful conclusions.</p>
+  </li>
+  <li>
+    <p>Is skeptical of media, newspapers etc. Since these orgs have an incentive to grab attention; and not do correct/nuanced analysis.</p>
+  </li>
+  <li>
+    <p>Him seeing people still indulge in this mass-scale decision-making based on noiss – an insurance for his career in options to trade against these ‘fools of randomness’</p>
+  </li>
+</ul>
+
+<h3 id="negative-value-of-information-on-society">Negative Value of Information on society</h3>
+
+<ul>
+  <li>
+    <p>Robert Shiller showed in 1981 mathematically, that the prices of stocks are way more volatile than the fundamentals that they are supposed to reflect.</p>
+  </li>
+  <li>
+    <p>i.e. <em>“Prices do not reflect the long-term value of securities by overshooting in both directions. Markets had to be wrong”</em></p>
+  </li>
+  <li>
+    <p>“Markets not as efficient as established by financial theory.”</p>
+  </li>
+  <li>
+    <p><em>“Efficient markets meant that prices should adapt to all the available information in such as way as to be totally unpredictable to us humans and prevent people from deriving profits”</em></p>
+  </li>
+  <li>
+    <p>Not all journalists are bad. Recommends: Anatole Kaletsky (london), Jim Grant (ny), Alan Abelson in finance. Gary Stix in scientific journalism.</p>
+  </li>
+  <li>
+    <p>There is too much noise in the short term (second-to-second, day-to-day); longer time horizons are stripped off of that noise. Which is why it is preferable to read history than the jounalists. “The Economist over the weekend rather than the Wall Street Journal” over weekdays.</p>
+  </li>
+</ul>
+
+<p><em>*There is huge amount of noise on the smaller-time-scale; and focusing too closely at the randomness/noise at this scale will lead emotions getting drained; and lead to an *emotional deficit</em> **</p>
+
+<ul>
+  <li>Author is aware of him being non-rational and that small-scale noise (too much information) will overwhelm him and cause -ve rumination. Causing him to unable to function optimally.</li>
+</ul>
+
+<h3 id="randomness-noise-and-the-scientific-intellectual">Randomness, noise, and the scientific intellectual</h3>
+
+<ul>
+  <li>Early in the previous centry scientists started to believe that there were only two kinds of facts:
+    <ol>
+      <li>Deductive: i.e. they follow axiomatically</li>
+      <li>Inductive i.e verifiable by experience</li>
+    </ol>
+  </li>
+</ul>
+
+<p>They claimed that these should replace the ‘literary hogwash’ in the humanities</p>
+
+<ul>
+  <li>
+    <p>Author believes that inductive statements might be impossible to verify; and be quite ‘hogwashy’ themselves.
+[Especially when it comes to black swan events]</p>
+  </li>
+  <li>
+    <p>Reverse Turing Test: a human is unintelligent if his speech can be replicated by a computer.</p>
+  </li>
+  <li>
+    <p>Author says that computers can generate discourse that looks like a literary rhetoric; but can not produce something which looks like scientific discourse.</p>
+  </li>
+</ul>
+
+<p><em>Can one produce piece of work that can be largely mistaken for Derrida entirely randomly? The answer is yes</em></p>
+
+<p><em>Owing to the fuzzyness of his thought, the literary intellectual can be fooled by randomness</em></p>
+
+<ul>
+  <li>
+    <p>Author clarifies that scientific/mathematical thought doesn’t always imply should be written in symbols. English is perfectly capabable of conveying rigorous mathematical thought – and cites The Selfish Gene as an example.</p>
+  </li>
+  <li>
+    <p>Says he is ok to be fooled by randomness if the results are aesthetic. Example: poetry.</p>
+  </li>
+  <li>
+    <p>He claims downfall of religion was causd by the translation from Latin to the local vernacular – for then it could get scrutinized by the scientific; and also lost the aesthetic beauty.</p>
+  </li>
+</ul>
+
+<p><em>If I am going to be fooled by randomness it better be of the beautiful (and harmless) kind</em></p>
+
+<h3 id="can-evolution-be-fooled-by-randomness">Can evolution be fooled by randomness?</h3>
+
+<ul>
+  <li>
+    <p>Talks about how even evolutionary there is a lot of noise in the ‘short-term’ and how it works only when considering the long term.</p>
+  </li>
+  <li>
+    <p>Populations with non-fit traits might survive for long because of randomness of not encountering a ‘black-swan’ path. And thus becoming more fragile to those black-swan events.</p>
+  </li>
+</ul>
+
+<h3 id="the-median-is-not-the-message-asymmetry-skewness-probability-and-expectation">The median is not the message: asymmetry, skewness; probability and expectation</h3>
+
+<ul>
+  <li>
+    <p>Definition - Asymmetric odds: the probabilties are not 50% for each event.</p>
+  </li>
+  <li>
+    <p>Definition - Asymmetric outcomes: the <em>payoffs</em> from the event (say in gambling) are not equal.</p>
+  </li>
+  <li>
+    <p><em>Expectation</em> = <em>Probability</em>  x <em>Payoff</em></p>
+  </li>
+</ul>
+
+<p>People confuse probability vs expectation. For instance: even if the probability is in our favor, the relative magnitude of the payoffs might be very very bad in case of unfavourable event.</p>
+
+<ul>
+  <li>
+    <p>Author mentions that <strong>bullish and bearish are hollow words with no application to the world of randomness – <em>particularly if such a world presents asymmetric outcomes</em></strong></p>
+  </li>
+  <li>
+    <p>This is a very important point. <strong>To reiterate, probability alone does not mean anything; it is only when we multiply it with the <em>payoff</em> or the outcome, that we can make a judgement and understand reality</strong></p>
+  </li>
+  <li>
+    <p>Bullish and bearish are used by people who do not <em>engage</em> in practicing uncertainity. (Because these terms do not quantify the magnitude of the rise or fall).</p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[The premise]]></summary></entry><entry><title type="html">Links</title><link href="http://localhost:4000/blog/2024-04-18-links/" rel="alternate" type="text/html" title="Links" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/blog/Links</id><content type="html" xml:base="http://localhost:4000/blog/2024-04-18-links/"><![CDATA[<ul>
+  <li>
+    <p><a href="https://karpathy.github.io/">Andrej Karpathy</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/">We don’t know how to compute - lecture by Gerald Sussman</a></p>
+  </li>
+  <li>
+    <p><a href="https://acko.net/">Steven Wittens Tools for Thought</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.geogebra.org/m/gzfn4pe3#material/xsnx8cdb">Euclid The Game</a>
+<a href="https://www.geogebra.org/m/gzfn4pe3#material/nafsdznh">My Current Level</a></p>
+  </li>
+  <li>
+    <p><a href="https://news.ycombinator.com/item?id=7920442">Discussion on Euclid The Game</a></p>
+  </li>
+  <li>
+    <p><a href="https://math.stackexchange.com/questions/373672/about-euclids-elements-and-modern-video-games">Origin of Euclid The Game</a></p>
+  </li>
+  <li>
+    <p><a href="https://cognitivemedium.com/tat/index.html">Thoughts as technology</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.lesswrong.com/posts/kpmaEevZ2KehZo2tp/some-advice-on-independent-research">How to do independant research</a></p>
+  </li>
+  <li>
+    <p><a href="https://news.ycombinator.com/item?id=25341601">How to think about co-relation</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.linkedin.com/posts/alexandre-zajac_softwareengineering-systemdesign-programming-activity-7191685360572084224-y_EP?utm_source=share&amp;utm_medium=member_desktop">System Design</a></p>
+  </li>
+  <li>
+    <p>Research Paper on polyhedral compilation <a href="https://link.springer.com/article/10.1007/BF01407931">Dataflow analysis of array and scalar references</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.reddit.com/r/AskHistorians/wiki/historians_views/#wiki_historians.27_views_of_jared_diamond.27s_.22guns.2C_germs.2C_and_steel.22">AskHistorian’s views on various books</a></p>
+  </li>
+  <li>
+    <p><a href="https://newsletter.systemdesign.one/">System Design Newsletter</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.linkedin.com/posts/nk-systemdesign-one_programming-coding-systemdesign-activity-7189602878272020480-20tF/?utm_source=share&amp;utm_medium=member_desktop">System Design</a></p>
+  </li>
+  <li>
+    <p><a href="https://mmhaskell.com/haskell-brain">The Haskell Brain</a></p>
+  </li>
+  <li>
+    <p><a href="https://mmhaskell.com/monads/functors">Functors in Haskell</a></p>
+  </li>
+  <li>
+    <p>How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/</p>
+  </li>
+  <li>
+    <p><a href="https://learning.oreilly.com/library/view/game-engine-architecture/">Game Engine Architecture</a></p>
+  </li>
+  <li>
+    <p><a href="http://gameprogrammingpatterns.com/introduction.html">Game Design Patterns</a></p>
+  </li>
+  <li>
+    <p><a href="https://learning.oreilly.com/library/view/restful-java-with/">RESTful Java with JAX-RS</a></p>
+  </li>
+  <li>
+    <p><a href="https://books.google.co.in/books/about/Engineering_a_Compiler.html?id=_tgh4bgQ6PAC&amp;source=kp_book_description&amp;redir_esc=y">Engineering a Compiler</a></p>
+  </li>
+  <li>
+    <p><a href="https://fooledbyrandomness.com/">Taleb’s Homepage</a></p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Karl_Popper">Karl Popper Wiki</a></p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Falsifiability">Falsifiability</a></p>
+  </li>
+  <li>
+    <p><a href="https://unearnedwisdom.com/how-to-read-nassim-taleb/#Understanding_Taleb">How to read Taleb</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.scottaaronson.com/democritus/lec9.html">PHYS771 Quantum Computing Since Democritus</a></p>
+  </li>
+  <li>
+    <p><a href="https://jekyllrb.com/docs/home">Jekyll Docs</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.wolfram.com/engine/">Wolfram Engine</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/WolframResearch/WolframLanguageForJupyter">Wolfram LanguageFor Jupyter</a></p>
+  </li>
+  <li>
+    <p>Machine learning and symbolic AI for mathematics Jeremy Avigad</p>
+  </li>
+  <li>
+    <p><a href="https://docs.jupyter.org/en/latest/running.html#running">Jupyter Notebook</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/jobindjohn/obsidian-publish-mkdocs">obsidian</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io?tab=readme-ov-file">Jekyll garden</a></p>
+  </li>
+  <li>
+    <p><a href="https://hiran.in/antilibrary">Hiran anti-library</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.preetamnath.com/blog/shopify-micro-saas#Shopify%20app%20ideas:%C2%A0How%20to%20discover%20problems%20&amp;%20niches">Build a shopify app</a></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="links" /><summary type="html"><![CDATA[Andrej Karpathy]]></summary></entry></feed>

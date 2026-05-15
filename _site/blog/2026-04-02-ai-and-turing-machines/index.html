@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>AI and Turing Machines</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="AI and Turing Machines" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20" />
+<meta property="og:description" content="Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20" />
+<link rel="canonical" href="http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/" />
+<meta property="og:url" content="http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/" />
+<meta property="og:site_name" content="Aditya Verma" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-04-02T13:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AI and Turing Machines" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-02T13:00:00+01:00","datePublished":"2026-04-02T13:00:00+01:00","description":"Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20","headline":"AI and Turing Machines","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/"},"url":"http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aditya Verma" /><link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/"></a><article><p class="post-meta">
+    <time datetime="2026-04-02 13:00:00 +0100">Apr 02, 2026</time>
+  </p><h1>AI and Turing Machines</h1>
+
+  <p>Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20</p>
+
+<h2 id="p-vs-np">P vs NP</h2>
+
+<ul>
+  <li>
+    <p>P is the class of ‘problems’ (or languages) that have polynomial time algorithms</p>
+  </li>
+  <li>
+    <p>NP is the class of ‘problems’ (or languages) that have polynomial time <strong>verifiers</strong>, e.g., hamiltonian path, finding a hamiltonian path is non-poly, but verification of a solution can be done in polynomical time.  Another characterization: is that these problems can be solved in (non-detrministic) polynomial time by a non-deterministic Turing Machine.</p>
+  </li>
+</ul>
+
+<p>Everything that is in P is also in NP.</p>
+
+<p>In summary,</p>
+
+<p>P = the class of languages for which membership can be decided quickly.
+NP = the class of languages for which membership can be verified quickly.
+P subset of NP.</p>
+
+<p>NP Completeness:</p>
+
+<p>Certain problems in NP show this property that they can be reduced to one another. so if we solve one such problem, all such other problems are solved. So far these have only been problmes not in P.</p>
+
+<p>NP = P ∪ NP-Intermediate ∪ NP-Complete</p>
+
+<p>NP Hard problems may fall outside NP. Although there may be overlap.
+NP-Complete = NP ∩ NP-Hard (hard, but at least verifiable)
+NP-Hard \ NP = problems that are at least as hard as anything in NP, but aren’t even verifiable in poly time.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--
+NP-Hard
+├── NP-Complete (the part inside NP)
+└── stuff outside NP entirely (Halting Problem, etc.)
+
+NP
+├── P
+├── NP-Intermediate
+└── NP-Complete (the part inside NP-Hard)
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="where-do-connectionist-architectures-such-as-llms-fall-on-the-classical-computational-hierarchy">Where do connectionist architectures such as LLMs fall on the classical computational hierarchy?</h3>
+
+<p><a href="https://arxiv.org/abs/2310.07923">The Expressive Power of Transformers with Chain of Thought</a> describes that with CoT reasoning they fall within P class.</p>
+
+<p>What does this mean? This implies that LLMs even with chain-of-thought reasoning are quite ‘weak’ (even weaker than Pushdown automata) when being benchmarked against the classical computational models.</p>
+
+<p>todo: read paper and describe the methodology.</p>
+
+<h3 id="do-brains-compute-ie-can-brain-processes-that-cause-mental-phenomenon-be-reduced-to-or-expressed-as-computation">Do brains compute i.e. can brain processes that cause mental phenomenon be reduced to or expressed as computation?</h3>
+<p>Yes – according to the research paper linked about and the Computational Theory of Mind. But how did they get to that conclusion?</p>
+
+<p>https://claude.ai/chat/6c1213f3-bbc0-49cd-882e-384f0c71771f</p>
+
+<h3 id="are-there-any-genuine-similarities-between-brains-and-neural-networks-such-as-llms-where-does-dynamical-systems-theory-fit-in">Are there any genuine similarities between brains and neural networks such as LLMs? Where does Dynamical Systems Theory fit in?</h3>
+<p>https://en.wikipedia.org/wiki/Dynamical_systems_theory</p>
+
+<h3 id="simulating-physicsphysical-processes-vs-simulating-mathematics">Simulating Physics/Physical processes vs Simulating “Mathematics”</h3>
+
+<p>The Church-Turing-Deutsch thesis says every <em>physical process</em> can be simulated by a Turing machine. This is a claim about the physical world: that nature doesn’t compute anything a Turing machine can’t.</p>
+
+<p>The situation with mathematics is different, Gödel’s first incompleteness theorem says that any consistent formal system that strong enough to express basic arithmetic will contain true statements it cannot prove.</p>
+
+<p>Any formal system (including math) <em>is</em> already computational. If we take the axioms and inference rules of ZFC or Peano Arithmetic: we can write a program that mechanically enumerates every theorem. The set of provable theorems is recursively enumerable (it’s the output of an algorithm). Formal systems such as mathematics or mathematic theorem-generation are already a Turing machine.</p>
+
+<p>The problem is that mathematical <em>truths</em> can exist beyond a formal system.
+“For any consistent formal system F that can do arithmetic, there exist arithmetic statements that are true but not provable in F. You can add that statement as a new axiom to get F’, but then F’ has its own unprovable truths. This never terminates.”</p>
+
+<p>So obviously, there is distinction is between <em>provability within a system</em> (computational) and <em>truth</em> (not capturable by any single computation at all). There are truths no formal system can reach. (Godel, Turing’s Halting Problem etc).</p>
+
+<p>Each formal system (including math) is a computation, but ‘truth’ still transcends formal systems. Although somehow, ‘nature’ seems more amneable to being computable.</p>
+
+<p>So, does nature ever ‘compute’ things that are non-computational? We haven’t found it yet. But have we? What about the millions of simulations that would take forever to compute? How do we know that all physical processes can truly be computed?</p>
+
+<p><em>in progress, I will keep thinking about this</em></p>
+
+</article>
+      </div>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });"></script>
+  </body>
+</html>
