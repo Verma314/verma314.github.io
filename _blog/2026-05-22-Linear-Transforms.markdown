@@ -99,3 +99,42 @@ If the null space is just {0} i.e.,   only the zero vector gets mapped to zero, 
 If the null space contains anything else (for example: some nonzero [a1, a2, a3] that T maps to zero) then we have found a nontrivial linear combination that equals zero, and the vectors are linearly dependent.
 
 The list of vectors is not inherently a transform. We *chose* to build a transform from them because it reframes the independence question into a null space question, which is a standard  technique.
+
+
+
+## Julia program to test linear independence of any list of vectors
+
+
+```
+using LinearAlgebra
+
+# Linear Independence
+# A list of vectors v1, v2, ..., vn is linearly independent if the only
+# solution to a1*v1 + a2*v2 + ... + an*vn = 0 is a1 = a2 = ... = an = 0.
+
+# --- Test vectors in R^3 ---
+# These should be linearly independent
+v1 = [1, 0, 0]
+v2 = [0, 1, 0]
+v3 = [0, 0, 1]
+
+# These should be linearly dependent (v3 = v1 + v2)
+w1 = [1, 2, 3]
+w2 = [4, 5, 6]
+w3 = [5, 7, 9]
+
+function is_linear_independent( vectors... )
+    # build a linear transform
+    T = hcat(vectors...)
+    nullSpace = nullspace(T)
+    if ( iszero(nullSpace) )
+        return true
+    else
+        return false
+    end
+end
+
+println(is_linear_independent(v1, v2, v3))
+println(is_linear_independent(w1, w2, w3))
+
+```
