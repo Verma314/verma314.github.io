@@ -160,9 +160,9 @@ end
 # --- Numerical check (random vectors) ---
 # Check if a map is linear by testing additivity and homogeneity
 function is_linear_numerical(map; num_tests=100, tol=1e-10)
-    # TODO: generate random vectors and scalars
-    # TODO: test additivity:   map(v1 + v2) ≈ map(v1) + map(v2)
-    # TODO: test homogeneity:  map(λ * v) ≈ λ * map(v)    
+    #  generate random vectors and scalars
+    #  test additivity:   map(v1 + v2) ≈ map(v1) + map(v2)
+    #  test homogeneity:  map(λ * v) ≈ λ * map(v)    
     for i = 1:num_tests
         randomV1 = [rand(-1000:1000), rand(-1000:1000), rand(-1000:1000)]
         randomV2 = [rand(-1000:1000), rand(-1000:1000), rand(-1000:1000)]
