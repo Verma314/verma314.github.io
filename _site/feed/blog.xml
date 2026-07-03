@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-15T21:42:52+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">Subspaces</title><link href="http://localhost:4000/blog/2026-05-15-subspaces/" rel="alternate" type="text/html" title="Subspaces" /><published>2026-05-15T18:30:00+01:00</published><updated>2026-05-15T18:30:00+01:00</updated><id>http://localhost:4000/blog/Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-subspaces/"><![CDATA[<h2 id="subspaces-definition">Subspaces: Definition</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-03T21:53:07+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">Sum of Subspaces</title><link href="http://localhost:4000/blog/2026-05-16-sum-of-subspaces/" rel="alternate" type="text/html" title="Sum of Subspaces" /><published>2026-05-16T09:00:00+01:00</published><updated>2026-05-16T09:00:00+01:00</updated><id>http://localhost:4000/blog/Sum-of-Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-16-sum-of-subspaces/"><![CDATA[<h2 id="sum-of-subspaces">Sum of Subspaces</h2>
+
+<p>Video link: https://youtu.be/IG-aN3VHr1I?list=PLGAnmvB9m7zOBVCZBUUmSinFV0wEir2Vw</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Sum of Subspaces]]></summary></entry><entry><title type="html">Quantum Computation: Qbits</title><link href="http://localhost:4000/blog/2026-05-16-quantum-computation-qbits/" rel="alternate" type="text/html" title="Quantum Computation: Qbits" /><published>2026-05-16T09:00:00+01:00</published><updated>2026-05-16T09:00:00+01:00</updated><id>http://localhost:4000/blog/Quantum-Computation-Qbits</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-16-quantum-computation-qbits/"><![CDATA[<h2 id="quantum-computation-qbits">Quantum Computation: Qbits</h2>
+
+<p>A ‘bit’ is a fundamental concept in classical computing. The ‘quantum bit’ or qbit is it’s analog in quantum computation.</p>
+
+<p>It is treated like an abstract mathematical object, which can be realized by physical systems.
+By treating qbits as an abtract entity we are able to build a theory of quantum computation without relying on a specific system.</p>
+
+<h4 id="definition">Definition</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A qbit is a mathematical object which has a state that is a linear combination of</td>
+      <td>0&gt; and</td>
+      <td>1&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The state of a qbit can be represented as:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>psy</td>
+      <td>= \alpha</td>
+      <td>0&gt; + \beta</td>
+      <td>1&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where \alpha and \beta are complex numbers.</p>
+
+<p>A classical bit can be in either 0 or 1, a qbit, however, can exist in a superposition of the two. Although, when we observe it, we see either 0, or 1, with a certain probability.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Quantum Computation: Qbits]]></summary></entry><entry><title type="html">Subspaces</title><link href="http://localhost:4000/blog/2026-05-15-subspaces/" rel="alternate" type="text/html" title="Subspaces" /><published>2026-05-15T18:30:00+01:00</published><updated>2026-05-15T18:30:00+01:00</updated><id>http://localhost:4000/blog/Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-subspaces/"><![CDATA[<h2 id="subspaces-definition">Subspaces: Definition</h2>
 
 <p>A subset <span class="kdmath">$U$</span> of a vector space <span class="kdmath">$V$</span> is called a <strong>subspace</strong> of <span class="kdmath">$V$</span> if
 <span class="kdmath">$U$</span> is itself a vector space using the same addition and scalar multiplication
@@ -100,7 +136,13 @@ $$</div>
 
 <h3 id="6-subspaces-of-mathbbr3">6. Subspaces of <span class="kdmath">$\mathbb{R}^3$</span></h3>
 
-<p>The subspaces of <span class="kdmath">$\mathbb{R}^3$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^3,$</span> all lines in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin, and all planes in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Subspaces: Definition]]></summary></entry><entry><title type="html">Vector Spaces</title><link href="http://localhost:4000/blog/2026-05-15-vector-spaces/" rel="alternate" type="text/html" title="Vector Spaces" /><published>2026-05-15T18:00:00+01:00</published><updated>2026-05-15T18:00:00+01:00</updated><id>http://localhost:4000/blog/Vector-Spaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-vector-spaces/"><![CDATA[<h2 id="vector-spaces">Vector Spaces</h2>
+<p>The subspaces of <span class="kdmath">$\mathbb{R}^3$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^3,$</span> all lines in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin, and all planes in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin.</p>
+
+<h3 id="note">Note</h3>
+
+<p>From Axler:</p>
+
+<p>‘Notice that its quite natural to think about things being subspaces’</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Subspaces: Definition]]></summary></entry><entry><title type="html">Vector Spaces</title><link href="http://localhost:4000/blog/2026-05-15-vector-spaces/" rel="alternate" type="text/html" title="Vector Spaces" /><published>2026-05-15T18:00:00+01:00</published><updated>2026-05-15T18:00:00+01:00</updated><id>http://localhost:4000/blog/Vector-Spaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-vector-spaces/"><![CDATA[<h2 id="vector-spaces">Vector Spaces</h2>
 
 <p>A <strong>vector space</strong> over a field <span class="kdmath">$\mathbb{F}$</span> is a set <span class="kdmath">$V$</span> together with two operations:</p>
 

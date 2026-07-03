@@ -97,3 +97,14 @@ The subspaces of $$\mathbb{R}^2$$ are exactly $$ \{0\}, \quad \mathbb{R}^2, $$ a
 ### 6. Subspaces of $$\mathbb{R}^3$$
 
 The subspaces of $$\mathbb{R}^3$$ are exactly $$ \{0\}, \quad \mathbb{R}^3, $$ all lines in $$\mathbb{R}^3$$ passing through the origin, and all planes in $$\mathbb{R}^3$$ passing through the origin.
+
+
+
+### Note
+
+From Axler:
+
+'Notice that its quite natural to think about things being subspaces' 
+
+
+
