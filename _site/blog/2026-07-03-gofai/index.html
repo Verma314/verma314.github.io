@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Notes on GOFAI</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Notes on GOFAI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Lecture 1" />
+<meta property="og:description" content="Lecture 1" />
+<link rel="canonical" href="http://localhost:4000/blog/2026-07-03-gofai/" />
+<meta property="og:url" content="http://localhost:4000/blog/2026-07-03-gofai/" />
+<meta property="og:site_name" content="Aditya Verma" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-07-03T21:55:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Notes on GOFAI" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-07-03T21:55:00+01:00","datePublished":"2026-07-03T21:55:00+01:00","description":"Lecture 1","headline":"Notes on GOFAI","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026-07-03-gofai/"},"url":"http://localhost:4000/blog/2026-07-03-gofai/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aditya Verma" /><link rel="icon" href="/assets/favicon.svg" /><link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">home</a><article><p class="post-meta">
+    <time datetime="2026-07-03 21:55:00 +0100">Jul 03, 2026</time>
+  </p><h1>Notes on GOFAI</h1>
+
+  <p>Lecture 1</p>
+
+<p><em>Introduction</em></p>
+
+<ul>
+  <li>AI is the study of building models. Models targeted at ‘thinking’, and action and perception.</li>
+  <li>We focus on building the right ‘representations’ that support those above models. Having the right representations makes it easy to think about building models.</li>
+</ul>
+
+<hr />
+
+<h2 id="lecture-2-goal-trees-and-problem-solving">Lecture 2: Goal Trees and Problem Solving</h2>
+
+<p><em>Symbolic Integration Programs</em></p>
+
+<p>To solve problems we break the problem down into smaller chunks and solve them. [todo find the graph Prof drew]</p>
+
+<ul>
+  <li>it encodes a few ‘safe’ transforms. approx 12</li>
+  <li>it encodes a few heuristics.</li>
+  <li>then the program parses the problem, and applies the above rules on them.</li>
+  <li>It constructs a tree, breaking the problem down sub-problems – represented by using AND nodes.</li>
+  <li>Sometimes when multiple transforms can be applied, an OR node is used.</li>
+  <li>Some heuristics are encoded on problem section: ie on which OR node to choose. For example: choosing hte one with the least nested function composition.</li>
+  <li>All leaf nodes under an AND node have to be solved. Only one under an ‘OR’ node need to be solved.</li>
+</ul>
+
+<p><em>Generate and Test</em>
+Generate and Test is a fundamental and a strong + simple idea in AI.</p>
+
+<p><img src="/blog/image-3.png" alt="alt text" /></p>
+
+<p><img src="/blog/image-4.png" alt="alt text" /></p>
+
+<ul>
+  <li>Meta-knowledge (and I think by extension meta-knowledge are important tools).</li>
+  <li>“Knowledge about knowledge is where the power is.” For example in classic expert systems (such as SAINT) organizing the knowledge, seeing the patterns in what to encode, and how to encode/represent the problem made the program much more efficient.</li>
+</ul>
+
+<p><img src="/blog/image-5.png" alt="alt text" /></p>
+
+<ul>
+  <li>“I also expect that your feeling of intelligence of this program (Symbolic Integrator) is diminished.When we understand how something works, its intelligence seems to vanish”</li>
+</ul>
+
+<hr />
+
+<h2 id="lecture-3-reasoning-goal-trees-and-rule-based-expert-systems">Lecture 3 ‘Reasoning: Goal Trees and Rule-based expert systems’</h2>
+
+<p>A program can be implemented such that it implements a goal tree.</p>
+
+<p>It can answer ‘why did you do that’ questions based on what comes ‘above’ (parent node) in the goal tree, and it can answer ‘how’ questions by looking at what comes below (child nodes) in the goal tree.</p>
+
+
+</article>
+      </div>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });"></script>
+  </body>
+</html>

@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Notes on GOFAI"
+date:   2026-07-03 21:55:00 +0100
+categories: books
+---
+
 Lecture 1
 
 *Introduction*
@@ -24,15 +31,15 @@ To solve problems we break the problem down into smaller chunks and solve them. 
 *Generate and Test*
 Generate and Test is a fundamental and a strong + simple idea in AI.
 
-![alt text](image-3.png)
+![alt text](/blog/image-3.png)
 
-![alt text](image-4.png)
+![alt text](/blog/image-4.png)
 
 
 * Meta-knowledge (and I think by extension meta-knowledge are important tools). 
 * "Knowledge about knowledge is where the power is." For example in classic expert systems (such as SAINT) organizing the knowledge, seeing the patterns in what to encode, and how to encode/represent the problem made the program much more efficient.
 
-![alt text](image-5.png)
+![alt text](/blog/image-5.png)
 
 * "I also expect that your feeling of intelligence of this program (Symbolic Integrator) is diminished.When we understand how something works, its intelligence seems to vanish"
 
@@ -44,9 +51,7 @@ A program can be implemented such that it implements a goal tree.
 
 It can answer 'why did you do that' questions based on what comes 'above' (parent node) in the goal tree, and it can answer 'how' questions by looking at what comes below (child nodes) in the goal tree.
 
---------------------------
 
-## Lecture 4: Search
 
 
  

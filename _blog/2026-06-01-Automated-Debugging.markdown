@@ -1,8 +1,15 @@
+---
+layout: post
+title:  "Automated Debugging"
+date:   2026-06-01 19:59:00 +0100
+categories: books
+---
+
 ## Debugging loop:
 
 'generate' and test\
 
-![alt text](image-2.png)
+![alt text](/blog/image-2.png)
 Creation of the baseline reproduction scenario; and then iterative hypothesis and test.
 1. requires a fixed testable defect reproduction:
 Case A - ie a spec/description for the senario when done that causes the defect to show up.

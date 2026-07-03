@@ -1,4 +1,313 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-03T21:53:07+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">Sum of Subspaces</title><link href="http://localhost:4000/blog/2026-05-16-sum-of-subspaces/" rel="alternate" type="text/html" title="Sum of Subspaces" /><published>2026-05-16T09:00:00+01:00</published><updated>2026-05-16T09:00:00+01:00</updated><id>http://localhost:4000/blog/Sum-of-Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-16-sum-of-subspaces/"><![CDATA[<h2 id="sum-of-subspaces">Sum of Subspaces</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-03T21:59:34+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">Notes on GOFAI</title><link href="http://localhost:4000/blog/2026-07-03-gofai/" rel="alternate" type="text/html" title="Notes on GOFAI" /><published>2026-07-03T21:55:00+01:00</published><updated>2026-07-03T21:55:00+01:00</updated><id>http://localhost:4000/blog/GOFAI</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-03-gofai/"><![CDATA[<p>Lecture 1</p>
+
+<p><em>Introduction</em></p>
+
+<ul>
+  <li>AI is the study of building models. Models targeted at ‘thinking’, and action and perception.</li>
+  <li>We focus on building the right ‘representations’ that support those above models. Having the right representations makes it easy to think about building models.</li>
+</ul>
+
+<hr />
+
+<h2 id="lecture-2-goal-trees-and-problem-solving">Lecture 2: Goal Trees and Problem Solving</h2>
+
+<p><em>Symbolic Integration Programs</em></p>
+
+<p>To solve problems we break the problem down into smaller chunks and solve them. [todo find the graph Prof drew]</p>
+
+<ul>
+  <li>it encodes a few ‘safe’ transforms. approx 12</li>
+  <li>it encodes a few heuristics.</li>
+  <li>then the program parses the problem, and applies the above rules on them.</li>
+  <li>It constructs a tree, breaking the problem down sub-problems – represented by using AND nodes.</li>
+  <li>Sometimes when multiple transforms can be applied, an OR node is used.</li>
+  <li>Some heuristics are encoded on problem section: ie on which OR node to choose. For example: choosing hte one with the least nested function composition.</li>
+  <li>All leaf nodes under an AND node have to be solved. Only one under an ‘OR’ node need to be solved.</li>
+</ul>
+
+<p><em>Generate and Test</em>
+Generate and Test is a fundamental and a strong + simple idea in AI.</p>
+
+<p><img src="/blog/image-3.png" alt="alt text" /></p>
+
+<p><img src="/blog/image-4.png" alt="alt text" /></p>
+
+<ul>
+  <li>Meta-knowledge (and I think by extension meta-knowledge are important tools).</li>
+  <li>“Knowledge about knowledge is where the power is.” For example in classic expert systems (such as SAINT) organizing the knowledge, seeing the patterns in what to encode, and how to encode/represent the problem made the program much more efficient.</li>
+</ul>
+
+<p><img src="/blog/image-5.png" alt="alt text" /></p>
+
+<ul>
+  <li>“I also expect that your feeling of intelligence of this program (Symbolic Integrator) is diminished.When we understand how something works, its intelligence seems to vanish”</li>
+</ul>
+
+<hr />
+
+<h2 id="lecture-3-reasoning-goal-trees-and-rule-based-expert-systems">Lecture 3 ‘Reasoning: Goal Trees and Rule-based expert systems’</h2>
+
+<p>A program can be implemented such that it implements a goal tree.</p>
+
+<p>It can answer ‘why did you do that’ questions based on what comes ‘above’ (parent node) in the goal tree, and it can answer ‘how’ questions by looking at what comes below (child nodes) in the goal tree.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Lecture 1]]></summary></entry><entry><title type="html">Automated Debugging</title><link href="http://localhost:4000/blog/2026-06-01-automated-debugging/" rel="alternate" type="text/html" title="Automated Debugging" /><published>2026-06-01T19:59:00+01:00</published><updated>2026-06-01T19:59:00+01:00</updated><id>http://localhost:4000/blog/Automated-Debugging</id><content type="html" xml:base="http://localhost:4000/blog/2026-06-01-automated-debugging/"><![CDATA[<h2 id="debugging-loop">Debugging loop:</h2>
+
+<p>‘generate’ and test\</p>
+
+<p><img src="/blog/image-2.png" alt="alt text" />
+Creation of the baseline reproduction scenario; and then iterative hypothesis and test.</p>
+<ol>
+  <li>
+    <p>requires a fixed testable defect reproduction:
+Case A - ie a spec/description for the senario when done that causes the defect to show up.
+Case B - a spec/description for the scenario where the defect does not show up.</p>
+  </li>
+  <li>
+    <p>The LLM by default shoul be able to keep repeating and experimenting on Case A;  ‘B’ becomes the case.</p>
+  </li>
+</ol>
+
+<p>This is quite similar to how humans debug: they reproduce the erroneous scenario (Case A). Figure out what the correct scenario would look like. And then come up with reasons on why Case A might be happenin and how to resolve it to Case B, and then try various hypothesis/ideas until B becomes the C.</p>
+
+<h2 id="reasoninggrounding">Reasoning/Grounding</h2>
+
+<p>For the LLM to become aware of the architecte, several approaches can be used:</p>
+<ol>
+  <li>Specific skill files which ‘teach’ the LLM about the connector.</li>
+  <li>A pre-computed typed knowledge graph of the architecture of the plugin, stored in the DB or a relational format.</li>
+  <li>Other structured knowledge such as DB tables with useful information.</li>
+  <li>Others … ?</li>
+</ol>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Debugging loop:]]></summary></entry><entry><title type="html">Basis, Dimensions</title><link href="http://localhost:4000/blog/2026-05-25-basis-dimensions/" rel="alternate" type="text/html" title="Basis, Dimensions" /><published>2026-05-25T21:00:00+01:00</published><updated>2026-05-25T21:00:00+01:00</updated><id>http://localhost:4000/blog/Basis-Dimensions</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-25-basis-dimensions/"><![CDATA[<h2 id="basis">Basis</h2>
+
+<p>A basis is a list of vectors in vector space V, that is linearly independent and spans V.</p>
+
+<h2 id="julia-program">Julia Program</h2>
+
+<p>To test manually whether a list is a basis of R^n we need to do two tests:</p>
+<ol>
+  <li>Check whether they are linearly independent.</li>
+  <li>Check their dimension.</li>
+</ol>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Basis]]></summary></entry><entry><title type="html">Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space</title><link href="http://localhost:4000/blog/2026-05-22-linear-transforms/" rel="alternate" type="text/html" title="Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space" /><published>2026-05-22T13:00:00+01:00</published><updated>2026-05-22T13:00:00+01:00</updated><id>http://localhost:4000/blog/Linear-Transforms</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-22-linear-transforms/"><![CDATA[<h2 id="linear-transforms">Linear Transforms</h2>
+
+<p>A linear transform (or linear map) from V to W is a function T : V -&gt; W satisfying two properties:</p>
+<ol>
+  <li><strong>Additivity</strong>: T(u + v) = T(u) + T(v)</li>
+  <li><strong>Homogeneity</strong>: T(cv) = cT(v), for all c in field F</li>
+</ol>
+
+<p>Intuition: any function between two vector spaces that preserves addition and scalar multiplication.</p>
+
+<h2 id="linear-transforms-and-matrices">Linear Transforms and Matrices</h2>
+
+<p>A matrix can be interpreted as a linear transform.</p>
+
+<p>A 2x2 matrix represents where the basis vectors from vector space A would land in vector space B. If in A we have an element x represented as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = a1 * [basis_vector_1] + a2 * [basis_vector_2]
+</code></pre></div></div>
+
+<p>then applying the transformation T gives us:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T(x) = a1 * [column 1 of the matrix] + a2 * [column 2 of the matrix]
+</code></pre></div></div>
+
+<p><em>Example</em></p>
+
+<p>Consider a linear map $T : \mathbb{R}^2 \to \mathbb{R}^2$ represented by the matrix:</p>
+
+<div class="kdmath">$$
+M = \begin{pmatrix} 2 & 1 \\ 0 & 3 \end{pmatrix}
+$$</div>
+
+<p>The columns tell us where the standard basis vectors (1 0) and (0 1) land:</p>
+
+<div class="kdmath">$$
+T(e_1) = \begin{pmatrix} 2 \\ 0 \end{pmatrix}, \quad T(e_2) = \begin{pmatrix} 1 \\ 3 \end{pmatrix}
+$$</div>
+
+<p>Now take a vector $x = 3e_1 + 2e_2 = \begin{pmatrix} 3 \ 2 \end{pmatrix}$. Applying T:</p>
+
+<div class="kdmath">$$
+T(x) = 3 \cdot \begin{pmatrix} 2 \\ 0 \end{pmatrix} + 2 \cdot \begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 6 \\ 0 \end{pmatrix} + \begin{pmatrix} 2 \\ 6 \end{pmatrix} = \begin{pmatrix} 8 \\ 6 \end{pmatrix}
+$$</div>
+
+<p>The coefficients (3 and 2) stayed the same in the transform. The matrix tells new destinations for each basis vector from the orignal list.</p>
+
+<p>Again, each column of the matrix is where one basis vector lands after the transformation. The matrix just tells us the new destinations.</p>
+
+<p>An m x n matrix represents a linear map from an n-dimensional space to an m-dimensional space. Column j is where the j-th basis vector gets sent.</p>
+
+<p><em>A direct example from Axler</em></p>
+
+<p>linear maps from $\mathbf{F}^n$ to $\mathbf{F}^m$</p>
+
+<p>To generalize, let $m$ and $n$ be positive integers, let $A_{j,k} \in \mathbf{F}$ for each $j = 1, \ldots, m$ and each $k = 1, \ldots, n$, and define a linear map $T \in \mathcal{L}(\mathbf{F}^n, \mathbf{F}^m)$ by:</p>
+
+<div class="kdmath">$$
+T(x_1, \ldots, x_n) = (A_{1,1}x_1 + \cdots + A_{1,n}x_n, \;\ldots\;, A_{m,1}x_1 + \cdots + A_{m,n}x_n)
+$$</div>
+
+<p>In fact, every linear map from $\mathbf{F}^n$ to $\mathbf{F}^m$ is of this form.</p>
+
+<p><em>Another practical example: Neural Nets</em></p>
+
+<p>In neural networks, a layer computes something like $y = \sigma(Wx + b)$, where $W$ is a weight matrix, $b$ is a bias, and $\sigma$ is an activation function (like ReLU). The $Wx$ part is a linear transform, the weight matrix $W$ (the transform) maps the input (vectors from space n) from one space to another, exactly as above. The bias and activation function break linearity (otherwise stacking layers would collapse into a single linear map, and the network couldn’t learn anything interesting).</p>
+
+<h2 id="null-space-and-linear-independence">Null Space and Linear Independence</h2>
+
+<p>Say we want to figure out whether a list of vectors w1, w2, w3 is linearly independent.</p>
+
+<p>By definition, the vectors are linearly independent if the only solution to:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a1*w1 + a2*w2 + a3*w3 = 0
+</code></pre></div></div>
+
+<p>is a1 = a2 = a3 = 0.</p>
+
+<p>Now here is the trick: we can represent this set of vectors as a ‘linear transform’, and hence as a matrix. We <em>construct</em> a linear map T by placing w1, w2, w3 as the columns of a matrix. From what we know about matrices, this means:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T([a1, a2, a3]) = a1*w1 + a2*w2 + a3*w3
+</code></pre></div></div>
+
+<p>Looking at the right-hand side: that is exactly the linear combination from the independence definition!</p>
+
+<p>So the question “are these vectors linearly independent?” becomes: **which inputs from the initial vector space does T send to the zero vector?
+Is it only the zero vector itself?</p>
+
+<p>A linear map moves vectors from one space to another. The <strong>null space</strong> of T is the set of all inputs that get sent to zero:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>null(T) = { v in V : T(v) = 0 }
+</code></pre></div></div>
+
+<p>If the null space is just {0} i.e.,   only the zero vector gets mapped to zero, then the only solution to our linear combination equation is the trivial one, and the vectors are linearly independent.</p>
+
+<p>If the null space contains anything else (for example: some nonzero [a1, a2, a3] that T maps to zero) then we have found a nontrivial linear combination that equals zero, and the vectors are linearly dependent.</p>
+
+<p>The list of vectors is not inherently a transform. We <em>chose</em> to build a transform from them because it reframes the independence question into a null space question, which is a standard  technique.</p>
+
+<h2 id="julia-program-to-test-linear-independence-of-any-list-of-vectors">Julia program to test linear independence of any list of vectors</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using LinearAlgebra
+
+# Linear Independence
+# A list of vectors v1, v2, ..., vn is linearly independent if the only
+# solution to a1*v1 + a2*v2 + ... + an*vn = 0 is a1 = a2 = ... = an = 0.
+
+# --- Test vectors in R^3 ---
+# These should be linearly independent
+v1 = [1, 0, 0]
+v2 = [0, 1, 0]
+v3 = [0, 0, 1]
+
+# These should be linearly dependent (v3 = v1 + v2)
+w1 = [1, 2, 3]
+w2 = [4, 5, 6]
+w3 = [5, 7, 9]
+
+function is_linear_independent( vectors... )
+    # build a linear transform
+    T = hcat(vectors...)
+    nullSpace = nullspace(T)
+    if ( iszero(nullSpace) )
+        return true
+    else
+        return false
+    end
+end
+
+println(is_linear_independent(v1, v2, v3))
+println(is_linear_independent(w1, w2, w3))
+
+</code></pre></div></div>
+
+<h2 id="a-simple-julia-program-to-test-if-a-map-between-two-vector-spaces-is-linear-using-numerial-and-symbolic-computation">A simple julia program to test if a map between two vector spaces is linear (using numerial and symbolic computation)</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using LinearAlgebra
+using Random
+using Symbolics
+
+# --- Define your maps here ---
+
+# T should take a vector and return a vector
+function T(v; b=0, c=0)
+    # TODO: implement the map T(x,y,z) = (2x - 4y + 3z + b, 6x + cxyz)
+    x = v[1]
+    y = v[2]
+    z = v[3]
+    return [2*x - 4*y + 3*z + b, 6*x + (c * x * y * z)] 
+end
+
+# --- Numerical check (random vectors) ---
+# Check if a map is linear by testing additivity and homogeneity
+function is_linear_numerical(map; num_tests=100, tol=1e-10)
+    #  generate random vectors and scalars
+    #  test additivity:   map(v1 + v2) ≈ map(v1) + map(v2)
+    #  test homogeneity:  map(λ * v) ≈ λ * map(v)    
+    for i = 1:num_tests
+        randomV1 = [rand(-1000:1000), rand(-1000:1000), rand(-1000:1000)]
+        randomV2 = [rand(-1000:1000), rand(-1000:1000), rand(-1000:1000)]
+    
+        leftCommute = map(randomV1 + randomV2)
+        rightCommute = map(randomV1) + map(randomV2)
+
+        #homegeneity:
+        lam = rand(-1000:1000)
+        leftHomogen = map( lam * randomV1)
+        rightHomogen = lam * map(randomV1)
+
+        if ((leftCommute != rightCommute) || (leftHomogen !=rightHomogen))
+            return false
+        end
+    end
+
+    return true
+end
+
+
+map1 =  v -&gt; T(v; b=10, c=10) #should be non-linear
+map2 = v -&gt; T(v; b=0, c = 0) # should be linear
+
+#println( is_linear_numerical(map1))
+#println( is_linear_numerical(map2))
+
+
+# --- Symbolic check (proof) ---
+
+# Check if a map is linear by testing additivity and homogeneity
+# symbolically. Returns the simplified residuals so you can see
+# exactly what breaks linearity.
+function is_linear_symbolic(map, n_in)
+    #  create symbolic variables for v1, v2, and λ
+    #   use @variables x1, x2, ...  or use Symbolics.variable(:x, i)
+    #  compute additivity residual:   simplify.(map(v1 + v2) - (map(v1) + map(v2)))
+    # compute homogeneity residual:  simplify.(map(λ * v) - λ * map(v))
+    #  return whether both residuals are zero, and the residuals themselvesi
+    
+    @variables x1 x2 x3 y1 y2 y3 lam
+    leftCommute  = map( [x1, x2, x3] + [y1, y2,y3])
+    rightCommute = map([x1, x2, x3]) + map([y1, y2, y3])
+    
+    vector1 = [x1, x2, x3]
+    homogeneityTest = simplify.(expand.(map(lam * vector1) - (lam* map(vector1))))
+    additivityTest = simplify.(leftCommute - rightCommute)
+    if (iszero(additivityTest) &amp;&amp; iszero(homogeneityTest)) 
+        return true
+    end    
+    return false
+end
+
+map3 =  v -&gt; T(v; b=10, c=10) #should be non-linear
+map4 = v -&gt; T(v; b=0, c = 0) # should be linear
+println( is_linear_symbolic(map3, 0))
+println( is_linear_symbolic(map4, 0 ))
+
+# --- Matrix extraction ---
+
+# Extract the matrix representation of a linear map
+# by applying it to standard basis vectors
+function extract_matrix(map, n_in, n_out)
+    # TODO: build the matrix column by column using basis vectors e1, e2, ...
+end
+</code></pre></div></div>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Linear Transforms]]></summary></entry><entry><title type="html">Sum of Subspaces</title><link href="http://localhost:4000/blog/2026-05-16-sum-of-subspaces/" rel="alternate" type="text/html" title="Sum of Subspaces" /><published>2026-05-16T09:00:00+01:00</published><updated>2026-05-16T09:00:00+01:00</updated><id>http://localhost:4000/blog/Sum-of-Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-16-sum-of-subspaces/"><![CDATA[<h2 id="sum-of-subspaces">Sum of Subspaces</h2>
 
 <p>Video link: https://youtu.be/IG-aN3VHr1I?list=PLGAnmvB9m7zOBVCZBUUmSinFV0wEir2Vw</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Sum of Subspaces]]></summary></entry><entry><title type="html">Quantum Computation: Qbits</title><link href="http://localhost:4000/blog/2026-05-16-quantum-computation-qbits/" rel="alternate" type="text/html" title="Quantum Computation: Qbits" /><published>2026-05-16T09:00:00+01:00</published><updated>2026-05-16T09:00:00+01:00</updated><id>http://localhost:4000/blog/Quantum-Computation-Qbits</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-16-quantum-computation-qbits/"><![CDATA[<h2 id="quantum-computation-qbits">Quantum Computation: Qbits</h2>
 
@@ -560,111 +869,4 @@ Charles Sanders Pierce</p>
   <li>
     <p>Bullish and bearish are used by people who do not <em>engage</em> in practicing uncertainity. (Because these terms do not quantify the magnitude of the rise or fall).</p>
   </li>
-</ul>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[The premise]]></summary></entry><entry><title type="html">Links</title><link href="http://localhost:4000/blog/2024-04-18-links/" rel="alternate" type="text/html" title="Links" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/blog/Links</id><content type="html" xml:base="http://localhost:4000/blog/2024-04-18-links/"><![CDATA[<ul>
-  <li>
-    <p><a href="https://karpathy.github.io/">Andrej Karpathy</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/">We don’t know how to compute - lecture by Gerald Sussman</a></p>
-  </li>
-  <li>
-    <p><a href="https://acko.net/">Steven Wittens Tools for Thought</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.geogebra.org/m/gzfn4pe3#material/xsnx8cdb">Euclid The Game</a>
-<a href="https://www.geogebra.org/m/gzfn4pe3#material/nafsdznh">My Current Level</a></p>
-  </li>
-  <li>
-    <p><a href="https://news.ycombinator.com/item?id=7920442">Discussion on Euclid The Game</a></p>
-  </li>
-  <li>
-    <p><a href="https://math.stackexchange.com/questions/373672/about-euclids-elements-and-modern-video-games">Origin of Euclid The Game</a></p>
-  </li>
-  <li>
-    <p><a href="https://cognitivemedium.com/tat/index.html">Thoughts as technology</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.lesswrong.com/posts/kpmaEevZ2KehZo2tp/some-advice-on-independent-research">How to do independant research</a></p>
-  </li>
-  <li>
-    <p><a href="https://news.ycombinator.com/item?id=25341601">How to think about co-relation</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.linkedin.com/posts/alexandre-zajac_softwareengineering-systemdesign-programming-activity-7191685360572084224-y_EP?utm_source=share&amp;utm_medium=member_desktop">System Design</a></p>
-  </li>
-  <li>
-    <p>Research Paper on polyhedral compilation <a href="https://link.springer.com/article/10.1007/BF01407931">Dataflow analysis of array and scalar references</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.reddit.com/r/AskHistorians/wiki/historians_views/#wiki_historians.27_views_of_jared_diamond.27s_.22guns.2C_germs.2C_and_steel.22">AskHistorian’s views on various books</a></p>
-  </li>
-  <li>
-    <p><a href="https://newsletter.systemdesign.one/">System Design Newsletter</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.linkedin.com/posts/nk-systemdesign-one_programming-coding-systemdesign-activity-7189602878272020480-20tF/?utm_source=share&amp;utm_medium=member_desktop">System Design</a></p>
-  </li>
-  <li>
-    <p><a href="https://mmhaskell.com/haskell-brain">The Haskell Brain</a></p>
-  </li>
-  <li>
-    <p><a href="https://mmhaskell.com/monads/functors">Functors in Haskell</a></p>
-  </li>
-  <li>
-    <p>How web servers work. Resources include: https://ruslanspivak.com/lsbaws-part1/</p>
-  </li>
-  <li>
-    <p><a href="https://learning.oreilly.com/library/view/game-engine-architecture/">Game Engine Architecture</a></p>
-  </li>
-  <li>
-    <p><a href="http://gameprogrammingpatterns.com/introduction.html">Game Design Patterns</a></p>
-  </li>
-  <li>
-    <p><a href="https://learning.oreilly.com/library/view/restful-java-with/">RESTful Java with JAX-RS</a></p>
-  </li>
-  <li>
-    <p><a href="https://books.google.co.in/books/about/Engineering_a_Compiler.html?id=_tgh4bgQ6PAC&amp;source=kp_book_description&amp;redir_esc=y">Engineering a Compiler</a></p>
-  </li>
-  <li>
-    <p><a href="https://fooledbyrandomness.com/">Taleb’s Homepage</a></p>
-  </li>
-  <li>
-    <p><a href="https://en.wikipedia.org/wiki/Karl_Popper">Karl Popper Wiki</a></p>
-  </li>
-  <li>
-    <p><a href="https://en.wikipedia.org/wiki/Falsifiability">Falsifiability</a></p>
-  </li>
-  <li>
-    <p><a href="https://unearnedwisdom.com/how-to-read-nassim-taleb/#Understanding_Taleb">How to read Taleb</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.scottaaronson.com/democritus/lec9.html">PHYS771 Quantum Computing Since Democritus</a></p>
-  </li>
-  <li>
-    <p><a href="https://jekyllrb.com/docs/home">Jekyll Docs</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.wolfram.com/engine/">Wolfram Engine</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/WolframResearch/WolframLanguageForJupyter">Wolfram LanguageFor Jupyter</a></p>
-  </li>
-  <li>
-    <p>Machine learning and symbolic AI for mathematics Jeremy Avigad</p>
-  </li>
-  <li>
-    <p><a href="https://docs.jupyter.org/en/latest/running.html#running">Jupyter Notebook</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/jobindjohn/obsidian-publish-mkdocs">obsidian</a></p>
-  </li>
-  <li>
-    <p><a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io?tab=readme-ov-file">Jekyll garden</a></p>
-  </li>
-  <li>
-    <p><a href="https://hiran.in/antilibrary">Hiran anti-library</a></p>
-  </li>
-  <li>
-    <p><a href="https://www.preetamnath.com/blog/shopify-micro-saas#Shopify%20app%20ideas:%C2%A0How%20to%20discover%20problems%20&amp;%20niches">Build a shopify app</a></p>
-  </li>
-</ul>]]></content><author><name></name></author><category term="links" /><summary type="html"><![CDATA[Andrej Karpathy]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[The premise]]></summary></entry></feed>

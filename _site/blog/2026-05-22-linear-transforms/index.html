@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Linear Transforms" />
+<meta property="og:description" content="Linear Transforms" />
+<link rel="canonical" href="http://localhost:4000/blog/2026-05-22-linear-transforms/" />
+<meta property="og:url" content="http://localhost:4000/blog/2026-05-22-linear-transforms/" />
+<meta property="og:site_name" content="Aditya Verma" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-22T13:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-22T13:00:00+01:00","datePublished":"2026-05-22T13:00:00+01:00","description":"Linear Transforms","headline":"Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026-05-22-linear-transforms/"},"url":"http://localhost:4000/blog/2026-05-22-linear-transforms/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aditya Verma" /><link rel="icon" href="/assets/favicon.svg" /><link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">home</a><article><p class="post-meta">
+    <time datetime="2026-05-22 13:00:00 +0100">May 22, 2026</time>
+  </p><h1>Intuition on Linear Transforms, Linear Independence, Matrices, and Null Space</h1>
+
+  <h2 id="linear-transforms">Linear Transforms</h2>
+
+<p>A linear transform (or linear map) from V to W is a function T : V -&gt; W satisfying two properties:</p>
+<ol>
+  <li><strong>Additivity</strong>: T(u + v) = T(u) + T(v)</li>
+  <li><strong>Homogeneity</strong>: T(cv) = cT(v), for all c in field F</li>
+</ol>
+
+<p>Intuition: any function between two vector spaces that preserves addition and scalar multiplication.</p>
+
+<h2 id="linear-transforms-and-matrices">Linear Transforms and Matrices</h2>
+
+<p>A matrix can be interpreted as a linear transform.</p>
+
+<p>A 2x2 matrix represents where the basis vectors from vector space A would land in vector space B. If in A we have an element x represented as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = a1 * [basis_vector_1] + a2 * [basis_vector_2]
+</code></pre></div></div>
+
+<p>then applying the transformation T gives us:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T(x) = a1 * [column 1 of the matrix] + a2 * [column 2 of the matrix]
+</code></pre></div></div>
+
+<p><em>Example</em></p>
+
+<p>Consider a linear map $T : \mathbb{R}^2 \to \mathbb{R}^2$ represented by the matrix:</p>
+
+<div class="kdmath">$$
+M = \begin{pmatrix} 2 & 1 \\ 0 & 3 \end{pmatrix}
+$$</div>
+
+<p>The columns tell us where the standard basis vectors (1 0) and (0 1) land:</p>
+
+<div class="kdmath">$$
+T(e_1) = \begin{pmatrix} 2 \\ 0 \end{pmatrix}, \quad T(e_2) = \begin{pmatrix} 1 \\ 3 \end{pmatrix}
+$$</div>
+
+<p>Now take a vector $x = 3e_1 + 2e_2 = \begin{pmatrix} 3 \ 2 \end{pmatrix}$. Applying T:</p>
+
+<div class="kdmath">$$
+T(x) = 3 \cdot \begin{pmatrix} 2 \\ 0 \end{pmatrix} + 2 \cdot \begin{pmatrix} 1 \\ 3 \end{pmatrix} = \begin{pmatrix} 6 \\ 0 \end{pmatrix} + \begin{pmatrix} 2 \\ 6 \end{pmatrix} = \begin{pmatrix} 8 \\ 6 \end{pmatrix}
+$$</div>
+
+<p>The coefficients (3 and 2) stayed the same in the transform. The matrix tells new destinations for each basis vector from the orignal list.</p>
+
+<p>Again, each column of the matrix is where one basis vector lands after the transformation. The matrix just tells us the new destinations.</p>
+
+<p>An m x n matrix represents a linear map from an n-dimensional space to an m-dimensional space. Column j is where the j-th basis vector gets sent.</p>
+
+<p><em>A direct example from Axler</em></p>
+
+<p>linear maps from $\mathbf{F}^n$ to $\mathbf{F}^m$</p>
+
+<p>To generalize, let $m$ and $n$ be positive integers, let $A_{j,k} \in \mathbf{F}$ for each $j = 1, \ldots, m$ and each $k = 1, \ldots, n$, and define a linear map $T \in \mathcal{L}(\mathbf{F}^n, \mathbf{F}^m)$ by:</p>
+
+<div class="kdmath">$$
+T(x_1, \ldots, x_n) = (A_{1,1}x_1 + \cdots + A_{1,n}x_n, \;\ldots\;, A_{m,1}x_1 + \cdots + A_{m,n}x_n)
+$$</div>
+
+<p>In fact, every linear map from $\mathbf{F}^n$ to $\mathbf{F}^m$ is of this form.</p>
+
+<p><em>Another practical example: Neural Nets</em></p>
+
+<p>In neural networks, a layer computes something like $y = \sigma(Wx + b)$, where $W$ is a weight matrix, $b$ is a bias, and $\sigma$ is an activation function (like ReLU). The $Wx$ part is a linear transform, the weight matrix $W$ (the transform) maps the input (vectors from space n) from one space to another, exactly as above. The bias and activation function break linearity (otherwise stacking layers would collapse into a single linear map, and the network couldn’t learn anything interesting).</p>
+
+<h2 id="null-space-and-linear-independence">Null Space and Linear Independence</h2>
+
+<p>Say we want to figure out whether a list of vectors w1, w2, w3 is linearly independent.</p>
+
+<p>By definition, the vectors are linearly independent if the only solution to:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a1*w1 + a2*w2 + a3*w3 = 0
+</code></pre></div></div>
+
+<p>is a1 = a2 = a3 = 0.</p>
+
+<p>Now here is the trick: we can represent this set of vectors as a ‘linear transform’, and hence as a matrix. We <em>construct</em> a linear map T by placing w1, w2, w3 as the columns of a matrix. From what we know about matrices, this means:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T([a1, a2, a3]) = a1*w1 + a2*w2 + a3*w3
+</code></pre></div></div>
+
+<p>Looking at the right-hand side: that is exactly the linear combination from the independence definition!</p>
+
+<p>So the question “are these vectors linearly independent?” becomes: **which inputs from the initial vector space does T send to the zero vector?
+Is it only the zero vector itself?</p>
+
+<p>A linear map moves vectors from one space to another. The <strong>null space</strong> of T is the set of all inputs that get sent to zero:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>null(T) = { v in V : T(v) = 0 }
+</code></pre></div></div>
+
+<p>If the null space is just {0} i.e.,   only the zero vector gets mapped to zero, then the only solution to our linear combination equation is the trivial one, and the vectors are linearly independent.</p>
+
+<p>If the null space contains anything else (for example: some nonzero [a1, a2, a3] that T maps to zero) then we have found a nontrivial linear combination that equals zero, and the vectors are linearly dependent.</p>
+
+<p>The list of vectors is not inherently a transform. We <em>chose</em> to build a transform from them because it reframes the independence question into a null space question, which is a standard  technique.</p>
+
+<h2 id="julia-program-to-test-linear-independence-of-any-list-of-vectors">Julia program to test linear independence of any list of vectors</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using LinearAlgebra
+
+# Linear Independence
+# A list of vectors v1, v2, ..., vn is linearly independent if the only
+# solution to a1*v1 + a2*v2 + ... + an*vn = 0 is a1 = a2 = ... = an = 0.
+
+# --- Test vectors in R^3 ---
+# These should be linearly independent
+v1 = [1, 0, 0]
+v2 = [0, 1, 0]
+v3 = [0, 0, 1]
+
+# These should be linearly dependent (v3 = v1 + v2)
+w1 = [1, 2, 3]
+w2 = [4, 5, 6]
+w3 = [5, 7, 9]
+
+function is_linear_independent( vectors... )
+    # build a linear transform
+    T = hcat(vectors...)
+    nullSpace = nullspace(T)
+    if ( iszero(nullSpace) )
+        return true
+    else
+        return false
+    end
+end
+
+println(is_linear_independent(v1, v2, v3))
+println(is_linear_independent(w1, w2, w3))
+
+</code></pre></div></div>
+
+<h2 id="a-simple-julia-program-to-test-if-a-map-between-two-vector-spaces-is-linear-using-numerial-and-symbolic-computation">A simple julia program to test if a map between two vector spaces is linear (using numerial and symbolic computation)</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using LinearAlgebra
+using Random
+using Symbolics
+
+# --- Define your maps here ---
+
+# T should take a vector and return a vector
+function T(v; b=0, c=0)
+    # TODO: implement the map T(x,y,z) = (2x - 4y + 3z + b, 6x + cxyz)
+    x = v[1]
+    y = v[2]
+    z = v[3]
+    return [2*x - 4*y + 3*z + b, 6*x + (c * x * y * z)] 
+end
+
+# --- Numerical check (random vectors) ---
+# Check if a map is linear by testing additivity and homogeneity
+function is_linear_numerical(map; num_tests=100, tol=1e-10)
+    #  generate random vectors and scalars
+    #  test additivity:   map(v1 + v2) ≈ map(v1) + map(v2)
+    #  test homogeneity:  map(λ * v) ≈ λ * map(v)    
+    for i = 1:num_tests
+        randomV1 = [rand(-1000:1000), rand(-1000:1000), rand(-1000:1000)]
+        randomV2 = [rand(-1000:1000), rand(-1000:1000), rand(-1000:1000)]
+    
+        leftCommute = map(randomV1 + randomV2)
+        rightCommute = map(randomV1) + map(randomV2)
+
+        #homegeneity:
+        lam = rand(-1000:1000)
+        leftHomogen = map( lam * randomV1)
+        rightHomogen = lam * map(randomV1)
+
+        if ((leftCommute != rightCommute) || (leftHomogen !=rightHomogen))
+            return false
+        end
+    end
+
+    return true
+end
+
+
+map1 =  v -&gt; T(v; b=10, c=10) #should be non-linear
+map2 = v -&gt; T(v; b=0, c = 0) # should be linear
+
+#println( is_linear_numerical(map1))
+#println( is_linear_numerical(map2))
+
+
+# --- Symbolic check (proof) ---
+
+# Check if a map is linear by testing additivity and homogeneity
+# symbolically. Returns the simplified residuals so you can see
+# exactly what breaks linearity.
+function is_linear_symbolic(map, n_in)
+    #  create symbolic variables for v1, v2, and λ
+    #   use @variables x1, x2, ...  or use Symbolics.variable(:x, i)
+    #  compute additivity residual:   simplify.(map(v1 + v2) - (map(v1) + map(v2)))
+    # compute homogeneity residual:  simplify.(map(λ * v) - λ * map(v))
+    #  return whether both residuals are zero, and the residuals themselvesi
+    
+    @variables x1 x2 x3 y1 y2 y3 lam
+    leftCommute  = map( [x1, x2, x3] + [y1, y2,y3])
+    rightCommute = map([x1, x2, x3]) + map([y1, y2, y3])
+    
+    vector1 = [x1, x2, x3]
+    homogeneityTest = simplify.(expand.(map(lam * vector1) - (lam* map(vector1))))
+    additivityTest = simplify.(leftCommute - rightCommute)
+    if (iszero(additivityTest) &amp;&amp; iszero(homogeneityTest)) 
+        return true
+    end    
+    return false
+end
+
+map3 =  v -&gt; T(v; b=10, c=10) #should be non-linear
+map4 = v -&gt; T(v; b=0, c = 0) # should be linear
+println( is_linear_symbolic(map3, 0))
+println( is_linear_symbolic(map4, 0 ))
+
+# --- Matrix extraction ---
+
+# Extract the matrix representation of a linear map
+# by applying it to standard basis vectors
+function extract_matrix(map, n_in, n_out)
+    # TODO: build the matrix column by column using basis vectors e1, e2, ...
+end
+</code></pre></div></div>
+
+
+</article>
+      </div>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });"></script>
+  </body>
+</html>

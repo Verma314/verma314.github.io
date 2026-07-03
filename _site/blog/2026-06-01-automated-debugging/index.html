@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Automated Debugging</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Automated Debugging" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Debugging loop:" />
+<meta property="og:description" content="Debugging loop:" />
+<link rel="canonical" href="http://localhost:4000/blog/2026-06-01-automated-debugging/" />
+<meta property="og:url" content="http://localhost:4000/blog/2026-06-01-automated-debugging/" />
+<meta property="og:site_name" content="Aditya Verma" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-06-01T19:59:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Automated Debugging" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-06-01T19:59:00+01:00","datePublished":"2026-06-01T19:59:00+01:00","description":"Debugging loop:","headline":"Automated Debugging","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026-06-01-automated-debugging/"},"url":"http://localhost:4000/blog/2026-06-01-automated-debugging/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aditya Verma" /><link rel="icon" href="/assets/favicon.svg" /><link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">home</a><article><p class="post-meta">
+    <time datetime="2026-06-01 19:59:00 +0100">Jun 01, 2026</time>
+  </p><h1>Automated Debugging</h1>
+
+  <h2 id="debugging-loop">Debugging loop:</h2>
+
+<p>‘generate’ and test\</p>
+
+<p><img src="/blog/image-2.png" alt="alt text" />
+Creation of the baseline reproduction scenario; and then iterative hypothesis and test.</p>
+<ol>
+  <li>
+    <p>requires a fixed testable defect reproduction:
+Case A - ie a spec/description for the senario when done that causes the defect to show up.
+Case B - a spec/description for the scenario where the defect does not show up.</p>
+  </li>
+  <li>
+    <p>The LLM by default shoul be able to keep repeating and experimenting on Case A;  ‘B’ becomes the case.</p>
+  </li>
+</ol>
+
+<p>This is quite similar to how humans debug: they reproduce the erroneous scenario (Case A). Figure out what the correct scenario would look like. And then come up with reasons on why Case A might be happenin and how to resolve it to Case B, and then try various hypothesis/ideas until B becomes the C.</p>
+
+<h2 id="reasoninggrounding">Reasoning/Grounding</h2>
+
+<p>For the LLM to become aware of the architecte, several approaches can be used:</p>
+<ol>
+  <li>Specific skill files which ‘teach’ the LLM about the connector.</li>
+  <li>A pre-computed typed knowledge graph of the architecture of the plugin, stored in the DB or a relational format.</li>
+  <li>Other structured knowledge such as DB tables with useful information.</li>
+  <li>Others … ?</li>
+</ol>
+
+
+</article>
+      </div>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });"></script>
+  </body>
+</html>
