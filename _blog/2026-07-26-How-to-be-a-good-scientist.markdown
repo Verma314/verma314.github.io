@@ -16,11 +16,5 @@ How to get better at mathematical and scientific research?
 6. Spaced Repetition and Recall: for new topics, learning syntax, for math areas you're not working on currently spaced repetition tools like Anki might help.
 7. A small problem every day: Of course, you must have some big problem statements always in your mind; but on a day-to-day basis solve the smaller problems, and as you solve them, you prepare yourself for the bigger ones. These can be any problems from you textbooks, programming problems, puzzles, etc.  Read one problem, and take it with you before you're about to sleep and mull over it. This helps build thinking and problem solving skills.
 
-----
-2014-18 : 4 years B.E, foundation, exploration, 
-2018-2026: 8 years professional SDE, exploring my interests, travelling, earning money, playing sports, self-development, searching for interests.
-2026-2028: M.S in CS, done after the advent of AI
-2028-2032:  PhD in CS. (at age 36. This isn't too late to get a PhD).
-
 
 
