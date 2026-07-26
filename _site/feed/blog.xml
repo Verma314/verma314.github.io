@@ -1,4 +1,222 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-03T21:59:34+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">Notes on GOFAI</title><link href="http://localhost:4000/blog/2026-07-03-gofai/" rel="alternate" type="text/html" title="Notes on GOFAI" /><published>2026-07-03T21:55:00+01:00</published><updated>2026-07-03T21:55:00+01:00</updated><id>http://localhost:4000/blog/GOFAI</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-03-gofai/"><![CDATA[<p>Lecture 1</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed/blog.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-27T00:14:04+01:00</updated><id>http://localhost:4000/feed/blog.xml</id><title type="html">Aditya Verma | Blog</title><subtitle>Chronicling</subtitle><entry><title type="html">How to be a good scientist</title><link href="http://localhost:4000/blog/2026-07-26-how-to-be-a-good-scientist/" rel="alternate" type="text/html" title="How to be a good scientist" /><published>2026-07-26T00:00:00+01:00</published><updated>2026-07-26T00:00:00+01:00</updated><id>http://localhost:4000/blog/How-to-be-a-good-scientist</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-26-how-to-be-a-good-scientist/"><![CDATA[<p>How to get better at mathematical and scientific research?</p>
+
+<ol>
+  <li>Read (or devote time to your craft) everyday: slowly, deliberately… learning compounds. This is the fundamental step, if we are not putting in enough time, no amount of tips will help. Read things which actually help building the skills you want, textbooks, research papers, classic papers (Shannon etc); avoid sugary/pop stuff.</li>
+  <li>Discuss ideas: with a colleague, with an LLM, talk out your thoughts, clarify things, do it on a walk. This helps with recall, building clarity, communication, and learning.</li>
+  <li>Artefacts and Teaching: just plain consumption is not enough, try writing everyday, do proofs, do implementation of almost everything you know, write good blogs, make YouTube videaos.  This helps with recall too; and helps us see our blind spots.</li>
+  <li>Reach out: reach out to professors, go to office hours, reach out to researchers, go to conferences, talks, try to build a community. This helps in getting new ideas, and staying at the forefront.</li>
+  <li>Go deep: Have a thesis in mind, and with that in mind, keep searching, exploring, going deeper, asking questions, too much breadth might not take you anywhere. Having a general vision will at least take you in one direction; and also provides you a “why” for your research and work.</li>
+  <li>Spaced Repetition and Recall: for new topics, learning syntax, for math areas you’re not working on currently spaced repetition tools like Anki might help.</li>
+  <li>A small problem every day: Of course, you must have some big problem statements always in your mind; but on a day-to-day basis solve the smaller problems, and as you solve them, you prepare yourself for the bigger ones. These can be any problems from you textbooks, programming problems, puzzles, etc.  Read one problem, and take it with you before you’re about to sleep and mull over it. This helps build thinking and problem solving skills.</li>
+</ol>
+
+<hr />
+<p>2014-18 : 4 years B.E, foundation, exploration, 
+2018-2026: 8 years professional SDE, exploring my interests, travelling, earning money, playing sports, self-development, searching for interests.
+2026-2028: M.S in CS, done after the advent of AI
+2028-2032:  PhD in CS. (at age 36. This isn’t too late to get a PhD).</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[How to get better at mathematical and scientific research?]]></summary></entry><entry><title type="html">Spec Faithfulness</title><link href="http://localhost:4000/blog/2026-07-22-spec-faithfulness/" rel="alternate" type="text/html" title="Spec Faithfulness" /><published>2026-07-22T00:00:00+01:00</published><updated>2026-07-22T00:00:00+01:00</updated><id>http://localhost:4000/blog/Spec-Faithfulness</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-22-spec-faithfulness/"><![CDATA[<ol>
+  <li>RQ1: How do we measure ‘faithfulness’ of a formal spec against human intent? [non human-in-the-loop]</li>
+</ol>
+
+<p>The human is definitely the ultimate oracle; however, does a partial or non-human/AI oracles exist that can capture how well a spec captures the intent without human involvement? How do we minimize human-in-the-loop? Especially with improving LLM performance can they act as a substitute for human-in-the-loop approaches?</p>
+
+<ul>
+  <li>survey existing methods and what they used.</li>
+  <li>critique whether those methods are robust</li>
+  <li>propose a method [??]</li>
+</ul>
+
+<p>How to test an oracle:
+“Take requirements with trusted gold specs, inject controlled unfaithfulness (boundary shifts, quantifier swaps, dropped conjuncts, antecedent weakening, off-by-one in temporal operators), and measure each candidate oracle’s detection rate and false-alarm rate against these known-bad mutants”</p>
+
+<ol>
+  <li>RQ2: How do we measure and reduce vagueness and ambiguity in human NL requirements to aid the reliable generation of LLM-assited formal specs.</li>
+</ol>
+
+<p>( Alt-RQ3: How can we with human+LLM collaboration, best capture human intent in formal spec? [human-in-the-loop] )</p>
+
+<hr />
+
+<ol>
+  <li>RQx: What target formalism (Lean, Dafny, TLA+ etc) is best suited to capture human intent to formal spec. Which shows the best accuracy and reliabily for LLM-assisted formally verified software development?</li>
+</ol>
+
+<hr />]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[RQ1: How do we measure ‘faithfulness’ of a formal spec against human intent? [non human-in-the-loop]]]></summary></entry><entry><title type="html">Logarithms</title><link href="http://localhost:4000/blog/2026-07-19-logarithms/" rel="alternate" type="text/html" title="Logarithms" /><published>2026-07-19T11:00:00+01:00</published><updated>2026-07-19T11:00:00+01:00</updated><id>http://localhost:4000/blog/Logarithms</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-19-logarithms/"><![CDATA[<p>in progress</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[in progress]]></summary></entry><entry><title type="html">Public Key (Asymmetric) Encryption</title><link href="http://localhost:4000/blog/2026-07-10-public-key-assymmetric/" rel="alternate" type="text/html" title="Public Key (Asymmetric) Encryption" /><published>2026-07-10T23:00:00+01:00</published><updated>2026-07-10T23:00:00+01:00</updated><id>http://localhost:4000/blog/Public-Key-Assymmetric</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-10-public-key-assymmetric/"><![CDATA[<h2 id="intro---what-is-assymetric-encryption">Intro - What is Assymetric Encryption?</h2>
+
+<p>Why? If we use symmetric encryption, in sending emails, we need a shared key with each person we want
+to communicate with (think - why?). So, we won’t be able to send an email to anyone we don’t yet know.</p>
+
+<p>Generating and exchanging new symmetric keys will get tedious as more people want to encrypt messages to you</p>
+
+<ul>
+  <li>
+    <p>In Assym encryption, anyone can send encrypted messages  to us using just our public key.</p>
+  </li>
+  <li>
+    <p>Only, we can decrypt those messages using our private key.</p>
+  </li>
+</ul>
+
+<h2 id="functional-behaviour">Functional behaviour</h2>
+
+<ol>
+  <li>Generate a public key and a private key using a key-gen algorithm.</li>
+  <li>Anyone with public key can encrypt the messages</li>
+  <li>Only the owner (with the private) key can decrypt.</li>
+  <li><em>Risk</em> : the public key may not belong to who they’re claiming to be. Problem for later. If Alice is sending me an email – how do we know if a public key I am using belongs to Alice?</li>
+</ol>
+
+<p><img src="/blog/image-6.png" alt="The input (security parameter) usually translates as &quot;how big do you want your keys to be?&quot; (the bigger, the more secure)" /></p>
+
+<h2 id="performance">Performance</h2>
+<ol>
+  <li>Asyym is very low performant for emails, its slow, the operations it does are computationalally expensive.</li>
+  <li>Symm key encryption uses AND, OR, XOR ops which are fast. In practice, this is 100-1000x faster than asymm encryption</li>
+</ol>
+
+<h2 id="how-do-we-use-asymm-encryptionm">How do we use Asymm Encryptionm</h2>
+<ol>
+  <li>Key Exhcanges</li>
+  <li>Hybrid Exchanges</li>
+</ol>
+
+<h2 id="key-exchanges">Key Exchanges</h2>
+<p>Asymm can be used to perform key exchanges. Mostly via key encapsulation
+<img src="/blog/image-7.png" alt="alt text" /></p>
+
+<p><em>Key encapsulation</em>: Bob generates random key, then encrypts that key for Alice using public key of Alice. Only Alice can decrypt that cipher. She will therefore get the random key generated by Bob. After this alice/bob will share a key and will communicate via symmetric key encryption.
+Remember, asymm encryption is very slow. So, using asymm just for key exhcange reduces the need to use it so much.</p>
+
+<p>This is done usually via RSA algorithm; although RSA is used less as compares to Elliptic Curve Diffie-Hellman algo (ECDH). ECDH has smaller parameter size, and RSA has been found to have some vulnerabilities.</p>
+
+<p><img src="/blog/image-8.png" alt="alt text" /></p>
+
+<p>^ The ‘encrypted symmetric key’ encrypted via Alice’s public key –&gt; is the encapsulation of the key. The ‘encapsulated key’  gets sent to Alice, and only she can unexcapsulate it.</p>
+
+<h2 id="hybrid-encryption">Hybrid Encryption</h2>
+
+<ul>
+  <li>Every invocation of aymm encryption can encrypt plaintexts upto a certain length ceiling.</li>
+  <li>This largest possible size is limited by the ‘security parameter’ (what is this param?)</li>
+  <li>Current recc 512 ASCII chars (4096 bits)</li>
+</ul>
+
+<h3 id="what-can-we-do">What can we do?</h3>
+<ul>
+  <li>Break message into blocks and encrypt them.. but the problem is that asymm encryp is slow.</li>
+  <li>Most applns use <em>hyrbid encryption</em> which implicitly uses key encapsulation and <em>authenticated encryption</em>.. making it faster and safer!</li>
+</ul>
+
+<h3 id="defn">Defn:</h3>
+
+<ul>
+  <li>Hybird encryption is a combination of symm + asymm crypto primitives:
+    <ol>
+      <li>Non-symm: key-exchange</li>
+      <li>Symm: use authenticated encryption</li>
+    </ol>
+  </li>
+</ul>
+
+<p>It similar to key-encapsulation in key-exchange, but we are also encapsulating data as well.</p>
+
+<p>In Summary “We generate a symmetric key; (asymm) use Alice’s public key to encrypt this key, so only Alice can decrypt it; once alice decrypts it: we then use symmetric key encryption (using the just shared key) to communicate with alice”</p>
+
+<p>Funtionally it looks like asymm encryption:
+<img src="/blog/image-9.png" alt="alt text" /></p>
+
+<p><img src="/blog/image-10.png" alt="alt text" /></p>
+
+<h3 id="example-elliptic-curve-integrated-encryption-scheme-ecies">Example: Elliptic Curve Integrated Encryption Scheme (ECIES)</h3>
+
+<p><img src="/blog/image-11.png" alt="alt text" /></p>
+
+<p>ECIES IS  a hybrid encrypotion system.</p>
+
+<h2 id="asymmetric-encryption-rsa">Asymmetric Encryption: RSA</h2>
+
+<p>Take numbers from number 1 to p- 1 ; p is a prime; under multiplication modulo p
+<img src="/blog/image-12.png" alt="alt text" /></p>
+
+<ul>
+  <li>One of the numbers represents the message we want to send</li>
+</ul>
+
+<p><img src="/blog/image-13.png" alt="alt text" /></p>
+
+<p><img src="/blog/image-14.png" alt="alt text" /></p>
+
+<h2 id="issues-and-fixes">issues and fixes</h2>
+
+<ul>
+  <li>[first issue] if the numbers that can be encrypted for a case are small; then a attacker can brute forrce and fidn all the (plaintext - ciphertext) pairs</li>
+</ul>
+
+<p>then ‘PKCS v1.5’ was introduced that fixes the issue by padding the message with random bytes</p>
+
+<ul>
+  <li>
+    <p>1998 another issue to break PKCS v1.5’ the “million messages attack” – the mitigations were found, but too hard to implement.
+(Bleichenbacker’s attack/adapttive chosen ciphertext) – tampers with the ciphertext.</p>
+  </li>
+  <li>
+    <p>‘RSA-OAEP’ fixed the issues to prevent Bleichenbacker. PKCS V2.0
+ it comes with a method to generate key.  RSA-OAEP has a secure padding scheme.</p>
+  </li>
+  <li>
+    <p>OAEP vuln were found – but only if the implementation is impoper.  Theoretically its ok.
+ Better to have simpler messages</p>
+  </li>
+</ul>
+
+<h3 id="how-it-works">how it works</h3>
+<ol>
+  <li>first we pad the message</li>
+  <li>paded message is XORs with a random number (masking)</li>
+  <li>a tag is added</li>
+  <li>these MGFs: are hasing functions / extendable output functions</li>
+</ol>
+
+<p>More info
+<img src="/blog/image-15.png" alt="alt text" /></p>
+
+<h2 id="rsa-kem">RSA-KEM</h2>
+
+<ul>
+  <li>Key encapsulating mech</li>
+  <li>Ciphertext: a random number is used to produce a symm key (via hashing). this symm key is used to encrypt via authenticated encryotion.</li>
+  <li>RSA KEM is rarely used. Most used are PKCS v1.5 or v2.0 standards.</li>
+</ul>
+
+<h2 id="hybrid-encryption-with-ecies-elliptic-curve">Hybrid encryption with ECIES (elliptic curve)</h2>
+
+<ul>
+  <li>Most widely used.</li>
+  <li>ANSI</li>
+  <li>NO KEY ENCAPSULATION. Key exhcange is used</li>
+  <li>DH version exists, not widely used.
+What is the advantage of using ECIES for hybrid encryption?</li>
+  <li>
+    <p>It uses ECDH for key exchange, which has smaller parameter sizes</p>
+  </li>
+  <li>
+    <p>step 1: bob create ephemeral key pair (pub, private)</p>
+  </li>
+  <li>with ephenmeral private key–&gt; we  do a key exchange using alice public key</li>
+  <li>hence we get a shared symm key</li>
+  <li>
+    <p>this symm key is used for (to generate cipher) authenticated encryption with alice.</p>
+  </li>
+  <li>alice combines the public key she receieved (step 1) with her private key to re-generate the symmetric key</li>
+  <li>
+    <p>now she can decrypt the ciphertext and can read with integrity  + authenticity</p>
+  </li>
+  <li>AES-GSM, ChaCha,</li>
+</ul>
+
+<hr />
+
+<h2 id="rsa">RSA</h2>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Intro - What is Assymetric Encryption?]]></summary></entry><entry><title type="html">Notes on GOFAI</title><link href="http://localhost:4000/blog/2026-07-03-gofai/" rel="alternate" type="text/html" title="Notes on GOFAI" /><published>2026-07-03T21:55:00+01:00</published><updated>2026-07-03T21:55:00+01:00</updated><id>http://localhost:4000/blog/GOFAI</id><content type="html" xml:base="http://localhost:4000/blog/2026-07-03-gofai/"><![CDATA[<p>Lecture 1</p>
 
 <p><em>Introduction</em></p>
 
@@ -343,530 +561,4 @@ By treating qbits as an abtract entity we are able to build a theory of quantum 
 
 <p>where \alpha and \beta are complex numbers.</p>
 
-<p>A classical bit can be in either 0 or 1, a qbit, however, can exist in a superposition of the two. Although, when we observe it, we see either 0, or 1, with a certain probability.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Quantum Computation: Qbits]]></summary></entry><entry><title type="html">Subspaces</title><link href="http://localhost:4000/blog/2026-05-15-subspaces/" rel="alternate" type="text/html" title="Subspaces" /><published>2026-05-15T18:30:00+01:00</published><updated>2026-05-15T18:30:00+01:00</updated><id>http://localhost:4000/blog/Subspaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-subspaces/"><![CDATA[<h2 id="subspaces-definition">Subspaces: Definition</h2>
-
-<p>A subset <span class="kdmath">$U$</span> of a vector space <span class="kdmath">$V$</span> is called a <strong>subspace</strong> of <span class="kdmath">$V$</span> if
-<span class="kdmath">$U$</span> is itself a vector space using the same addition and scalar multiplication
-as <span class="kdmath">$V$</span>.</p>
-
-<p>In practice, we do not need to check all the vector space axioms again. From Axler:</p>
-
-<h4 id="conditions-for-a-subspace">Conditions for a Subspace</h4>
-
-<p>Let <span class="kdmath">$V$</span> be a vector space over a field <span class="kdmath">$\mathbb{F}$</span>, and let <span class="kdmath">$U \subseteq V$</span>.
-Then <span class="kdmath">$U$</span> is a subspace of <span class="kdmath">$V$</span> if and only if the following three conditions hold:</p>
-
-<div class="kdmath">$$
-\begin{aligned}
-&\text{additive identity:}
-&& 0 \in U, \\
-&\text{closed under addition:}
-&& u, w \in U \implies u + w \in U, \\
-&\text{closed under scalar multiplication:}
-&& a \in \mathbb{F} \text{ and } u \in U \implies au \in U.
-\end{aligned}
-$$</div>
-
-<h4 id="proof">Proof</h4>
-
-<p>Think about why we don’t need to show that in <span class="kdmath">$U$</span> other properties of vector spaces also hold.</p>
-
-<h2 id="examples-of-subspaces-from-axler">Examples of Subspaces (from Axler)</h2>
-
-<h3 id="1-a-subset-of-mathbbf4">1. A subset of <span class="kdmath">$\mathbb{F}^4$</span></h3>
-
-<p>If <span class="kdmath">$b \in \mathbb{F}$</span>, then</p>
-
-<div class="kdmath">$$
-\{(x_1, x_2, x_3, x_4) \in \mathbb{F}^4 : x_3 = 5x_4 + b\}
-$$</div>
-
-<p>is a subspace of <span class="kdmath">$\mathbb{F}^4$</span> if and only if <span class="kdmath">$b = 0$</span>.</p>
-
-<p>Why: the zero vector <span class="kdmath">$(0,0,0,0)$</span> can be in this set only if</p>
-
-<div class="kdmath">$$
-0 = 5(0) + b,
-$$</div>
-
-<p>which means <span class="kdmath">$b = 0$</span>.</p>
-
-<h3 id="2-continuous-functions-on-01">2. Continuous functions on <span class="kdmath">$[0,1]$</span></h3>
-
-<p>The set of continuous real-valued functions on the interval <span class="kdmath">$[0,1]$</span> is a
-subspace of <span class="kdmath">$\mathbb{R}^{[0,1]}$</span>.</p>
-
-<p>Note: <span class="kdmath">$A^B$</span>, such as <span class="kdmath">$\mathbb{R}^{[0,1]}$</span>, means the set of functions from
-<span class="kdmath">$B$</span> to <span class="kdmath">$A$</span>.</p>
-
-<h3 id="3-differentiable-functions-on-mathbbr">3. Differentiable functions on <span class="kdmath">$\mathbb{R}$</span></h3>
-
-<p>The set of differentiable real-valued functions on <span class="kdmath">$\mathbb{R}$</span> is a
-subspace of <span class="kdmath">$\mathbb{R}^{\mathbb{R}}$</span>.</p>
-
-<h3 id="4-differentiable-functions-with-f2--b">4. Differentiable functions with <span class="kdmath">$f'(2) = b$</span></h3>
-
-<p>The set of differentiable real-valued functions <span class="kdmath">$f$</span> on the interval <span class="kdmath">$(0,3)$</span>
-such that</p>
-
-<div class="kdmath">$$
-f'(2) = b
-$$</div>
-
-<p>is a subspace of <span class="kdmath">$\mathbb{R}^{(0,3)}$</span> if and only if <span class="kdmath">$b = 0$</span>.</p>
-
-<p>Why?</p>
-
-<p>Define <span class="kdmath">$S_b = \{f : (0,3) \to \mathbb{R} : f \text{ is differentiable and } f'(2) = b\}.$</span></p>
-
-<p>For <span class="kdmath">$S_b$</span> to be a subspace, it must contain the zero function. The zero function is</p>
-
-<div class="kdmath">$$
-0(x) = 0.
-$$</div>
-
-<p>Therefore,</p>
-
-<div class="kdmath">$$
-0'(x) = 0,
-$$</div>
-
-<p>so in particular</p>
-
-<div class="kdmath">$$
-0'(2) = 0.
-$$</div>
-
-<p>Thus the zero function belongs to <span class="kdmath">$S_b$</span> only when <span class="kdmath">$b = 0$</span>.</p>
-
-<h3 id="5-subspaces-of-mathbbr2">5. Subspaces of <span class="kdmath">$\mathbb{R}^2$</span></h3>
-
-<p>The subspaces of <span class="kdmath">$\mathbb{R}^2$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^2,$</span> and all lines in <span class="kdmath">$\mathbb{R}^2$</span> passing through the origin.</p>
-
-<h3 id="6-subspaces-of-mathbbr3">6. Subspaces of <span class="kdmath">$\mathbb{R}^3$</span></h3>
-
-<p>The subspaces of <span class="kdmath">$\mathbb{R}^3$</span> are exactly <span class="kdmath">$\{0\}, \quad \mathbb{R}^3,$</span> all lines in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin, and all planes in <span class="kdmath">$\mathbb{R}^3$</span> passing through the origin.</p>
-
-<h3 id="note">Note</h3>
-
-<p>From Axler:</p>
-
-<p>‘Notice that its quite natural to think about things being subspaces’</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Subspaces: Definition]]></summary></entry><entry><title type="html">Vector Spaces</title><link href="http://localhost:4000/blog/2026-05-15-vector-spaces/" rel="alternate" type="text/html" title="Vector Spaces" /><published>2026-05-15T18:00:00+01:00</published><updated>2026-05-15T18:00:00+01:00</updated><id>http://localhost:4000/blog/Vector-Spaces</id><content type="html" xml:base="http://localhost:4000/blog/2026-05-15-vector-spaces/"><![CDATA[<h2 id="vector-spaces">Vector Spaces</h2>
-
-<p>A <strong>vector space</strong> over a field <span class="kdmath">$\mathbb{F}$</span> is a set <span class="kdmath">$V$</span> together with two operations:</p>
-
-<div class="kdmath">$$
-\begin{aligned}
-+ &: V \times V \to V \\
-\cdot &: \mathbb{F} \times V \to V
-\end{aligned}
-$$</div>
-
-<p>These operations are called <strong>vector addition</strong> and <strong>scalar multiplication</strong>. For every
-<span class="kdmath">$u, v, w \in V$</span> and every <span class="kdmath">$a, b \in \mathbb{F}$</span>, the following axioms must hold:</p>
-
-<div class="kdmath">$$
-\begin{aligned}
-u + v &= v + u && \text{commutativity of addition} \\
-(u + v) + w &= u + (v + w) && \text{associativity of addition} \\
-\exists\,0 \in V \quad \text{such that} \quad v + 0 &= v && \text{additive identity} \\
-\forall v \in V,\ \exists\,(-v) \in V \quad \text{such that} \quad v + (-v) &= 0 && \text{additive inverse} \\
-a(u + v) &= au + av && \text{distributivity over vector addition} \\
-(a + b)v &= av + bv && \text{distributivity over scalar addition} \\
-(ab)v &= a(bv) && \text{compatibility of scalar multiplication} \\
-1v &= v && \text{scalar identity}
-\end{aligned}
-$$</div>
-
-<p>Equivalently, <span class="kdmath">$V$</span> forms an abelian group under vector addition, and the scalars come
-from a field <span class="kdmath">$\mathbb{F}$</span> whose multiplication acts on the vectors in a way compatible
-with both addition in <span class="kdmath">$V$</span> and addition and multiplication in <span class="kdmath">$\mathbb{F}$</span>.</p>
-
-<p>Intuitively, <span class="kdmath">$V$</span> has elements that can combine to form other <span class="kdmath">$V$</span> elements, and can get ‘scaled’ up or down using elements from a field/scalar.</p>
-
-<h2 id="examples-of-vector-spaces">Examples of Vector Spaces</h2>
-
-<p>The usual example of a vector space is <span class="kdmath">$\mathbb{R}^n$</span>. For example,</p>
-
-<div class="kdmath">$$
-\mathbb{R}^2 = \{(x, y) : x, y \in \mathbb{R}\}
-$$</div>
-
-<p>is the set of all ordered pairs of real numbers. We add vectors component by component:</p>
-
-<div class="kdmath">$$
-(x_1, y_1) + (x_2, y_2) = (x_1 + x_2, y_1 + y_2)
-$$</div>
-
-<p>and we multiply by scalars component by component:</p>
-
-<div class="kdmath">$$
-a(x, y) = (ax, ay)
-$$</div>
-
-<p>The intuition is that these vectors can be drawn as arrows in the plane, similar to how it is done in physics.</p>
-
-<p>However, vector spaces are much more general than ‘arrows’. A vector is any object that can be added to another object of the same kind, and multiplied by scalars, while satisfying the vector space axioms.</p>
-
-<p>For example, the set of all polynomials with real coefficients is a vector space over
-<span class="kdmath">$\mathbb{R}$</span>:</p>
-
-<div class="kdmath">$$
-\mathbb{R}[x]
-$$</div>
-
-<p>An element of this vector space looks like</p>
-
-<div class="kdmath">$$
-p(x) = a_0 + a_1x + a_2x^2 + \cdots + a_nx^n
-$$</div>
-
-<p>where each coefficient <span class="kdmath">$a_i$</span> is a real number.</p>
-
-<p>We can add two polynomials:</p>
-
-<div class="kdmath">$$
-(p + q)(x) = p(x) + q(x)
-$$</div>
-
-<p>and we can multiply a polynomial by a scalar:</p>
-
-<div class="kdmath">$$
-(ap)(x) = a p(x)
-$$</div>
-
-<p>The result is still a polynomial, so the operations stay inside <span class="kdmath">$\mathbb{R}[x]$</span>.</p>
-
-<p>For instance, if</p>
-
-<div class="kdmath">$$
-p(x) = 1 + 2x
-$$</div>
-
-<p>and</p>
-
-<div class="kdmath">$$
-q(x) = 3 - x + x^2
-$$</div>
-
-<p>then</p>
-
-<div class="kdmath">$$
-p(x) + q(x) = 4 + x + x^2
-$$</div>
-
-<p>and</p>
-
-<div class="kdmath">$$
-5p(x) = 5 + 10x
-$$</div>
-
-<p>So the set of polynomials form a vector space as well.</p>
-
-<p>Another example is the set of all <span class="kdmath">$m \times n$</span> matrices over a field <span class="kdmath">$\mathbb{F}$</span>:</p>
-
-<div class="kdmath">$$
-M_{m \times n}(\mathbb{F})
-$$</div>
-
-<p>(The field can be anything, R, C, etc)</p>
-
-<p>Matrices can be added entry by entry, and multiplied by scalars entry by entry. Therefore,
-they form a vector space over <span class="kdmath">$\mathbb{F}$</span>.</p>
-
-<p>Vector spaces are very general: the vectors might be arrows, lists of numbers,
-polynomials, matrices, functions,  or other mathematical objects. The only properties of importance is that they can be added and scaled according to the
-vector space axioms.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Vector Spaces]]></summary></entry><entry><title type="html">AI and Turing Machines</title><link href="http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/" rel="alternate" type="text/html" title="AI and Turing Machines" /><published>2026-04-02T13:00:00+01:00</published><updated>2026-04-02T13:00:00+01:00</updated><id>http://localhost:4000/blog/AI-and-Turing-Machines</id><content type="html" xml:base="http://localhost:4000/blog/2026-04-02-ai-and-turing-machines/"><![CDATA[<p>Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20</p>
-
-<h2 id="p-vs-np">P vs NP</h2>
-
-<ul>
-  <li>
-    <p>P is the class of ‘problems’ (or languages) that have polynomial time algorithms</p>
-  </li>
-  <li>
-    <p>NP is the class of ‘problems’ (or languages) that have polynomial time <strong>verifiers</strong>, e.g., hamiltonian path, finding a hamiltonian path is non-poly, but verification of a solution can be done in polynomical time.  Another characterization: is that these problems can be solved in (non-detrministic) polynomial time by a non-deterministic Turing Machine.</p>
-  </li>
-</ul>
-
-<p>Everything that is in P is also in NP.</p>
-
-<p>In summary,</p>
-
-<p>P = the class of languages for which membership can be decided quickly.
-NP = the class of languages for which membership can be verified quickly.
-P subset of NP.</p>
-
-<p>NP Completeness:</p>
-
-<p>Certain problems in NP show this property that they can be reduced to one another. so if we solve one such problem, all such other problems are solved. So far these have only been problmes not in P.</p>
-
-<p>NP = P ∪ NP-Intermediate ∪ NP-Complete</p>
-
-<p>NP Hard problems may fall outside NP. Although there may be overlap.
-NP-Complete = NP ∩ NP-Hard (hard, but at least verifiable)
-NP-Hard \ NP = problems that are at least as hard as anything in NP, but aren’t even verifiable in poly time.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--
-NP-Hard
-├── NP-Complete (the part inside NP)
-└── stuff outside NP entirely (Halting Problem, etc.)
-
-NP
-├── P
-├── NP-Intermediate
-└── NP-Complete (the part inside NP-Hard)
-</code></pre></div></div>
-
-<hr />
-
-<h3 id="where-do-connectionist-architectures-such-as-llms-fall-on-the-classical-computational-hierarchy">Where do connectionist architectures such as LLMs fall on the classical computational hierarchy?</h3>
-
-<p><a href="https://arxiv.org/abs/2310.07923">The Expressive Power of Transformers with Chain of Thought</a> describes that with CoT reasoning they fall within P class.</p>
-
-<p>What does this mean? This implies that LLMs even with chain-of-thought reasoning are quite ‘weak’ (even weaker than Pushdown automata) when being benchmarked against the classical computational models.</p>
-
-<p>todo: read paper and describe the methodology.</p>
-
-<h3 id="do-brains-compute-ie-can-brain-processes-that-cause-mental-phenomenon-be-reduced-to-or-expressed-as-computation">Do brains compute i.e. can brain processes that cause mental phenomenon be reduced to or expressed as computation?</h3>
-<p>Yes – according to the research paper linked about and the Computational Theory of Mind. But how did they get to that conclusion?</p>
-
-<p>https://claude.ai/chat/6c1213f3-bbc0-49cd-882e-384f0c71771f</p>
-
-<h3 id="are-there-any-genuine-similarities-between-brains-and-neural-networks-such-as-llms-where-does-dynamical-systems-theory-fit-in">Are there any genuine similarities between brains and neural networks such as LLMs? Where does Dynamical Systems Theory fit in?</h3>
-<p>https://en.wikipedia.org/wiki/Dynamical_systems_theory</p>
-
-<h3 id="simulating-physicsphysical-processes-vs-simulating-mathematics">Simulating Physics/Physical processes vs Simulating “Mathematics”</h3>
-
-<p>The Church-Turing-Deutsch thesis says every <em>physical process</em> can be simulated by a Turing machine. This is a claim about the physical world: that nature doesn’t compute anything a Turing machine can’t.</p>
-
-<p>The situation with mathematics is different, Gödel’s first incompleteness theorem says that any consistent formal system that strong enough to express basic arithmetic will contain true statements it cannot prove.</p>
-
-<p>Any formal system (including math) <em>is</em> already computational. If we take the axioms and inference rules of ZFC or Peano Arithmetic: we can write a program that mechanically enumerates every theorem. The set of provable theorems is recursively enumerable (it’s the output of an algorithm). Formal systems such as mathematics or mathematic theorem-generation are already a Turing machine.</p>
-
-<p>The problem is that mathematical <em>truths</em> can exist beyond a formal system.
-“For any consistent formal system F that can do arithmetic, there exist arithmetic statements that are true but not provable in F. You can add that statement as a new axiom to get F’, but then F’ has its own unprovable truths. This never terminates.”</p>
-
-<p>So obviously, there is distinction is between <em>provability within a system</em> (computational) and <em>truth</em> (not capturable by any single computation at all). There are truths no formal system can reach. (Godel, Turing’s Halting Problem etc).</p>
-
-<p>Each formal system (including math) is a computation, but ‘truth’ still transcends formal systems. Although somehow, ‘nature’ seems more amneable to being computable.</p>
-
-<p>So, does nature ever ‘compute’ things that are non-computational? We haven’t found it yet. But have we? What about the millions of simulations that would take forever to compute? How do we know that all physical processes can truly be computed?</p>
-
-<p><em>in progress, I will keep thinking about this</em></p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Research Ppaer: https://onlinelibrary.wiley.com/doi/10.1080/03640210801897856#b20]]></summary></entry><entry><title type="html">Notes from Fooled by Randomness</title><link href="http://localhost:4000/blog/2024-04-21-fooled-by-randomness/" rel="alternate" type="text/html" title="Notes from Fooled by Randomness" /><published>2024-04-18T19:24:16+01:00</published><updated>2024-04-18T19:24:16+01:00</updated><id>http://localhost:4000/blog/Fooled-by-Randomness</id><content type="html" xml:base="http://localhost:4000/blog/2024-04-21-fooled-by-randomness/"><![CDATA[<h3 id="the-premise">The premise</h3>
-
-<ul>
-  <li>The cetral premise seems to say that humans see patterns where there are none. And very dangerously successes are often attribtued to skill when it has only been sheer luck.</li>
-</ul>
-
-<p>On left: the truth vs, on right: what humans confuse the truth for:
-<img src="/assets/Distinctions.png" alt="image info" /></p>
-
-<ul>
-  <li>Asks us to be suspicious of ‘experts’ that offer certainity; more advisable to listen to 
-experts who talk about the irrationality and unreliability of human thought. People such as Daniel Kahneman, Karl Popper, Maynard Keynes, Hayek, Adam Smith</li>
-</ul>
-
-<p>Humans are defective and faulty.</p>
-
-<p><em>To check out:</em>
-Bounded rationality.
-Heuristic and biases.
-Check out https://en.wikipedia.org/wiki/Falsifiability
-Charles Sanders Pierce</p>
-
-<p>We need to get around our emotions instead of grandiose moralizing of overcoming the human-ness. We need tricks.</p>
-
-<h3 id="alternate-histories-or-parallel-timelines">Alternate Histories or Parallel Timelines</h3>
-
-<ul>
-  <li>In life and risk-taking, always look at ‘alternative histories.’</li>
-</ul>
-
-<p>£10 million earned from dentistry and £10 million earned from a lottery are vastly different qualitatively. Even though for an accountant they are the same.</p>
-
-<p>In trading, when taking risks make sure to take them in such a way that in n number of alternate universe timelines that risk should pan out in a good number of them.</p>
-
-<p>A dentist having studied dentistry will have the same/similar outcome in 1 million universes, as opposed to a person who invests in lottery tickets.</p>
-
-<ul>
-  <li>Life’s successes/failures are similar to russian roulette. Ask yourself is your success coming from a genuine skill or dumb luck? Go to the source of the wealth creation (skill vs lotto tickets?) – this is called <code class="language-plaintext highlighter-rouge">the generator</code></li>
-</ul>
-
-<p>Always seek for the generator.</p>
-
-<ul>
-  <li>Look for the invisible risks of blowup in your ‘portfolio’</li>
-</ul>
-
-<h3 id="monte-carlo-methods">Monte Carlo Methods</h3>
-
-<ul>
-  <li>Monte Carlo methods seek to formalize the idea of alternate histories. The scientific name for them being <code class="language-plaintext highlighter-rouge">alternate sample paths</code></li>
-</ul>
-
-<p>The name is borrowed from the field of probability known as <code class="language-plaintext highlighter-rouge">stochastic processes</code></p>
-
-<p>Note the focus on <em>path</em> instead of outcome.</p>
-
-<ul>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">Stochastic processes</code>: dynamics of event unfolding over time. Evolution of successive random events.</p>
-  </li>
-  <li>
-    <p>A <code class="language-plaintext highlighter-rouge">Monte Carlo Simulation</code> how various paths could unfold given a set of biases.</p>
-  </li>
-  <li>
-    <p>Probability affects all sciences, especially “the mother of all sciences” – <code class="language-plaintext highlighter-rouge">knowledge</code></p>
-  </li>
-</ul>
-
-<p>To assess the <em>quality</em> of knowledge being gathered we have to look at the randomness with which it was obtained. ?? (Revisit: Monte Carlo Mathematics pg 44)</p>
-
-<ul>
-  <li>In science probability and information are treated exactly the same.</li>
-</ul>
-
-<h3 id="learning-from-history">Learning from history</h3>
-
-<ul>
-  <li>
-    <p>He says, he learns about the past by reading history, and the future via monte carlo simulations.</p>
-  </li>
-  <li>
-    <p>People have a bias to not learn from other’s experience (denigrating other’s history). They might assume that they are special, or some such.</p>
-  </li>
-  <li>
-    <p>People in the investment industry did not learn from numerous crashes.</p>
-  </li>
-  <li>
-    <p>We can not run experiments on ‘history’ but due to the nature of history being long we cna see the outcome of many paths.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">Distilled thinking</code>: Thinking that is based on information that is stripped out of meaningless and diverting clutter.</p>
-  </li>
-  <li>
-    <p>Respects time-honoured ideas as opposed to ‘modern ideas’ – older ideas that have survived have stood the test of time.</p>
-  </li>
-  <li>
-    <p>Barrage of (new) information is often toxic; irrelevant and a needle in the haystack.  Information in outlets such as WSJ are statistically insignificant for the derivation of any meaningful conclusions.</p>
-  </li>
-  <li>
-    <p>Is skeptical of media, newspapers etc. Since these orgs have an incentive to grab attention; and not do correct/nuanced analysis.</p>
-  </li>
-  <li>
-    <p>Him seeing people still indulge in this mass-scale decision-making based on noiss – an insurance for his career in options to trade against these ‘fools of randomness’</p>
-  </li>
-</ul>
-
-<h3 id="negative-value-of-information-on-society">Negative Value of Information on society</h3>
-
-<ul>
-  <li>
-    <p>Robert Shiller showed in 1981 mathematically, that the prices of stocks are way more volatile than the fundamentals that they are supposed to reflect.</p>
-  </li>
-  <li>
-    <p>i.e. <em>“Prices do not reflect the long-term value of securities by overshooting in both directions. Markets had to be wrong”</em></p>
-  </li>
-  <li>
-    <p>“Markets not as efficient as established by financial theory.”</p>
-  </li>
-  <li>
-    <p><em>“Efficient markets meant that prices should adapt to all the available information in such as way as to be totally unpredictable to us humans and prevent people from deriving profits”</em></p>
-  </li>
-  <li>
-    <p>Not all journalists are bad. Recommends: Anatole Kaletsky (london), Jim Grant (ny), Alan Abelson in finance. Gary Stix in scientific journalism.</p>
-  </li>
-  <li>
-    <p>There is too much noise in the short term (second-to-second, day-to-day); longer time horizons are stripped off of that noise. Which is why it is preferable to read history than the jounalists. “The Economist over the weekend rather than the Wall Street Journal” over weekdays.</p>
-  </li>
-</ul>
-
-<p><em>*There is huge amount of noise on the smaller-time-scale; and focusing too closely at the randomness/noise at this scale will lead emotions getting drained; and lead to an *emotional deficit</em> **</p>
-
-<ul>
-  <li>Author is aware of him being non-rational and that small-scale noise (too much information) will overwhelm him and cause -ve rumination. Causing him to unable to function optimally.</li>
-</ul>
-
-<h3 id="randomness-noise-and-the-scientific-intellectual">Randomness, noise, and the scientific intellectual</h3>
-
-<ul>
-  <li>Early in the previous centry scientists started to believe that there were only two kinds of facts:
-    <ol>
-      <li>Deductive: i.e. they follow axiomatically</li>
-      <li>Inductive i.e verifiable by experience</li>
-    </ol>
-  </li>
-</ul>
-
-<p>They claimed that these should replace the ‘literary hogwash’ in the humanities</p>
-
-<ul>
-  <li>
-    <p>Author believes that inductive statements might be impossible to verify; and be quite ‘hogwashy’ themselves.
-[Especially when it comes to black swan events]</p>
-  </li>
-  <li>
-    <p>Reverse Turing Test: a human is unintelligent if his speech can be replicated by a computer.</p>
-  </li>
-  <li>
-    <p>Author says that computers can generate discourse that looks like a literary rhetoric; but can not produce something which looks like scientific discourse.</p>
-  </li>
-</ul>
-
-<p><em>Can one produce piece of work that can be largely mistaken for Derrida entirely randomly? The answer is yes</em></p>
-
-<p><em>Owing to the fuzzyness of his thought, the literary intellectual can be fooled by randomness</em></p>
-
-<ul>
-  <li>
-    <p>Author clarifies that scientific/mathematical thought doesn’t always imply should be written in symbols. English is perfectly capabable of conveying rigorous mathematical thought – and cites The Selfish Gene as an example.</p>
-  </li>
-  <li>
-    <p>Says he is ok to be fooled by randomness if the results are aesthetic. Example: poetry.</p>
-  </li>
-  <li>
-    <p>He claims downfall of religion was causd by the translation from Latin to the local vernacular – for then it could get scrutinized by the scientific; and also lost the aesthetic beauty.</p>
-  </li>
-</ul>
-
-<p><em>If I am going to be fooled by randomness it better be of the beautiful (and harmless) kind</em></p>
-
-<h3 id="can-evolution-be-fooled-by-randomness">Can evolution be fooled by randomness?</h3>
-
-<ul>
-  <li>
-    <p>Talks about how even evolutionary there is a lot of noise in the ‘short-term’ and how it works only when considering the long term.</p>
-  </li>
-  <li>
-    <p>Populations with non-fit traits might survive for long because of randomness of not encountering a ‘black-swan’ path. And thus becoming more fragile to those black-swan events.</p>
-  </li>
-</ul>
-
-<h3 id="the-median-is-not-the-message-asymmetry-skewness-probability-and-expectation">The median is not the message: asymmetry, skewness; probability and expectation</h3>
-
-<ul>
-  <li>
-    <p>Definition - Asymmetric odds: the probabilties are not 50% for each event.</p>
-  </li>
-  <li>
-    <p>Definition - Asymmetric outcomes: the <em>payoffs</em> from the event (say in gambling) are not equal.</p>
-  </li>
-  <li>
-    <p><em>Expectation</em> = <em>Probability</em>  x <em>Payoff</em></p>
-  </li>
-</ul>
-
-<p>People confuse probability vs expectation. For instance: even if the probability is in our favor, the relative magnitude of the payoffs might be very very bad in case of unfavourable event.</p>
-
-<ul>
-  <li>
-    <p>Author mentions that <strong>bullish and bearish are hollow words with no application to the world of randomness – <em>particularly if such a world presents asymmetric outcomes</em></strong></p>
-  </li>
-  <li>
-    <p>This is a very important point. <strong>To reiterate, probability alone does not mean anything; it is only when we multiply it with the <em>payoff</em> or the outcome, that we can make a judgement and understand reality</strong></p>
-  </li>
-  <li>
-    <p>Bullish and bearish are used by people who do not <em>engage</em> in practicing uncertainity. (Because these terms do not quantify the magnitude of the rise or fall).</p>
-  </li>
-</ul>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[The premise]]></summary></entry></feed>
+<p>A classical bit can be in either 0 or 1, a qbit, however, can exist in a superposition of the two. Although, when we observe it, we see either 0, or 1, with a certain probability.</p>]]></content><author><name></name></author><category term="books" /><summary type="html"><![CDATA[Quantum Computation: Qbits]]></summary></entry></feed>
