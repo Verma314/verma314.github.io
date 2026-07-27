@@ -1,0 +1,4 @@
+# Jekyll build output — GitHub Pages rebuilds this from source, so it doesn't belong in the repo.
+_site/
+.jekyll-cache/
+.jekyll-metadata
