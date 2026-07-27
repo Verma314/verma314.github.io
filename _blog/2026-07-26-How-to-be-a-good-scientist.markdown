@@ -16,6 +16,7 @@ How to get better at mathematical and scientific research?
 6. Spaced Repetition and Recall: for new topics, learning syntax, for math areas you're not working on currently spaced repetition tools like Anki might help.
 7. A small problem every day: Of course, you must have some big problem statements always in your mind; but on a day-to-day basis solve the smaller problems, and as you solve them, you prepare yourself for the bigger ones. These can be any problems from you textbooks, programming problems, puzzles, etc.  Read one problem, and take it with you before you're about to sleep and mull over it. This helps build thinking and problem solving skills.
 8. Write: I think this is so important, it needed a new point apart from point 3. Keep a personal journal as well, keep writing your thoughts, get good at writing, for yourself, for your work, etc. Everyone is using LLMs to write, but being able to write well with your own personal style will help set apart your work, and will refine your thinking.
+9. Being a Disciplined Professional: Do not romanticize research and learning too much, romanticizing it introduces the ethereal notions of "passion", "genius" etc, these introduce scope of giving excuses (example: blaming it on luck, privelage etc). Understanding that this (learning math, doing research) is a skill and a job (like plumbing, etc) will help you get through low-motivation and doubt. **It is a craft like any other**, do it for a few hours everyday. But keep going, and do it well. 
 
 
 
