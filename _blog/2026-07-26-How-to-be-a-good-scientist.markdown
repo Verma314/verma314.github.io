@@ -5,8 +5,26 @@ date:   2026-07-26 00:00:00 +0100
 categories: books
 ---
 
+**How to study and learn?**
 
-How to get better at mathematical and scientific research?
+1. **High-quality deliberate practice:** which can then be broken down into high-quality deliberate input; and high-quality deliberate recall with feedback. 
+
+This generally involves training/practice at the edge (or beyond) your ability; focused deep work hours (not casual); internalization of learning through thinking/mulling; and then recall in doing good high-quality recall by creating artefacts such as blogs, writings, videos, teaching others, doing exercises, drills etc. This requires focused time.
+
+this absolutely requires:
+- seeking out good reference/learning source material
+- feedback system 
+- focused chunks of deep work time.
+
+Other principles:
+
+2. *Chunking*: everything is built on increasing abstractions, so when learning new concepts, being able to find chunks, able to break the new concepts down into chunks, memorizing them so they're in procedural memory; and then re-using them in other concepts. This builds up a higher tolerance for larger and larger contexts. 
+
+Eveything you do in section below are contingent on doing the above.
+
+-------
+
+**How to get better at mathematical and scientific research?**
 
 1. Read (or devote time to your craft) everyday: slowly, deliberately... learning compounds. This is the fundamental step, if we are not putting in enough time, no amount of tips will help. Read things which actually help building the skills you want, textbooks, research papers, classic papers (Shannon etc); avoid sugary/pop stuff.
 2. Discuss ideas: with a colleague, with an LLM, talk out your thoughts, clarify things, do it on a walk. This helps with recall, building clarity, communication, and learning.
