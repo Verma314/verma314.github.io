@@ -29,6 +29,8 @@ We talked (and perhaps agreed) in the premise before our brain's computational p
 
 Does a machine listen to the Moonlight Sonata to feel better? Then, are things like happiness, fulfillment, pleasure cognitive functions as well?  I don't know and I will come back to it.
 
+
+## Are learning and recreation the two most important things to exist? 
 [continued]/ 
 
 
