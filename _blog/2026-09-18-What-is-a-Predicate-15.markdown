@@ -31,3 +31,7 @@ Also, we don't always need to specify a value to 'convert' a predicate into a st
 $$ \exists x \in \mathbb{Z}, x > 10 $$
 
 (there exists $x$ in $\mathbb{Z}$, such that $x > 10$)
+
+
+Also, when thought of as a relation, a predicate has to 'output' a boolean true/false. So, while x > 10 is a predicate, x + 10 is not.
+
