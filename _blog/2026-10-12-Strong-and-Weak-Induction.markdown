@@ -48,10 +48,11 @@ useful for writing a cleaner proof; neither is more powerful than the
 other; and are quite the same thing when you think about it. Why?
 
 When we apply weak induction to P, we assume P(k). But we can also apply
-weak induction to a **slightly* *different property: one that says all the
-P-claims upto k hold.  And use that to show P(k+1), that would **also* *show
-that P(n) is true for all n. You didn't do anything radically different;
-you just chose a slightly different property to prove.
+weak induction to a *slightly* different property, this property says that 
+all the P-claims upto k hold true.  We use that property to show P(k+1) is true. 
+That would **also* *show that P(n) is true for all n. We didn't do anything 
+radically different; just chose a slightly different property to prove via 
+induction.
 
 Take any property P that you're trying to prove. Prove the base case P(0),
 then instead of just assuming 'P(k)  is true' for your inductive step. You
