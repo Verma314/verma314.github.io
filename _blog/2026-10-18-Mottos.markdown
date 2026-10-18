@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Operating Principles"
+date:   2026-10-18 22:04:39 +0100
+categories: books
+---
+
+1. Producing artefacts (in the real world) is the main way to get better at things. 
+
+Context:
+The real world generally has a feedback loop. Do something every time, the world will give you a feedback back, update your beliefs and continue. Keep designing experiments, keep doing math, keep writing emails, keep writing code, exploring, learning, but most importantly experimenting all the time!.
+
+2.  
+
