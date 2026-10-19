@@ -10,5 +10,25 @@ categories: books
 Context:
 The real world generally has a feedback loop. Do something every time, the world will give you a feedback back, update your beliefs and continue. Keep designing experiments, keep doing math, keep writing emails, keep writing code, exploring, learning, but most importantly experimenting all the time!.
 
-2.  
+These experiments and putting stuff outthere is what will give feedback, and is the only way to 'go further.'
+So, alongside doing the thinking, keep experimenting/taking action at all times. Of course, thoughtful action, doing the same thing over and over again will not yeild different results.
 
+2. Chase down the exact mechanics of what makes something groundbreaking.
+
+Context:
+It's silly to assume that Wittgenstein (or his work) is great just because he is popular and everyone says so. Chase down the exact mechanics of what makes the work great, if at all. This will consequently involve reading a lot of classics, which is a very good way to become skilled and learned yourself. Figure out Shannon's paper, General Relativity, et.
+
+This will consequently involve reading a lot of classics, which is a very good way of becoming skilled yourself. 
+
+
+3.Meta-skills on how to learn, methodologies, figure something out and go from A -> B, will be more important than actual concrete skills.
+
+Context:
+Perhaps this is me saying that working on your fluid skills and intelligence is much more beneficial than just improving your knowledge. This basically means working on the meta-skill. Instead of being skilled at Haskell --> Its better to work on how to get skilled at any programming paradigm quickly.
+
+Instead of solving an engineering challenge with AI -> its better to work on finding the best methodology for using AI for engineering (which is why my RQ direction is good). Its better to learn how to get better at reading math, than just getting good at linear algebra. Soft-skills in these domains, and the meta-skills are not useless or silly. They are the main thing. Any AI can answer question about linear algebra.  But know how to pick up a subject quickly. Know how to figure out why it is important. Always go a few levels deeper than what is asked. Keep asking 'why.' Keep thinking 'how will i automate this, or what is the best way to do this'. This requires pespective and thinking like a scientist. Also more important to ask is, why am i doing this at all.  But of course, it is important not to get too lost in these, and even if you're operating on an abstract level, always keep a bunch of concrete problems close at hand to make sure your ideas are working well in real life, and are getting inspired from them. 
+
+ In short, learning how to think, reason, how to do research, how to learn a topic quickly, how to read a book, how to read a paper, how to learn mathematics, how to do mathematical modelling, how to use AI, how to be organized, how to talk,  etc can be more important than the actual questions in themselves.  
+
+
+4. Lean into the confusion and the unclear.
