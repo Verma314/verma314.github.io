@@ -5,7 +5,7 @@ date:   2026-10-21 17:45:15 +0100
 categories: books
 ---
 
-23rd October 2026 - 
+23rd October 2026 -  Philosophy Reading Martha N., Nietzsche
 22nd October 2026 -  Experiments on Spec-oriented programming
 21st October 2026 -  Markov Chain Monte Carlo; Philosophy of Love; Tennis
 
