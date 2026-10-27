@@ -13,12 +13,16 @@ The real world generally has a feedback loop. Do something every time, the world
 These experiments and putting stuff outthere is what will give feedback, and is the only way to 'go further.'
 So, alongside doing the thinking, keep experimenting/taking action at all times. Of course, thoughtful action, doing the same thing over and over again will not yeild different results.
 
+
+1.b Use a human-created source for your learning and reading. This grounds your learning in the real world. Compared to LLMs (as of Oct '26), human written material have more groundedness, concise explanations, and oddly enough more relatability for the reader.
+
 2. Chase down the exact mechanics of what makes something groundbreaking.
 
 Context:
 It's silly to assume that Wittgenstein (or his work) is great just because he is popular and everyone says so. Chase down the exact mechanics of what makes the work great, if at all. This will consequently involve reading a lot of classics, which is a very good way to become skilled and learned yourself. Figure out Shannon's paper, General Relativity, et.
 
 This will consequently involve reading a lot of classics, which is a very good way of becoming skilled yourself. 
+
 
 
 3.Meta-skills on how to learn, methodologies, figure something out and go from A -> B, will be more important than actual concrete skills.
@@ -34,7 +38,9 @@ Instead of solving an engineering challenge with AI -> its better to work on fin
 4. Lean into the confusion and the unclear.
 
 
+
 5. The ultimate status is your own mental clarity, skill, ability, physical ability, sense of philosophy, and ethics. These abstract ideals are much better to aim for than tokens or rewards in your CV, much better than amassing wealth etc. Eventually, everyone, everything, will be forgotten, no one cares about the clever algorithm you once wrote, or your fast car, because these kinds of status games always depend on an audience. Do what you'd do if no one else existed. Do it for your own mental subjective experience, do it for your own qualia, and nothing else.
+
 
 
 6. Learn how to parse texts and information. 

@@ -5,6 +5,7 @@ date:   2026-10-21 17:45:15 +0100
 categories: books
 ---
 
+27th October 2026 -  Research on AI-assisted Formal Verification
 26th October 2026 -  Classical Mechanics by John Taylor
 25th October 2026 -  Systems Thinking by Donella Meadows
 24th October 2026 -  Nussbaumi, Audre Lorde on Feminism   
