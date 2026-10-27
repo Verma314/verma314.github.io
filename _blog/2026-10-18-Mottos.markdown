@@ -37,3 +37,6 @@ Instead of solving an engineering challenge with AI -> its better to work on fin
 5. The ultimate status is your own mental clarity, skill, ability, physical ability, sense of philosophy, and ethics. These abstract ideals are much better to aim for than tokens or rewards in your CV, much better than amassing wealth etc. Eventually, everyone, everything, will be forgotten, no one cares about the clever algorithm you once wrote, or your fast car, because these kinds of status games always depend on an audience. Do what you'd do if no one else existed. Do it for your own mental subjective experience, do it for your own qualia, and nothing else.
 
 
+6. Learn how to parse texts and information. 
+
+This is, and will continue to be,  be an extremely important skill. While reading off of a paper, a real life event, video, lecture etc. Be able to quickly "parse" it into meaningful chunks. This includes figuring out what the core idea is, the ideas and concepts you do not understand, the overall structure of the text and so on.
