@@ -5,6 +5,9 @@ date:   2026-10-21 17:45:15 +0100
 categories: books
 ---
 
+30th October 2026 -  Research on AI-assisted FV, automated pre-post conditions 
+29th October 2026 -  Research work on Anthropic's article on FV scalability
+28th October 2026 -  Regular Software Engineering
 27th October 2026 -  Research on AI-assisted Formal Verification
 26th October 2026 -  Classical Mechanics by John Taylor
 25th October 2026 -  Systems Thinking by Donella Meadows
