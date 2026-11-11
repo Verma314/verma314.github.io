@@ -5,6 +5,8 @@ date:   2026-11-04 23:52:46 +0000
 categories: books
 ---
 
+0. Interface with the world more. Talk to people more. Communicating ideas and asking questions to other real humans can be a surprisingly good way to clarify your own thinking. There are no isolated geniuses.
+
 1. Be happy. Prioritize being and feeling joyful, or at least content. There is no use to worry so much. Things will be good. There is no reason to fear or play it too safe and cowardly, you'll be ok. Explore. Live. Things will work out fine, have that optimism and trust in yourself; the world will make it seem like there is all doom and gloom all around. Not so. Even in the midst of the deepest winter you can find your happiness.
 
 2. Meditate
